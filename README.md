@@ -1,0 +1,2 @@
+# TheUltimateADblocker
+BLOCK ALL ADS EVERYWHERE
