@@ -1,12 +1,11 @@
 # THE ULTIMATE AD BLOCKER
 Block ads EVERYWHERE
 
-```
+
 
 Last Update: 2017/11/25
 [DOWNLOAD](https://github.com/AlexRabbit/TheUltimateADblocker/archive/master.zip).
 
-```
 
 ## Getting Started
 
