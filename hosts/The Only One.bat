@@ -26,4 +26,32 @@ IF EXIST %windir%\SYSTEM32\DRIVERS\ETC\NUL COPY /Y HOSTS %windir%\SYSTEM32\DRIVE
 	echo  NOW YOU HAVE 0 ADS, CONGRATULATIONS
 :noHostsFile
 Pause
+Windows Registry Editor Version 5.00
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\Psched]
+"NonBestEffortLimit"=dword:00000000
+sc config wuauserv start= auto
+sc config bits start= auto
+sc config DcomLaunch start= 
+net start bits
+net start DcomLaunch
+reg add "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\WindowsUpdate\Auto Update" /v AUOptions /t REG_DWORD /d 1 /f
+reg add "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\WindowsUpdate\Auto Update" /v AUOptions /t REG_DWORD /d 0 /f
+sc config wuauserv start= auto
+sc config wuauserv start= 
+netsh int ip reset resetlog.txt
+netsh int ip reset resetlog.txt
+netsh int ip reset 
+netsh int ip reset c:\Reset.
+netsh int ipv4 reset 
+netsh advfirewall firewall add rule name=”YoutubeBufferTrick” dir=in action=block remoteip=173.194.55.0/24,206.111.0.0/16 enable=yes
+ipconfig
+ipconfig /release
+ipconfig /renew
+ipconfig /flushdns
+netsh int tcp show global 
+netsh int tcp set global chimney=enabled
+netsh int tcp set global autotuninglevel=normal 
+netsh int tcp set global congestionprovider=ctcp 
+NETSH INT IP RESET C:\RESETLOG.txt
+netsh winsock reset
 EXIT
