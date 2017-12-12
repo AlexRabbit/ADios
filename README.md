@@ -49,34 +49,37 @@ In some operating systems, the contents of the hosts file is used preferentially
 
 ```
 *This Block ALL IN-APP ADS like spotify, the shitty windows apps, and more. 
-either sound ads, textads, graphic ads.
+either sound ads, text ads, graphic ads.
 
 *This blocks the AD servers in the internet going to your computer, 
 that means when you enter a website Ex: youtube, you conect to youtube 
-and their ad servers like ADSENSE, this will block that request and 
-you only will enjoy pure youtube.
+and their ad servers like ADSENSE, this will block ADSservers requests and 
+you only will enjoy pure internet.
 ```
 
+THIS HOST BLOCKER DOESNT HAVE REPETITIVE LINES
+AND ALL LINES ARE IN 0.0.0.0 AND NOT IN 127.0.0.1
 
 ## HOW TO INSTALL?
 
-This is very simple, i add three files.
+This is very simple, i add two files.
 
 >Host File
 
 >The Only One.bat
 
-and
+HOWEVER I RECOMEND USING HOSTMAN
+http://www.abelhadigital.com/hostsman
 
->Internet Restart,bat
+I also recomend: restarting your pc in safe mode (from msconfig) once in safe mode youll use my files.
+https://www.digitalcitizen.life/4-ways-boot-safe-mode-windows-10
+
 ```
 *In windows only open the .bat as Administrator and it is ready!
 
 *if fails restart your computer and open again the .bat file as admin. :)
 
-I use the .bat from the site MVP because their code makes a backup in the same folder caled host.mvp
-
-*At the end Use Internet Restart.bat to Refresh your internet and Flush DNS
+*
 ```
 ## HOW TO INSTALL Manually?
 IN Windows
@@ -86,19 +89,25 @@ IN Windows
 
 HardDrive\windows\system32\drivers\etc\hosts folder.
 
-*Grab the original hot file, right click and remobe "only read", now you can move it to roud desktop
+*Grab the original hot file, right click and remove "only read", now you can move it to your desktop
 (do not change the name, just make a back up)
 
 *Drag and drop my host file
 
-*Use Internet Restart.bat to Refresh your internet and Flush DNS
 ```
 
 IN WindowsMac OS X, iOS, Android, Linux:
 ```
 GO TO
  /etc/hosts folder
+ 
+ Grab the original hot file move it to make a back up
+
  ```
+
+If you need to uninstall delete the file from the folder
+if you cant: I  recomend restarting your pc in safe mode (from msconfig) once in safe you can delete it.
+https://www.digitalcitizen.life/4-ways-boot-safe-mode-windows-10
 
 
 
@@ -106,4 +115,49 @@ GO TO
 
 * Hat tip to anyone who's code was used
 
+*AdAway
+
+*add.2o7Net
+
+*add.Dead 	
+
+*add.Risk
+
+*add.Spam
+
+*Cameleon
+
+*Dan Pollock 
+
+*Fake News
+
+*HpHosts
+
+*KADhosts
+
+*Malware Domain List
+
+*Mitchell Krog's 
+
+*MVPS hosts file
+
+*Peter Lowe´s
+
+*pornhosts
+
+*Sinfonietta's gambling 
+
+*Sinfonietta's porn blocking 
+
+*Sinfonietta's snuff-site blocking
+
+*SpotifyAds 
+
+*Steven Black's 
+
+*Tyzbit 
+
+*UncheckyAds 
+
+*yoyo.org 
 
