@@ -3,7 +3,7 @@ Block ads EVERYWHERE
 
 
 
-Last Update: 2017/11/25
+Last Update: 2017/DIC/11
 [DOWNLOAD](https://github.com/AlexRabbit/TheUltimateADblocker/archive/master.zip).
 
 
@@ -33,7 +33,7 @@ In some operating systems, the contents of the hosts file is used preferentially
 
 *Tracking Sites
 
-*ALL PORN (except xvideos, pornhub and efukt)
+*ALL PORN (except xvideos, pornhub, 4chan and efukt)
 
 *Dead Sites
 
