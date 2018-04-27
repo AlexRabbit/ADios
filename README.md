@@ -3,7 +3,7 @@ Block ads EVERYWHERE
 
 
 
-Last Update: 2017/DIC/11
+Last Update: 2018/APRIL/27
 [DOWNLOAD](https://github.com/AlexRabbit/TheUltimateADblocker/archive/master.zip).
 
 
@@ -11,12 +11,15 @@ Last Update: 2017/DIC/11
 
 This Repo is a compilation of MANY sites and organizations that gatters this hosts (ARROUND 30 sites)
 also is a campilation of many compilators from here, github.
+
 I used a notepad++ plugin that deletes repetitive lines so this hosts are Unique.
 
 ### Need to Know
 + A hosts file is a local file stored on the computer that translates domain names or NetBIOS names into an IP addresses.
 When looking up an IP address, the computer will first look at the hosts file to resolve the name. If the name is not in the local hosts file, it will try resolving using a Domain Name Service (DNS), and if also not found the lookup will fail.
-The hosts file is one of several system facilities that assists in addressing network nodes in a computer network. It is a common part of an operating system's Internet Protocol (IP) implementation, and serves the function of translating human-friendly hostnames into numeric protocol addresses, called IP addresses, that identify and locate a host in an IP network.
+T
+he hosts file is one of several system facilities that assists in addressing network nodes in a computer network. It is a common part of an operating system's Internet Protocol (IP) implementation, and serves the function of translating human-friendly hostnames into numeric protocol addresses, called IP addresses, that identify and locate a host in an IP network.
+
 In some operating systems, the contents of the hosts file is used preferentially to other name resolution methods, such as the Domain Name System (DNS), but many systems implement name service switches, e.g., nsswitch.conf for Linux and Unix, to provide customization. Unlike remote DNS resolvers, the hosts file is under the direct control of the local computer's administrator.
 
 ##It Blocks:
@@ -33,19 +36,20 @@ In some operating systems, the contents of the hosts file is used preferentially
 
 *Tracking Sites
 
-*ALL PORN (except xvideos, pornhub, 4chan and efukt)
-
 *Dead Sites
 
 *Scammer Sites
 
 *Spam Sites
 
-*Windows/MACOS/Lunix In app Ads (ex: spotify ads (all software ads))
+*ALL ADS IN ALL SOFTWARE FROM Windows/MACOS/Lunix  (ex: spotify ads (all software ads))
 
 *Microsoft tracking domains
 
 *AND MORE.
+
+*This Block ALL IN-APP ADS like spotify, the shitty windows apps, and more.
+either sound ads, text ads, graphic ads.
 
 ```
 *This Block ALL IN-APP ADS like spotify, the shitty windows apps, and more. 
@@ -68,10 +72,15 @@ This is very simple, i add two files.
 
 >The Only One.bat
 
-HOWEVER I RECOMEND USING HOSTMAN
+*In windows only open the .bat as Administrator and it is ready!
+
+*if fails restart your computer and open again the .bat file as admin. :)
+
+
+## HOWEVER I RECOMEND USING HOSTMAN (OPTIONAL)
 http://www.abelhadigital.com/hostsman
 
-I also recomend: restarting your pc in safe mode (from msconfig) once in safe mode youll use my files.
+## I also recomend: restarting your pc in safe mode (from msconfig) once in safe mode youll use my files. (OPTIONAL)
 https://www.digitalcitizen.life/4-ways-boot-safe-mode-windows-10
 
 ```
@@ -84,28 +93,23 @@ https://www.digitalcitizen.life/4-ways-boot-safe-mode-windows-10
 ## HOW TO INSTALL Manually?
 IN Windows
 
-```
+
 *GO TO
+```
 
 HardDrive\windows\system32\drivers\etc\hosts folder.
 
-*Grab the original hot file, right click and remove "only read", now you can move it to your desktop
+```
+
+*Grab the original hoSt file, right click, propeties and remove "only read", now you can move it to your desktop
 (do not change the name, just make a back up)
 
-*Drag and drop my host file
+*Drag and drop my "host" file
 
-```
 
-IN WindowsMac OS X, iOS, Android, Linux:
-```
-GO TO
- /etc/hosts folder
- 
- Grab the original hot file move it to make a back up
 
- ```
-
-If you need to uninstall delete the file from the folder
+#UNINSTALL
+## If you need to uninstall delete the file from the folder
 if you cant: I  recomend restarting your pc in safe mode (from msconfig) once in safe you can delete it.
 https://www.digitalcitizen.life/4-ways-boot-safe-mode-windows-10
 
@@ -143,11 +147,7 @@ https://www.digitalcitizen.life/4-ways-boot-safe-mode-windows-10
 
 *Peter Lowe´s
 
-*pornhosts
-
 *Sinfonietta's gambling 
-
-*Sinfonietta's porn blocking 
 
 *Sinfonietta's snuff-site blocking
 
