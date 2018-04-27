@@ -22,7 +22,7 @@ he hosts file is one of several system facilities that assists in addressing net
 
 In some operating systems, the contents of the hosts file is used preferentially to other name resolution methods, such as the Domain Name System (DNS), but many systems implement name service switches, e.g., nsswitch.conf for Linux and Unix, to provide customization. Unlike remote DNS resolvers, the hosts file is under the direct control of the local computer's administrator.
 
-## It Blocks:
+### It Blocks:
 
 *Ads 
 *Malware 
@@ -52,8 +52,8 @@ and their ad servers like ADSENSE, this will block ADSservers requests and
 you only will enjoy pure internet.
 ```
 
-# THIS HOST BLOCKER DOESNT HAVE REPETITIVE LINES
-# AND ALL LINES ARE IN 0.0.0.0 AND NOT IN 127.0.0.1
+### THIS HOST BLOCKER DOESNT HAVE REPETITIVE LINES
+### AND ALL LINES ARE IN 0.0.0.0 AND NOT IN 127.0.0.1
 
 
 
@@ -62,6 +62,8 @@ you only will enjoy pure internet.
 This is very simple, i add two files.
 
 >Host File
+
+
 >The Only One.bat
 
 *In windows only open the .bat as Administrator and it is ready!
@@ -69,9 +71,9 @@ This is very simple, i add two files.
 
 
 
-## HOWEVER I RECOMEND USING HOSTMAN (OPTIONAL)
+### HOWEVER I RECOMEND USING HOSTMAN (OPTIONAL)
 http://www.abelhadigital.com/hostsman
-## I also recomend: restarting your pc in safe mode (from msconfig) once in safe mode youll use my files. (OPTIONAL)
+### I also recomend: restarting your pc in safe mode (from msconfig) once in safe mode youll use my files. (OPTIONAL)
 https://www.digitalcitizen.life/4-ways-boot-safe-mode-windows-10
 
 ```
@@ -101,7 +103,7 @@ HardDrive\windows\system32\drivers\etc\hosts folder.
 
 
 
-#UNINSTALL
+###UNINSTALL
 ## If you need to uninstall delete the file from the folder
 I  recomend restarting your pc in safe mode (from msconfig) once in safe you can delete it.
 https://www.digitalcitizen.life/4-ways-boot-safe-mode-windows-10
