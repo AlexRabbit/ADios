@@ -35,7 +35,7 @@ In some operating systems, the contents of the hosts file is used preferentially
 *Spam Sites
 *ALL ADS IN ALL SOFTWARE FROM Windows/MACOS/Lunix  (ex: spotify ads (all software ads))
 *Microsoft tracking domains
-*All Microsoft and third party apps and services
+*All Microsoft and third party spying apps and services
 *AND MORE.
 
 
