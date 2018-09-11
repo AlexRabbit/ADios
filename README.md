@@ -10,13 +10,6 @@ Last Update: 2018/september/07
 [ADBLOCK SUSCRIPTION](https://adblockpro.000webhostapp.com/alex/text.txt&title=Alex).
 
 
-<a href="abp:subscribe?location=https%3A//easylist-downloads.adblockplus.org/easylistlithuania%2Beasylist.txt&amp;title=EasyList%20Lithuania%2BEasyList">EasyList Lithuania+EasyList</a>
-
-
-
-
-
-
 
 
 ## Getting Started
