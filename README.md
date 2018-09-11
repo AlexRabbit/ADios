@@ -8,7 +8,7 @@ Last Update: 2018/september/07
 [DOWNLOAD](https://github.com/AlexRabbit/TheUltimateADblocker/archive/master.zip).
 
 
-[ADBLOCK SUSCRIPTION](https://.abp:subscribe?location=https://adblockpro.000webhostapp.com/alex/text.txt&title=Alex).
+[ADBLOCK SUSCRIPTION](https://www.abp:subscribe?location=https://adblockpro.000webhostapp.com/alex/text.txt&title=Alex).
 
 ## Getting Started
 
