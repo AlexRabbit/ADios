@@ -3,9 +3,9 @@ Block ads EVERYWHERE
 
 
 
-Last Update: 2018/APRIL/27
+Last Update: 2018/september
 [DOWNLOAD](https://github.com/AlexRabbit/TheUltimateADblocker/archive/master.zip).
-
+[ADBLOCK SUSCRIPTION](href="abp:subscribe?location=https://adblockpro.000webhostapp.com/alex/text.txt&title=Alex")
 
 ## Getting Started
 
