@@ -7,7 +7,7 @@ Last Update: 2018/october/27
 
 [DOWNLOAD](https://github.com/AlexRabbit/ADios-ADS/archive/master.zip).
 
-[ADBLOCK SUSCRIPTION](abp:subscribe?location=https://raw.githubusercontent.com/AlexRabbit/ADios-ADS/master/hosts)
+[ADBLOCK SUSCRIPTION](https://abp:subscribe?location=https://raw.githubusercontent.com/AlexRabbit/ADios-ADS/master/hosts)
 
 
 
