@@ -3,7 +3,7 @@ Block ads EVERYWHERE
 
 
 
-Last Update: 2018/october/27
+Last Update: 2018/december/19
 
 [DOWNLOAD](https://github.com/AlexRabbit/ADios-ADS/archive/master.zip).
 
