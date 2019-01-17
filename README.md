@@ -29,16 +29,6 @@ When looking up an IP address, the computer will **first look at the hosts file*
 Example - the following entry **0.0.0.0** **ad.doubleclick.net** blocks all files supplied by that [DoubleClick](http://en.wikipedia.org/wiki/Doubleclick "Wikipedia Definition of Doubleclick") Server to the web page you are viewing. This also prevents the server from tracking your movements. Why? ... because in certain cases "Ad Servers" like Doubleclick (and many others) will try silently to [open a separate connection](http://winhelp2002.mvps.org/doubleclick.gif "View screenshot of DoubleClick trying to open a seperate connection.") on the webpage you are viewing, record your movements then yes ... follow you to additional sites you may visit.
 
 
-***Make your choice..***
-```mermaid
-graph LR
-A[Internet+Garbage] -- ADios Filter --> B((Clean Internet))  
-A --> C(Internet+Garbage)
-B --> D{You}
-C --> D
-```
-
-
 ## How to install
 ### Automatically
 - Simply locate the "***master.zip***" file you downloaded.  
