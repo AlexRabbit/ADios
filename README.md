@@ -1,8 +1,11 @@
 # ADios!![ADios ADS👋](https://myrealdomain.com/images/bye-emoji-5.png)
 ## The ultimate adblocker
 ***Last Update: 2019/January/16***
+
 [DOWNLOAD](https://github.com/AlexRabbit/ADios-ADS/archive/master.zip)
+
 [RAW TEXT](https://raw.githubusercontent.com/AlexRabbit/ADios-ADS/master/hosts)
+
 
 This repository is a compilation of several reputable `hosts` files, and merges them into a unified host file with duplicates removed. 
 I use a notepad++ plugin that deletes repetitive lines so this entries are Unique.
@@ -12,20 +15,19 @@ I use a notepad++ plugin that deletes repetitive lines so this entries are Uniqu
 - **Compatible** with all devices, regardless of OS. on web browsing, applications and any mobile device.
 -   **privacy:** with all these annoyances blocking, it also `increases` privacy.
 - *THIS HOST BLOCKER DOESNT HAVE REPETITIVE LINES - ALL LINES ARE IN 0.0.0.0*
-```
-*This blocks the AD servers in the internet going to your computer, 
-that means when you enter a website Ex: youtube, you conect to youtube 
-and their ad servers like ADSENSE, this will block ADSservers requests and 
-you only will enjoy pure internet.
-```
 
-StackEdit stores your files in your browser, which means all your files are automatically saved locally and are accessible **offline!**
+> This blocks the AD servers in the internet going to your computer, 
+> that means when you enter a website Ex: youtube, you conect to youtube
+> and their ad servers like ADSENSE, this will block ADSservers requests
+> and  you only will enjoy pure internet.
+
 
 ## What. Is. This.
 A hosts file is a local file stored on the computer that translates domain names into an IP addresses.
 When looking up an IP address, the computer will **first look at the hosts file** to resolve the name. If the name is in the local hosts file as not allowed, you cannot access the site.. So here is the *hack* intead of blocking sites, it only blockes the ADS
 
 Example - the following entry **0.0.0.0** **ad.doubleclick.net** blocks all files supplied by that [DoubleClick](http://en.wikipedia.org/wiki/Doubleclick "Wikipedia Definition of Doubleclick") Server to the web page you are viewing. This also prevents the server from tracking your movements. Why? ... because in certain cases "Ad Servers" like Doubleclick (and many others) will try silently to [open a separate connection](http://winhelp2002.mvps.org/doubleclick.gif "View screenshot of DoubleClick trying to open a seperate connection.") on the webpage you are viewing, record your movements then yes ... follow you to additional sites you may visit.
+
 
 ***Make your choice..***
 ```mermaid
@@ -35,6 +37,8 @@ A --> C(Internet+Garbage)
 B --> D{You}
 C --> D
 ```
+
+
 ## How to install
 ### Automatically
 - Simply locate the "***master.zip***" file you downloaded.  
