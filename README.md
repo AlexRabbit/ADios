@@ -1,6 +1,6 @@
 # ADios!![ADios ADS👋](https://myrealdomain.com/images/bye-emoji-5.png)
 ## The ultimate adblocker
-***Last Update: 2019/January/16***
+***Last Update: 2019/March/12***
 
 [DOWNLOAD](https://github.com/AlexRabbit/ADios-ADS/archive/master.zip)
 
