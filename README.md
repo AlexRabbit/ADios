@@ -1,10 +1,10 @@
 # ADios!![ADios ADS👋](https://myrealdomain.com/images/bye-emoji-5.png)
 ## The ultimate adblocker
-***Last Update: 2019/March/12***
+***Last Update: 2019/May/29***
 
-[DOWNLOAD](https://github.com/AlexRabbit/ADios-ADS/archive/master.zip)
+[DOWNLOAD](http://bit.ly/HostBlock)
 
-[RAW TEXT](https://raw.githubusercontent.com/AlexRabbit/ADios-ADS/master/hosts)
+[RAW TEXT](http://bit.ly/HostBlockRaw)
 
 
 This repository is a compilation of several reputable `hosts` files, and merges them into a unified host file with duplicates removed. 
