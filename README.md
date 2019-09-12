@@ -2,9 +2,11 @@
 ## The ultimate adblocker
 ***Last Update: 2019/Sept/05***
 
-[DOWNLOAD](http://bit.ly/HostBlock)
+[DOWNLOAD](https://bit.ly/HostBlock)
 
-[RAW TEXT](http://bit.ly/HostBlockRaw)
+[Pi Hole](https://bit.ly/PiHoleHostBlock)
+
+[RAW TEXT](https://bit.ly/HostBlockRaw)
 
 
 This repository is a compilation of several reputable `hosts` files, and merges them into a unified host file with duplicates removed. 
