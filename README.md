@@ -4,7 +4,7 @@
 
 [DOWNLOAD](https://bit.ly/HostBlock)
 
-[Pi Hole](https://bit.ly/PiHoleHostBlock)
+[PI-HOLE](https://bit.ly/PiHoleHostBlock)
 
 [RAW TEXT](https://bit.ly/HostBlockRaw)
 
