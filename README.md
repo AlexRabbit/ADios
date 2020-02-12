@@ -11,14 +11,17 @@
 |--|--|
 | **For Pi-Hole** | [**PI-HOLE**](https://bit.ly/PiHoleHostBlock) |
 
+Read this after instaling the my host list:
+https://help.getadblock.com/support/solutions/articles/6000157524-how-do-i-clear-my-browser-cache-and-cookies-reset-my-browser-settings-and-update-my-browser-
 
-> This repository is a compilation of several reputable `hosts` files,
+> This repository is a compilation of several reputable `hosts` files, But more importantly, My Own!
 > and merges them into a `unified host` file with **duplicates removed**. 
 > I use a notepad++ plugin that deletes repetitive lines so all of this entries **are unique**.
 
 # Features
 -   **It blocks:** 
  - [x] Twitch Ads
+ - [x] Porn Ads (not porn)
  - [x] Advertisements
  - [x] Malware
  - [x] Trackers
@@ -30,6 +33,8 @@
  - [x] ADS in Software (all ads inside spotify app, etc)
  - [x] Microsoft tracking
  - [x] crypto mining
+
+
 
 
 >  **Compatible** with all devices, regardless of OS. on web browsing,
