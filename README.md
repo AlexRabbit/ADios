@@ -3,7 +3,7 @@
 ![ADios ADS👋](https://myrealdomain.com/images/bye-emoji-5.png)
 
 # The ultimate adblocker
-| **Last Update** | **2020/FEB/11** |
+| **Last Update** | **2020/FEB/12** |
 |--|--|
 |**Download Proyect (Hosts Files)**  | [**DOWNLOAD**](https://bit.ly/HostBlock) |
 
