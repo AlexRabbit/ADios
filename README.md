@@ -7,6 +7,10 @@
 |--|--|
 |**Download Proyect (Hosts Files)**  | [**DOWNLOAD**](https://bit.ly/HostBlock) |
 
+
+*DO NOT INSTALL IT MANUALLY IF YOU ARE USING WINDOWS, IT WONT WORK AND YOULL LOOSE INTERNET CONECTION; BETTER USE THE "AUTOinstall.bat" FILE AND RUN IT AS ADMINISTRATOR*
+
+
 | Plain Text (w/ 0.0.0.0 as prefix )| [RAW TEXT](https://bit.ly/HostBlockRaw) |
 |--|--|
 | **For Pi-Hole** | [**PI-HOLE**](https://bit.ly/PiHoleHostBlock) |
@@ -16,7 +20,7 @@
 **ONLY Clear your browser cache and cookies**
 
 
-*DO NOT INSTALL IT MANUALLY IF YOU ARE USING WINDOWS, IT WONT WORK AND YOULL LOOSE INTERNET CONECTION; BETTER USE THE "AUTOinstall.bat" FILE AND RUN IT AS ADMINISTRATOR*
+
 
 > This repository is a compilation of several reputable `hosts` files, But more importantly, My Own!
 > and merges them into a `unified host` file with **duplicates removed**. 
