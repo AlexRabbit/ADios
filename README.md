@@ -14,6 +14,8 @@
 
 [**Read this after instaling the  host list:**](https://help.getadblock.com/support/solutions/articles/6000157524-how-do-i-clear-my-browser-cache-and-cookies-reset-my-browser-settings-and-update-my-browser-)
 **ONLY Clear your browser cache and cookies**
+
+
 *DO NOT INSTALL IT MANUALLY IF YOU ARE USING WINDOWS, IT WONT WORK AND YOULL LOOSE INTERNET CONECTION; BETTER USE THE "AUTOinstall.bat" FILE AND RUN IT AS ADMINISTRATOR*
 
 > This repository is a compilation of several reputable `hosts` files, But more importantly, My Own!
