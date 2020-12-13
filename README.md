@@ -16,20 +16,22 @@
 
 ------
 
-|       **LAST UPDATE**       | **2020/DIC/12**                                  |
-| :-------------------------: | :----------------------------------------------- |
-|    **Download Project**     | [Download](https://bit.ly/HostBlock)             |
-|   **Host File (0.0.0.0)**   | [RAW Host File](https://bit.ly/HostBlockRaw)     |
-|         **Pi-Hole**         | [RAW Pi-Hole](https://bit.ly/PiHoleHostBlock)    |
-| **Ad-Blocker Subscription** | [Subscribe](https://bit.ly/HostSubscription)     |
-|                             | [RAW AdBlocker](https://bit.ly/HostSubscription) |
-|        **Wildcards**        | [RAW Wildcards](https://bit.ly/HostWildcards)    |
+|       **LAST UPDATE**       | **2020/DIC/12**                                              |
+| :-------------------------: | :----------------------------------------------------------- |
+|    **Download Project**     | [Download](https://bit.ly/HostBlock)                         |
+|   **Host File (0.0.0.0)**   | [RAW Host File](https://bit.ly/HostBlockRaw)                 |
+|         **Pi-Hole**         | [RAW Pi-Hole](https://bit.ly/PiHoleHostBlock)                |
+| **Ad-Blocker Subscription** | [Subscribe](https://subscribe.adblockplus.org/?location=https://bit.ly/HostSubscription&title=ADios) |
+|                             | [RAW AdBlocker](https://bit.ly/HostSubscription)             |
+|        **Wildcards**        | [RAW Wildcards](https://bit.ly/HostWildcards)                |
+
+
 
 **For all the Ad-Guard fans..** 
 
 |                   **CONFIGURATION FILES**                    | **2020/DIC/12**                                              |
 | :----------------------------------------------------------: | :----------------------------------------------------------- |
-| **[Ad-Guard Browser Extension](https://adguard.com/en/adguard-assistant/overview.html)** | [Download](https://bit.ly/HostBlock)  *File is on Config files > AdGuard Addon.json* |
+| **[Ad-Guard Browser Extension](https://adguard.com/en/adguard-assistant/overview.html)** | [Download](https://bit.ly/HostBlock)   File is on *Config files > AdGuard Addon.json* |
 | **[Ad-Guard APP](https://adguard.com/en/adguard-windows/overview.html)** | [Download](https://bit.ly/AdGuardApp)                        |
 
 *I highly recommend to clear your cache and cookies after adding the block list.*
