@@ -91,5 +91,3 @@ So here is the `hack`: instead of blocking sites, it only blocks the ADS
 
 ------
 
-
-
