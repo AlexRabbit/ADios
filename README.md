@@ -19,7 +19,7 @@ Added more hosts but primarily for Twitch and Spotify adblocking; DNSMasq and Re
 |       |                                              |
 | :---: | :------------------------------------------- |
 | *ETH* | `0xf86656cfaaae0bcc17a0baac03fbd6b1777855ce` |
-| *BTC* | `bc1quxpndm8angnr4ny4aghj23hz6nclz5tawn7xds` |
+| *BTC SegWit* | `bc1quxpndm8angnr4ny4aghj23hz6nclz5tawn7xds` |
 
 ------
 
