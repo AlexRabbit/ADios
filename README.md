@@ -8,7 +8,7 @@
 
 *I highly recommend to clear your cache and cookies after adding the block list.*
 
-*2021/APRIL/04: New year update!* 
+*2021/APRIL/04: New year update!* -> APRIL/08: Testing to block when that random ad at twitch and some others when spotify gets updated.
 
 Added more hosts but primarily for Twitch and Spotify adblocking; DNSMasq and Response Policy Zone support added!
 
