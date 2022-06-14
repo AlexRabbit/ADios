@@ -8,9 +8,10 @@
 
 *I highly recommend to clear your cache and cookies after adding the block list.*
 
-*2021/APRIL/04: New year update!* -> APRIL/08: Testing to block that random ad at twitch and some others when spotify gets updated.  ->  april/11:a hotfix to stop adguard to unexpecteley crash. at this point looks like there are no more ads on twitch nor random ads on spotify.
+*2022/JUNE/14: 2022 UPDATE!* -> 
+Full update and more Twitch hosts.
 
-Added more hosts but primarily for Twitch and Spotify adblocking; DNSMasq and Response Policy Zone support added!
+Updated everything and added more Twitch ad hosts!
 
 ------
 
@@ -18,12 +19,12 @@ Added more hosts but primarily for Twitch and Spotify adblocking; DNSMasq and Re
 
 |       |                                              |
 | :---: | :------------------------------------------- |
-| *ETH* | `0xf86656cfaaae0bcc17a0baac03fbd6b1777855ce` |
-| *BTC SegWit* | `bc1quxpndm8angnr4ny4aghj23hz6nclz5tawn7xds` |
+| *Nothing* | `I dont longer ask for donations` |
+
 
 ------
 
-|       **LAST UPDATE**        |                        2021/APRIL/05                         |
+|       **LAST UPDATE**        |                        2022/JUNE/14                         |
 | :--------------------------: | :----------------------------------------------------------: |
 | ***Download Whole Project*** |            *[Download](https://bit.ly/HostBlock)*            |
 |                              |                                                              |
@@ -37,7 +38,7 @@ Added more hosts but primarily for Twitch and Spotify adblocking; DNSMasq and Re
 
 ### **For all the Ad-Guard fans..** 
 
-|                   **CONFIGURATION FILES**                    | 2021/APRIL/05                                                |
+|                   **CONFIGURATION FILES**                    | 2022/JUNE/14                                                |
 | :----------------------------------------------------------: | :----------------------------------------------------------- |
 | **[Ad-Guard Browser Extension](https://adguard.com/en/adguard-assistant/overview.html)** | [Download](https://bit.ly/HostBlock)   File is on *Config files > AdGuard Addon.json* |
 | **[Ad-Guard APP](https://adguard.com/en/adguard-windows/overview.html)** | [Download](https://bit.ly/AdGuardApp)                        |
