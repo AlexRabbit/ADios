@@ -8,10 +8,8 @@
 
 *I highly recommend to clear your cache and cookies after adding the block list.*
 
-*2022/JUNE/14: 2022 UPDATE!* -> 
-Full update and more Twitch hosts.
-
-Updated everything and added more Twitch ad hosts!
+*2023/SEPTEMBER/29: 2023 UPDATE!* -> 
+Full update + Performance. I erased more things i cannot mantain and contains many errors i cannot test.
 
 ------
 
@@ -26,22 +24,10 @@ Updated everything and added more Twitch ad hosts!
 
 |       **LAST UPDATE**        |                        2022/JUNE/14                         |
 | :--------------------------: | :----------------------------------------------------------: |
-| ***Download Whole Project*** |            *[Download](https://bit.ly/HostBlock)*            |
-|                              |                                                              |
-| **Ad-Blocker Subscription**  | [Subscribe](https://subscribe.adblockplus.org/?location=https://bit.ly/HostSubscription&title=ADios) |
-|                              | [RAW AdBlocker Suscription](https://bit.ly/HostSubscription) |
-|   **Host File (0.0.0.0)**    |         [RAW Host File](https://bit.ly/HostBlockRaw)         |
-|         **Pi-Hole**          |        [RAW Pi-Hole](https://bit.ly/PiHoleHostBlock)         |
-|        **Wildcards**         |        [RAW Wildcards](https://bit.ly/HostWildcards)         |
-|         **DNSMasq**          |            [RAW DNS Masq](http://bit.ly/DNSMasq)             |
-|   **Response Policy Zone**   | [RAW Response Policy Zone](http://bit.ly/ResponsePolicyZone) |
+| ***Download Whole Project*** |            *[Download](https://github.com/AlexRabbit/ADios/archive/refs/heads/master.zip)*            |
+|   **Host File (0.0.0.0)**    |         [RAW Host File](https://github.com/AlexRabbit/ADios/raw/master/hosts)         |
+|         **Pi-Hole**          |        [RAW Pi-Hole](https://github.com/AlexRabbit/ADios/raw/master/PIHOLE/hosts)         |
 
-### **For all the Ad-Guard fans..** 
-
-|                   **CONFIGURATION FILES**                    | 2022/JUNE/14                                                |
-| :----------------------------------------------------------: | :----------------------------------------------------------- |
-| **[Ad-Guard Browser Extension](https://adguard.com/en/adguard-assistant/overview.html)** | [Download](https://bit.ly/HostBlock)   File is on *Config files > AdGuard Addon.json* |
-| **[Ad-Guard APP](https://adguard.com/en/adguard-windows/overview.html)** | [Download](https://bit.ly/AdGuardApp)                        |
 
 ------
 
