@@ -22,7 +22,7 @@ Full update + Performance. I erased more things i cannot mantain and contains ma
 
 ------
 
-|       **LAST UPDATE**        |                        2022/JUNE/14                         |
+|       **LAST UPDATE**        |                        2025/AUG/20                         |
 | :--------------------------: | :----------------------------------------------------------: |
 | ***Download Whole Project*** |            *[Download](https://github.com/AlexRabbit/ADios/archive/refs/heads/master.zip)*            |
 |   **Host File (0.0.0.0)**    |         [RAW Host File](https://github.com/AlexRabbit/ADios/raw/master/hosts)         |
@@ -73,4 +73,5 @@ and merges them into a `unified host` file with **duplicates removed**.
 I use a notepad++ plug in that deletes repetitive lines so all of this entries **are unique**.
 
 ------
+
 
