@@ -1,77 +1,126 @@
-[TOC]
+# ADios
 
+**A unified, auto-updated hosts-based blocklist.** One list, many formats—for your system hosts file, Pi-hole, AdGuard, DNSMasq, and more.
 
+---
 
-# **👋ADios!**
+## What This Is
 
-## The Ultimate AdBlocker
+ADios is a **merged and deduplicated blocklist** delivered in standard **hosts format** (`0.0.0.0 domain.com`). It combines:
 
-*I highly recommend to clear your cache and cookies after adding the block list.*
+- **Upstream lists** from trusted projects (AdAway, Steven Black, AdGuard, OISD, URLhaus, and others)
+- **Curated additions** for streaming and app ads (e.g. Twitch, Spotify)
+- **Whitelisting** so essential domains (e.g. for Spotify or Twitch to work) stay unblocked
 
-*2023/SEPTEMBER/29: 2023 UPDATE!* -> 
-Full update + Performance. I erased more things i cannot mantain and contains many errors i cannot test.
+The list is **rebuilt automatically every day** on GitHub Actions. You get a single, clean `hosts` file (and a Pi-hole–friendly copy) without running anything yourself.
 
-------
+---
 
-####  **Make a Dono**☕ 
+## How Hosts Blocking Works
 
-|       |                                              |
-| :---: | :------------------------------------------- |
-| *Nothing* | `I dont longer ask for donations` |
+- Your OS uses a **hosts file** to map hostnames to IP addresses. It is checked **before** DNS ([RFC 6761](https://www.rfc-editor.org/rfc/rfc6761), and OS behavior is documented in [Microsoft](https://learn.microsoft.com/en-us/previous-versions/windows/it-pro/windows-server-2003/cc758994(v=ws.10)) and [Linux](https://man7.org/linux/man-pages/man5/hosts.5.html) docs).
+- Sending a hostname to **`0.0.0.0`** (or `127.0.0.1`) makes the OS resolve it locally, so the connection never reaches the real server. That’s the standard way to block domains via hosts.
+- The same format is used by Pi-hole, AdGuard Home, and many DNS-level blockers, so one list can serve multiple use cases.
 
+---
 
-------
+## What Gets Blocked
 
-|       **LAST UPDATE**        |                        2025/AUG/20                         |
-| :--------------------------: | :----------------------------------------------------------: |
-| ***Download Whole Project*** |            *[Download](https://github.com/AlexRabbit/ADios/archive/refs/heads/master.zip)*            |
-|   **Host File (0.0.0.0)**    |         [RAW Host File](https://github.com/AlexRabbit/ADios/raw/master/hosts)         |
-|         **Pi-Hole**          |        [RAW Pi-Hole](https://github.com/AlexRabbit/ADios/raw/master/PIHOLE/hosts)         |
+| Category | Description |
+|----------|-------------|
+| **Ads & trackers** | Common ad and analytics domains from the included lists |
+| **Streaming ads** | Twitch, YouTube (Samsung TV list), and similar ad domains |
+| **In-app ads** | Spotify, Deezer, and other in-app ad endpoints where possible |
+| **Malware & abuse** | Domains from URLhaus and similar abuse lists |
+| **Scam / spam** | Scam and spam domains from the included sources |
+| **Optional adult ads** | Optional blocklist for adult ad networks (not adult content itself) |
 
+Whitelisted domains (e.g. core Spotify/Twitch domains needed for playback) are **removed** from the final list so services keep working.
 
-------
+---
 
-### **Backup Hostfile**
+## Downloads
 
-| **VIRGIN HOST FILE** |                         **BACK UP**                          |
-| :------------------: | :----------------------------------------------------------: |
-| **Clean Host File**  | [Download](http://winhelp2002.mvps.org/defaultwin7-hosts.zip) |
+| File | Use case |
+|------|----------|
+| **[hosts](https://raw.githubusercontent.com/AlexRabbit/ADios/master/hosts)** | System hosts file, AdGuard, DNSMasq, etc. |
+| **[PIHOLE/hosts](https://raw.githubusercontent.com/AlexRabbit/ADios/master/PIHOLE/hosts)** | Pi-hole blocklist (same content, `0.0.0.0` format) |
 
-------
+**System hosts (Windows):**  
+`C:\Windows\System32\drivers\etc\hosts`  
+**System hosts (macOS/Linux):**  
+`/etc/hosts`
 
-### FEATURES
+Copy the raw content of `hosts` into your hosts file (back up the original first). Clear browser cache after changing hosts.
 
-- **IT BLOCKS**
+---
 
- -   [x] Twitch Ads
- -   [x] Porn Ads (not porn)
- -   [x] Advertisements
- -   [x] Malware
- -   [x] Trackers
- -   [x] Spyware
- -   [x] SPAM sites
- -   [x] Adware
- -   [x] Gambling sites
- -   [x] Scammer Sites
- -   [x] ADS in Software (all ads inside spotify app, etc)
- -   [x] Microsoft tracking
- -   [x] crypto mining
+## Compatibility
 
-------
+- **Windows, macOS, Linux** — use the `hosts` file as above.
+- **Pi-hole** — use the list URL or the raw `PIHOLE/hosts` file.
+- **AdGuard / AdGuard Home** — supports hosts-style blocklists.
+- **DNSMasq** — use `addn-hosts` or the same format.
+- **Response Policy Zone (RPZ)** — can be built from the same domain list.
 
-### WHAT. IS. THIS?
+---
 
-A hosts file is a file that translates domain names into an IP addresses.
-When looking up an IP address, the computer will **first look at the hosts file** to resolve the name. **If the name is in the local hosts file as not allowed, you cannot access the site..** 
+## Build It Yourself
 
-So here is the `Trick`: instead of blocking sites, it only blocks the ADS
+The list is produced by a Python script that:
 
-**Example** - the following entry `0.0.0.0 ad.doubleclick.net` blocks all files supplied by that [DoubleClick](http://en.wikipedia.org/wiki/Doubleclick "Wikipedia Definition of Doubleclick") an AD-Server to the web page you are viewing. This also prevents the server from tracking your movements.
+1. Fetches all URLs in `blacklist.txt`
+2. Merges local lists (e.g. `block2.txt`)
+3. Normalizes and deduplicates entries
+4. Applies `whitelist.txt`
+5. Writes `hosts` and `PIHOLE/hosts` in `0.0.0.0` format
 
-This repository is a compilation of several reputable `hosts` files, But more importantly, My Own!
-and merges them into a `unified host` file with **duplicates removed**. 
-I use a notepad++ plug in that deletes repetitive lines so all of this entries **are unique**.
+**Requirements:** Python 3.8+, `requests`.
 
-------
+```bash
+pip install -r requirements.txt
+python build_hosts.py
+```
 
+Outputs: `host.txt` (domains only), `0host.txt`, `hosts`, and `PIHOLE/hosts` (if the `PIHOLE` directory exists).
 
+---
+
+## Auto-Update (GitHub Actions)
+
+The repository uses **GitHub Actions** to rebuild the list **daily** on GitHub’s runners:
+
+- **Schedule:** once per day (cron)
+- **Manual run:** **Actions** → **Update hosts** → **Run workflow**
+
+Only the built `hosts` (and `PIHOLE/hosts`) are committed; the workflow does not re-run on its own commit (`[skip ci]`).
+
+---
+
+## Backup Hosts File
+
+Before replacing your hosts file, keep a clean copy. For a default Windows hosts file, see:  
+[winhelp2002.mvps.org](http://winhelp2002.mvps.org/defaultwin7-hosts.zip).
+
+---
+
+## Sources (Upstream Lists)
+
+The list aggregates from public, community-maintained blocklists, including (among others):
+
+- AdAway, Steven Black’s unified hosts, AdGuard filters
+- OISD, FadeMind, Soteria-Nou, URLhaus (abuse.ch)
+- Pgl.yoyo.org, Someone Who Cares, MVPS
+- Specialized lists for YouTube, Samsung TV, Twitch, Spotify
+
+See `blacklist.txt` in the repo for the full URL list. We do not control those projects; we only merge and deduplicate their output and add our own whitelist.
+
+---
+
+## License
+
+[GPL-3.0](LICENSE). Same for the build script and config; upstream lists keep their respective licenses.
+
+---
+
+**ADios** — one list, auto-updated, for hosts-based blocking everywhere.
