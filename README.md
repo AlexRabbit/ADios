@@ -28,7 +28,6 @@
 ## 📑 Table of Contents
 
 - [✨ What Is This? (In Plain English)](#-what-is-this-in-plain-english)
-- [👵 Explain It Like I'm Your Grandma](#-explain-it-like-im-your-grandma)
 - [🔄 How It Works](#-how-it-works)
 - [📥 Download & Install (Step by Step)](#-download--install-step-by-step)
 - [🛡️ What Gets Blocked](#️-what-gets-blocked)
@@ -52,17 +51,6 @@ You don’t need to be a nerd. You just need to copy one file to the right place
 
 ---
 
-## 👵 Explain It Like I'm Your Grandma
-
-Imagine your computer has a **little address book** that it checks **before** it looks up any website.
-
-- When you visit **facebook.com**, the computer first flips through this address book.
-- If it finds **facebook.com** in the book with a special note that says *“don’t go there”*, it never actually visits the real Facebook ad server — so **no ad**.
-- **ADios** is that address book, but filled with the **addresses of ad and tracking companies**, so they get the “don’t go there” note instead of loading.
-
-We don’t block Facebook or YouTube. We block the **ads and trackers** that come from other addresses. So you still get your cat videos — just without the noisy commercials. 🐱
-
----
 
 ## 🔄 How It Works
 
@@ -116,13 +104,6 @@ flowchart LR
 | **4** | Or manually: open `/etc/hosts` in an editor with sudo, paste at the bottom, save. |
 | **5** | Clear browser cache. Done! 🎉 |
 
-### 🥧 Pi-hole
-
-| Step | What to do |
-|------|------------|
-| **1** | In Pi-hole Admin: **Group management** → **Adlists**. |
-| **2** | Add this URL: `https://raw.githubusercontent.com/AlexRabbit/ADios/master/PIHOLE/hosts` |
-| **3** | Update gravity (or wait for the next update). Done! 🎉 |
 
 ---
 
@@ -135,7 +116,7 @@ flowchart LR
 | 🎵 **In‑app ads** | Spotify, Deezer, and other in‑app ad endpoints where possible. |
 | 🦠 **Malware & abuse** | Domains from URLhaus and similar abuse lists. |
 | 📧 **Scam / spam** | Scam and spam domains from the included sources. |
-| 🔞 **Optional adult ads** | Optional blocklist for adult ad networks (not adult content itself). |
+| 🔞 **Adult ads** | Adult ad networks (not adult content itself). |
 
 Whitelisted domains (e.g. core Spotify/Twitch domains needed for playback) are **removed** from the list so services keep working. ✅
 
@@ -146,10 +127,7 @@ Whitelisted domains (e.g. core Spotify/Twitch domains needed for playback) are *
 | Use case | What to use |
 |----------|-------------|
 | 🪟 **Windows / 🍎 macOS / 🐧 Linux** | [**hosts**](https://raw.githubusercontent.com/AlexRabbit/ADios/master/hosts) — copy into your system hosts file (see [Download & Install](#-download--install-step-by-step)). |
-| 🥧 **Pi-hole** | [**PIHOLE/hosts**](https://raw.githubusercontent.com/AlexRabbit/ADios/master/PIHOLE/hosts) — add as an adlist URL. |
 | 🛡️ **AdGuard / AdGuard Home** | Use the **hosts** file URL or import the list; AdGuard supports hosts-style blocklists. |
-| 📡 **DNSMasq** | Use **addn-hosts** or the same format. |
-| 🌐 **Response Policy Zone (RPZ)** | Can be built from the same domain list. |
 
 ---
 
@@ -188,25 +166,7 @@ The list is built from well-known, community-maintained blocklists (AdAway, Stev
 The **file on GitHub** updates automatically every day. To get the latest list on *your* device, you can re-download and replace (or re-append) the hosts file from time to time, or use a tool that pulls the list by URL (e.g. Pi-hole).
 </details>
 
----
 
-## 🔧 Build It Yourself
-
-Want to run the build on your own machine?
-
-1. **Clone this repo** and make sure you have Python 3.8+ and `requests`.
-2. Install: `pip install -r requirements.txt`
-3. Run: `python build_hosts.py`
-
-The script will:
-
-- Fetch all URLs in **blacklist.txt**
-- Merge local lists (e.g. **block2.txt**)
-- Normalize and deduplicate
-- Apply **whitelist.txt**
-- Write **hosts** and **PIHOLE/hosts**
-
-Outputs: `host.txt` (domains only), `0host.txt`, **hosts**, and **PIHOLE/hosts** (if the PIHOLE folder exists).
 
 ---
 
@@ -223,6 +183,7 @@ Outputs: `host.txt` (domains only), `0host.txt`, **hosts**, and **PIHOLE/hosts**
 
 **ADios** — *one list, auto-updated, for hosts-based blocking everywhere.*
 
-**👋 So long, ads.**
+**👋 ADios, ads.**
 
 </div>
+
