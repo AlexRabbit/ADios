@@ -23,21 +23,6 @@
 
 ---
 
-</div>
-
-## 📑 Table of Contents
-
-- [✨ What Is This? (In Plain English)](#-what-is-this-in-plain-english)
-- [🔄 How It Works](#-how-it-works)
-- [📥 Download & Install (Step by Step)](#-download--install-step-by-step)
-- [🛡️ What Gets Blocked](#️-what-gets-blocked)
-- [✅ Compatibility](#-compatibility)
-- [❓ FAQ](#-faq)
-- [🔧 Build It Yourself](#-build-it-yourself)
-- [📜 License & Thanks](#-license--thanks)
-
----
-
 ## ✨ What Is This? (In Plain English)
 
 **ADios** is a **giant list of ad and tracker addresses** that your computer can use to **block them before they load**.
@@ -186,4 +171,5 @@ The **file on GitHub** updates automatically every day. To get the latest list o
 **👋 ADios, ads.**
 
 </div>
+
 
