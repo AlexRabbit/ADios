@@ -64,3 +64,6 @@ streams.hushed.com
 t.appsflyer.com
 t.scdn.co
 wg.spotify.com
+airbnb.com
+muscache.com
+cloudfront.net
