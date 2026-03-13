@@ -1,3 +1,5 @@
+If this helped you, consider starring the repo ⭐
+
 <div align="center">
 
 # 👋 ADios — Say Goodbye to Ads
@@ -171,5 +173,6 @@ The **file on GitHub** updates automatically every day. To get the latest list o
 **👋 ADios, ads.**
 
 </div>
+
 
 
