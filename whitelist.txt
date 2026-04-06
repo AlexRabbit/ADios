@@ -1,6 +1,6 @@
-a2z.com
 104.199.65.11
 BitCanna.io
+a2z.com
 adf.ly
 af4a.adj.st
 amazonww.qualtrics.com
@@ -20,6 +20,7 @@ audio-sp.spotify.com
 bit.ly
 bitly.com
 ci.phncdn.com
+cloudfront.net
 cpmlink.net
 cx.atdmt.com
 de.ioam.de
@@ -64,6 +65,3 @@ streams.hushed.com
 t.appsflyer.com
 t.scdn.co
 wg.spotify.com
-airbnb.com
-muscache.com
-cloudfront.net
