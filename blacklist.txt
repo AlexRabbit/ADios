@@ -20,6 +20,7 @@ https://raw.githubusercontent.com/FadeMind/hosts.extras/master/UncheckyAds/hosts
 https://raw.githubusercontent.com/FadeMind/hosts.extras/master/add.Spam/hosts
 https://raw.githubusercontent.com/KuysRapboy/hostfile/main/SPOTIFY%20host
 https://raw.githubusercontent.com/StevenBlack/hosts/master/data/StevenBlack/hosts
+https://raw.githubusercontent.com/StevenBlack/hosts/master/hosts
 https://raw.githubusercontent.com/durablenapkin/block/master/streaming.txt
 https://raw.githubusercontent.com/durablenapkin/scamblocklist/master/hosts.txt
 https://raw.githubusercontent.com/kboghdady/youTube_ads_4_pi-hole/master/black.list
