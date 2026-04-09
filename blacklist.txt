@@ -35,3 +35,4 @@ https://small.oisd.nl/domainswild
 https://someonewhocares.org/hosts/zero/hosts
 https://urlhaus.abuse.ch/downloads/hostfile/
 https://winhelp2002.mvps.org/hosts.txt
+https://raw.githubusercontent.com/hkamran80/blocklists/main/smart-tv.txt
