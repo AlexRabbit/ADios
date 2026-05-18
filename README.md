@@ -9,7 +9,7 @@ If this helped you, consider starring the repo ⭐
 <br>
 
 [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
-[![Auto-Updated Daily](https://img.shields.io/badge/Auto--Update-Daily%20%F0%9F%8C%9F-success)](#-how-it-works)
+[![Auto-Updated](https://img.shields.io/badge/Auto--Update-Every%2048h-success)](#-how-it-works)
 [![Platform](https://img.shields.io/badge/Platform-Windows%20%7C%20macOS%20%7C%20Linux%20%7C%20Pi--hole-lightgrey)](#-compatibility)
 [![Maintained](https://img.shields.io/badge/Maintained-Yes-brightgreen)](https://github.com/AlexRabbit/ADios)
 
@@ -31,7 +31,7 @@ If this helped you, consider starring the repo ⭐
 
 - 🧹 **One list** — We merge dozens of trusted blocklists (AdAway, Steven Black, AdGuard, and more) into a single, clean file.
 - 🚫 **Whitelist included** — Important stuff (like making Spotify actually play music) is *not* blocked.
-- 🔄 **Auto-updated every day** — A robot on GitHub rebuilds the list daily. You get the latest blocks without lifting a finger.
+- 🔄 **Auto-updated every 48 hours** — GitHub Actions rebuilds the list and pushes it to this repo. You get fresh blocks without lifting a finger.
 - 📂 **Standard format** — Works with your system **hosts file**, **Pi-hole**, **AdGuard**, **DNSMasq**, and similar tools.
 
 You don’t need to be a nerd. You just need to copy one file to the right place. We’ll show you exactly where.
@@ -55,7 +55,7 @@ flowchart LR
 
 | Step | What happens |
 |------|----------------|
-| 1️⃣ | Every day, GitHub runs a small program that **fetches** all the blocklists we use. |
+| 1️⃣ | Every 48 hours, GitHub Actions **fetches** all the blocklists we use. |
 | 2️⃣ | It **merges** them, **removes duplicates**, and **cleans** the format. |
 | 3️⃣ | It **removes** any domain on our whitelist (so Spotify, Twitch, etc. keep working). |
 | 4️⃣ | It writes the result into the **hosts** file and **pushes** it to this repo. |
@@ -114,6 +114,8 @@ Whitelisted domains (e.g. core Spotify/Twitch domains needed for playback) are *
 | Use case | What to use |
 |----------|-------------|
 | 🪟 **Windows / 🍎 macOS / 🐧 Linux** | [**hosts**](https://raw.githubusercontent.com/AlexRabbit/ADios/master/hosts) — copy into your system hosts file (see [Download & Install](#-download--install-step-by-step)). |
+| 🕳️ **Pi-hole** | [**pihole-hosts**](https://raw.githubusercontent.com/AlexRabbit/ADios/master/pihole-hosts) — plain domain list for gravity / adlist import. |
+| 🔐 **DNSCrypt-proxy** | [**dnscrypt-hosts**](https://raw.githubusercontent.com/AlexRabbit/ADios/master/dnscrypt-hosts) — `blocked_names` format for [dnscrypt-proxy](https://github.com/DNSCrypt/dnscrypt-proxy). |
 | 🛡️ **AdGuard / AdGuard Home** | Use the **hosts** file URL or import the list; AdGuard supports hosts-style blocklists. |
 
 ---
@@ -123,7 +125,7 @@ Whitelisted domains (e.g. core Spotify/Twitch domains needed for playback) are *
 <details>
 <summary><b>🔄 How often is the list updated?</b></summary>
 
-**Every day.** A GitHub Action runs at midnight UTC, rebuilds the list from all sources, and pushes the new **hosts** file to this repo. You can re-download or re-pull the list anytime.
+**Every 48 hours.** The [Update hosts](.github/workflows/update-hosts.yml) workflow runs on a schedule (and can be triggered manually), rebuilds the list from all sources, and pushes **hosts**, **pihole-hosts**, and **dnscrypt-hosts** to this repo. You can re-download or re-pull the list anytime.
 </details>
 
 <details>
@@ -144,13 +146,13 @@ Open it with a text editor (as Administrator on Windows, or with `sudo` on macOS
 <details>
 <summary><b>🔒 Is this safe?</b></summary>
 
-The list is built from well-known, community-maintained blocklists (AdAway, Steven Black, AdGuard, OISD, etc.). The build runs on GitHub’s servers and the result is plain text. You can inspect the script (`build_hosts.py`) and the source lists (`blacklist.txt`) in this repo.
+The list is built from well-known, community-maintained blocklists (AdAway, Steven Black, AdGuard, OISD, etc.). The build runs on GitHub’s servers and the result is plain text. You can inspect `config/build_hosts.py` and the source lists in `config/` (`lists`, `blacklist`, `whitelist`). On any machine with Python 3.9+, run `python3 config/build_hosts.py` — no pip or `requirements.txt` needed.
 </details>
 
 <details>
 <summary><b>📥 Do I need to update it myself?</b></summary>
 
-The **file on GitHub** updates automatically every day. To get the latest list on *your* device, you can re-download and replace (or re-append) the hosts file from time to time, or use a tool that pulls the list by URL (e.g. Pi-hole).
+The **files on GitHub** update automatically every 48 hours. To get the latest list on *your* device, re-download or point your tool at the raw URLs (Pi-hole, DNSCrypt, system hosts).
 </details>
 
 
@@ -160,7 +162,7 @@ The **file on GitHub** updates automatically every day. To get the latest list o
 ## 📜 License & Thanks
 
 - **License:** [GPL-3.0](LICENSE). Same for the build script and config; upstream lists keep their respective licenses.
-- **Sources:** This list aggregates from public, community-maintained blocklists (AdAway, Steven Black, AdGuard, OISD, FadeMind, URLhaus, and others). See **blacklist.txt** in the repo for the full URL list. We don’t control those projects; we merge, deduplicate, and whitelist.
+- **Sources:** This list aggregates from public, community-maintained blocklists (AdAway, Steven Black, AdGuard, OISD, FadeMind, URLhaus, and others). See **config/lists** in the repo for the full URL list. We don’t control those projects; we merge, deduplicate, and whitelist.
 
 **Backup hosts file (Windows):** [winhelp2002.mvps.org](http://winhelp2002.mvps.org/defaultwin7-hosts.zip) — keep a clean copy before making changes.
 
