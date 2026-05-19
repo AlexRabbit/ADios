@@ -29,6 +29,7 @@ jobs:
         env:
           DNS_WORKERS: "80"
           DNS_MAX_PROBE: "50000"
+          VERIFIED_TTL_DAYS: "30"
         run: python config/build_hosts.py
 
       - name: Commit and push if changed

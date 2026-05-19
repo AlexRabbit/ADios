@@ -5,13 +5,14 @@ ADios blocklist builder.
 Reads lists, blacklist, whitelist, and dead from this directory (config/).
 Writes pihole-hosts, hosts, and dnscrypt-hosts at the repository root.
 
-Pipeline: merge sources → dedupe/sort → public DNS probe (dead) → whitelist → dead
-filter → write outputs.
+Pipeline: merge sources → dedupe/sort → DNS probe (verified TTL + dead) → whitelist
+→ dead filter → write outputs.
 
 DNS probe uses Google + Cloudflare DoH (not your LAN). Optional env:
-  SKIP_DNS_CHECK=1   skip probing (fast local build)
-  DNS_WORKERS=64     parallel probes
-  DNS_MAX_PROBE=25000  max new domains checked per run
+  SKIP_DNS_CHECK=1      skip probing (fast local build)
+  DNS_WORKERS=64        parallel probes
+  DNS_MAX_PROBE=25000   max domains checked per run
+  VERIFIED_TTL_DAYS=30  re-check verified domains after this many days (~monthly)
 
 Runtime: Python 3.9+ only — standard library, no pip, no requirements.txt.
 On a clean VPS/PC: clone the repo, then:
@@ -25,6 +26,7 @@ import os
 import re
 import subprocess
 import sys
+import time
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from pathlib import Path
 from urllib.error import HTTPError, URLError
@@ -327,6 +329,44 @@ def load_whitelist() -> set[str]:
     return load_host_set(WHITELIST_FILE)
 
 
+def load_verified() -> dict[str, int]:
+    """domain -> unix time of last successful DNS check."""
+    verified: dict[str, int] = {}
+    for raw in read_lines(VERIFIED_FILE):
+        stripped = raw.strip()
+        if not stripped:
+            continue
+        parts = stripped.split()
+        domain = purify_hostname(parts[0]) if parts else None
+        if not domain:
+            domain = purify_hostname(stripped)
+        if not domain:
+            continue
+        checked_at = 0
+        if len(parts) >= 2 and parts[1].isdigit():
+            checked_at = int(parts[1])
+        verified[domain] = checked_at
+    return verified
+
+
+def save_verified(verified: dict[str, int]) -> None:
+    lines = [f"{domain} {checked_at}" for domain, checked_at in sorted(verified.items())]
+    body = "\n".join(lines)
+    VERIFIED_FILE.write_text(body + ("\n" if body else ""), encoding="utf-8")
+
+
+def _verified_ttl_seconds() -> int:
+    days = int(os.environ.get("VERIFIED_TTL_DAYS", "30"))
+    return max(1, days) * 86400
+
+
+def _is_verified_fresh(domain: str, verified: dict[str, int], now: int) -> bool:
+    checked_at = verified.get(domain)
+    if checked_at is None:
+        return False
+    return (now - checked_at) < _verified_ttl_seconds()
+
+
 def _dns_query(domain: str, rtype: str) -> tuple[int | None, bool]:
     """Query public DoH. Returns (status_code, has_answer). status None = transport error."""
     headers = {**REQUEST_HEADERS, "Accept": "application/dns-json"}
@@ -368,11 +408,21 @@ def domain_is_alive(domain: str) -> bool:
     return True
 
 
-def prune_dead_domains(candidates: list[str], dead: set[str], verified: set[str]) -> tuple[list[str], set[str], set[str]]:
+def prune_dead_domains(
+    candidates: list[str],
+    dead: set[str],
+    verified: dict[str, int],
+) -> tuple[list[str], set[str], dict[str, int]]:
     """
-    After dedupe/sort: probe via public DNS; append new dead names to dead set.
-    Uses verified cache so each run only checks new names (see DNS_MAX_PROBE).
+    Probe via public DNS. Verified entries expire after VERIFIED_TTL_DAYS and are
+    re-checked; failures move to dead and are removed from verified.
     """
+    candidate_set = set(candidates)
+    now = int(time.time())
+    ttl_days = _verified_ttl_seconds() // 86400
+
+    verified = {d: ts for d, ts in verified.items() if d in candidate_set and d not in dead}
+
     if os.environ.get("SKIP_DNS_CHECK", "").strip().lower() in ("1", "true", "yes"):
         print("SKIP_DNS_CHECK set — skipping public DNS probe")
         return [d for d in candidates if d not in dead], dead, verified
@@ -380,14 +430,23 @@ def prune_dead_domains(candidates: list[str], dead: set[str], verified: set[str]
     workers = max(1, int(os.environ.get("DNS_WORKERS", "64")))
     max_probe = max(0, int(os.environ.get("DNS_MAX_PROBE", "25000")))
 
-    pending = [d for d in candidates if d not in dead and d not in verified]
+    stale = sorted(
+        (d for d in candidate_set if d not in dead and d in verified and not _is_verified_fresh(d, verified, now)),
+        key=lambda d: verified.get(d, 0),
+    )
+    unchecked = sorted(d for d in candidate_set if d not in dead and d not in verified)
+    pending = stale + unchecked
+
+    fresh_count = sum(1 for d in candidate_set if d not in dead and _is_verified_fresh(d, verified, now))
+
     if max_probe and len(pending) > max_probe:
-        print(f"DNS probe budget: {max_probe} of {len(pending)} pending domains this run")
+        print(f"DNS probe budget: {max_probe} of {len(pending)} due for check this run")
         pending = pending[:max_probe]
 
     print(
         f"DNS probe: {len(pending)} domains via public DoH "
-        f"({len(verified)} cached alive, {len(dead)} known dead)"
+        f"({fresh_count} fresh verified, {len(stale)} stale, {len(unchecked)} new, "
+        f"{len(dead)} dead, TTL {ttl_days}d)"
     )
 
     newly_dead: set[str] = set()
@@ -402,16 +461,19 @@ def prune_dead_domains(candidates: list[str], dead: set[str], verified: set[str]
                     print(f"  DNS progress: {done}/{len(pending)}")
                 try:
                     if future.result():
-                        verified.add(domain)
+                        verified[domain] = now
                     else:
                         newly_dead.add(domain)
+                        verified.pop(domain, None)
                 except Exception as exc:
                     print(f"  DNS error for {domain}: {exc}", file=sys.stderr)
-                    verified.add(domain)
+                    verified[domain] = now
 
     if newly_dead:
         dead |= newly_dead
-        print(f"Marked {len(newly_dead)} new dead domains (appended to config/dead)")
+        print(f"Marked {len(newly_dead)} dead domains (config/dead); removed from verified")
+
+    verified = {d: ts for d, ts in verified.items() if d not in dead}
 
     alive = [d for d in candidates if d not in dead]
     return alive, dead, verified
@@ -431,11 +493,12 @@ def build_blocklist() -> list[str]:
     print(f"Merged {len(candidates)} unique domains (sorted)")
 
     dead = load_host_set(DEAD_FILE)
-    verified = load_host_set(VERIFIED_FILE) if VERIFIED_FILE.is_file() else set()
+    verified = load_verified() if VERIFIED_FILE.is_file() else {}
+    verified = {d: ts for d, ts in verified.items() if d not in dead}
 
     alive, dead, verified = prune_dead_domains(candidates, dead, verified)
     save_host_set(DEAD_FILE, dead)
-    save_host_set(VERIFIED_FILE, verified)
+    save_verified(verified)
 
     whitelist = load_whitelist()
     print(f"Whitelist entries: {len(whitelist)}")
