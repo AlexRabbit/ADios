@@ -30,16 +30,20 @@ jobs:
           DNS_WORKERS: "80"
           DNS_MAX_PROBE: "50000"
           VERIFIED_TTL_DAYS: "30"
+          DEAD_RECHECK_DAYS: "90"
         run: python config/build_hosts.py
+
+      - name: Build ADiosBlocker
+        run: python config/build_adblock.py
 
       - name: Commit and push if changed
         run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add hosts pihole-hosts dnscrypt-hosts config/dead config/verified
+          git config user.name "AlexRabbit"
+          git config user.email "AlexRabbit@users.noreply.github.com"
+          git add hosts pihole-hosts dnscrypt-hosts adguardhosts.txt config/remover config/probe_cache ADiosBlocker
           if git diff --staged --quiet; then
             echo "No changes to blocklists; skipping commit."
             exit 0
           fi
-          git commit -m "chore: auto-update blocklists [skip ci]"
+          git commit -m "chore: auto-update blocklists and ADiosBlocker"
           git push
