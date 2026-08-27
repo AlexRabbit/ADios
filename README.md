@@ -59,8 +59,8 @@ flowchart LR
 | 1️⃣ | Every 48 hours, GitHub Actions **fetches** all the blocklists we use. |
 | 2️⃣ | It **merges** them, **removes duplicates**, and **cleans** the format. |
 | 3️⃣ | It **probes dead domains** via unfiltered public DNS + RDAP/WHOIS (never your LAN, never Google/Cloudflare). |
-| 4️⃣ | It **removes** any domain on our whitelist (so Spotify, Twitch, etc. keep working). |
-| 5️⃣ | It writes **hosts**, **pihole-hosts**, **dnscrypt-hosts**, and **adguardhosts.txt**, then **pushes** to this repo. |
+| 4️⃣ | It **removes** whitelist domains (keep working) and **remover** domains (dead/expired — no longer a threat). |
+| 5️⃣ | It writes **hosts**, **pihole-hosts**, **dnscrypt-hosts**, **adguardhosts.txt**, and **remover.txt**, then **pushes** to this repo. |
 | 6️⃣ | You (or your Pi-hole, etc.) use those files. Ads and trackers get blocked. ✨ |
 
 ---
@@ -119,6 +119,7 @@ Whitelisted domains (e.g. core Spotify/Twitch domains needed for playback) are *
 | 🕳️ **Pi-hole** | [**pihole-hosts**](https://raw.githubusercontent.com/AlexRabbit/ADios/master/pihole-hosts) — plain sorted domain list for gravity / adlist import. |
 | 🔐 **DNSCrypt-proxy** | [**dnscrypt-hosts**](https://raw.githubusercontent.com/AlexRabbit/ADios/master/dnscrypt-hosts) — `blocked_names` file with section headers per source list (plain domain = blocks domain + subdomains). |
 | 🛡️ **AdGuard / AdGuard Home** | [**adguardhosts.txt**](https://raw.githubusercontent.com/AlexRabbit/ADios/master/adguardhosts.txt) — `||domain^` syntax. Or use the **hosts** file URL. |
+| 🗑️ **Remover list** | [**remover.txt**](https://raw.githubusercontent.com/AlexRabbit/ADios/master/remover.txt) — dead/expired domains stripped from all blocklists (inverse of whitelist). |
 
 ---
 
@@ -127,11 +128,26 @@ Whitelisted domains (e.g. core Spotify/Twitch domains needed for playback) are *
 <details>
 <summary><b>🔄 How often is the list updated?</b></summary>
 
-**Every 48 hours.** The [Update hosts](.github/workflows/update-hosts.yml) workflow runs on a schedule (and can be triggered manually), rebuilds the list from all sources, and pushes **hosts**, **pihole-hosts**, **dnscrypt-hosts**, and **adguardhosts.txt** to this repo. You can re-download or re-pull the list anytime.
+**Every 48 hours.** The [Update hosts](.github/workflows/update-hosts.yml) workflow runs on a schedule (and can be triggered manually), rebuilds the list from all sources, and pushes **hosts**, **pihole-hosts**, **dnscrypt-hosts**, **adguardhosts.txt**, and **remover.txt** to this repo. You can re-download or re-pull the list anytime.
 </details>
 
 <details>
-<summary><b>🔍 How are dead domains removed?</b></summary>
+<summary><b>🗑️ What is remover.txt / config/remover?</b></summary>
+
+**Remover is the opposite of whitelist.**
+
+| File | Role |
+|------|------|
+| `config/whitelist` | Domains that must **never** be blocked (Spotify playback, etc.) |
+| `config/remover` | Domains that must **never** appear in outputs — dead, expired, or manually dropped |
+
+Every run, DNS probing finds domains like `0--0.ml` that no longer resolve and are unregistered. Those go into **`config/remover`** and the published **`remover.txt`**. The build subtracts remover **and** whitelist from the merged list before writing `hosts`, `pihole-hosts`, `dnscrypt-hosts`, and `adguardhosts.txt`.
+
+You can also add domains manually to `config/remover` to force-remove them (same idea as editing whitelist).
+</details>
+
+<details>
+<summary><b>🔍 How are dead domains detected?</b></summary>
 
 The build script probes domains using **explicitly unfiltered public DNS-over-HTTPS** resolvers (Control D Unfiltered, OpenDNS, LibreDNS, dnsforge.de). It **never** uses your LAN/modem DNS, Google, or Cloudflare — probes go direct over HTTPS, bypassing local adblock.
 
@@ -139,7 +155,7 @@ The build script probes domains using **explicitly unfiltered public DNS-over-HT
 - **Dead** only if ≥2 resolvers return NXDOMAIN for both A and AAAA **and** RDAP confirms the domain is unregistered/expired.
 - **Inconclusive** results keep the domain (conservative — ad domains that fail DNS but still exist stay blocked).
 
-State is stored in **`config/probe_cache`** (`alive`, `dead`, `dead_permanent`). First dead mark is re-checked after 90 days; if still dead, it becomes **permanent**. Human-readable dead list: **`config/dead`**.
+State is stored in **`config/probe_cache`** (`alive`, `dead`, `dead_permanent`). First dead mark is re-checked after 90 days; if still dead, it becomes **permanent**. All removed domains are listed in **`config/remover`** and **`remover.txt`**.
 
 Env overrides: `SKIP_DNS_CHECK=1`, `DNS_MAX_PROBE`, `VERIFIED_TTL_DAYS`, `DEAD_RECHECK_DAYS`, `DNS_PROBE_ENDPOINTS`.
 </details>

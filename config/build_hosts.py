@@ -2,11 +2,11 @@
 """
 ADios blocklist builder.
 
-Reads lists, blacklist, whitelist, and probe_cache from this directory (config/).
-Writes hosts, pihole-hosts, dnscrypt-hosts, and adguardhosts.txt at the repository root.
+Reads lists, blacklist, whitelist, remover, and probe_cache from this directory (config/).
+Writes hosts, pihole-hosts, dnscrypt-hosts, adguardhosts.txt, and remover.txt at the repository root.
 
 Pipeline: merge sources (track origin) → dedupe/sort → unfiltered DNS probe + WHOIS
-→ probe_cache → whitelist → dead filter → write outputs.
+→ probe_cache → whitelist + remover filter → write outputs.
 
 DNS probe uses explicitly unfiltered public DoH resolvers (never Google/Cloudflare,
 never your LAN). Optional env:
@@ -49,7 +49,8 @@ ROOT = CONFIG.parent
 LISTS_FILE = CONFIG / "lists"
 BLACKLIST_FILE = CONFIG / "blacklist"
 WHITELIST_FILE = CONFIG / "whitelist"
-DEAD_FILE = CONFIG / "dead"
+REMOVER_FILE = CONFIG / "remover"
+DEAD_FILE = CONFIG / "dead"  # legacy; migrated into config/remover
 PROBE_CACHE_FILE = CONFIG / "probe_cache"
 VERIFIED_FILE = CONFIG / "verified"  # legacy; migrated into probe_cache
 
@@ -68,6 +69,7 @@ OUTPUT_PIHOLE = ROOT / "pihole-hosts"
 OUTPUT_HOSTS = ROOT / "hosts"
 OUTPUT_DNSCRYPT = ROOT / "dnscrypt-hosts"
 OUTPUT_ADGUARD = ROOT / "adguardhosts.txt"
+OUTPUT_REMOVER = ROOT / "remover.txt"
 
 REQUEST_HEADERS = {
     "User-Agent": "ADios-build-hosts/2.0 (+https://github.com/AlexRabbit/ADios)",
@@ -362,6 +364,28 @@ def load_whitelist() -> set[str]:
     return load_host_set(WHITELIST_FILE)
 
 
+def load_remover() -> set[str]:
+    """Domains to strip from every output (inverse of whitelist)."""
+    if REMOVER_FILE.is_file():
+        return load_host_set(REMOVER_FILE)
+    if DEAD_FILE.is_file():
+        return load_host_set(DEAD_FILE)
+    return set()
+
+
+def save_remover(names: set[str]) -> None:
+    """Write remover list to config/remover and published remover.txt."""
+    save_host_set(REMOVER_FILE, names)
+    save_host_set(OUTPUT_REMOVER, names)
+
+
+def _migrate_legacy_dead_to_remover() -> None:
+    if REMOVER_FILE.is_file() or not DEAD_FILE.is_file():
+        return
+    save_remover(load_host_set(DEAD_FILE))
+    print(f"Migrated legacy {DEAD_FILE.name} -> {REMOVER_FILE.name} and {OUTPUT_REMOVER.name}")
+
+
 def _name_cmp(domain: str) -> str:
     parts = domain.split(".")
     parts.reverse()
@@ -622,20 +646,18 @@ def load_probe_cache() -> dict[str, tuple[int, ProbeStatus]]:
                 checked_at = int(parts[1]) if len(parts) >= 2 and parts[1].isdigit() else 0
                 cache[domain] = (checked_at, "alive")
 
-        if DEAD_FILE.is_file():
-            for domain in load_host_set(DEAD_FILE):
+        if DEAD_FILE.is_file() or REMOVER_FILE.is_file():
+            for domain in load_remover():
                 if domain not in cache:
                     cache[domain] = (0, "dead")
 
-    _sync_dead_file_into_cache(cache)
+    _sync_remover_into_cache(cache)
     return cache
 
 
-def _sync_dead_file_into_cache(cache: dict[str, tuple[int, ProbeStatus]]) -> None:
-    """Every run: domains in config/dead are always excluded from outputs."""
-    if not DEAD_FILE.is_file():
-        return
-    for domain in load_host_set(DEAD_FILE):
+def _sync_remover_into_cache(cache: dict[str, tuple[int, ProbeStatus]]) -> None:
+    """Every run: domains in config/remover are always excluded from outputs."""
+    for domain in load_remover():
         entry = cache.get(domain)
         if entry is None:
             cache[domain] = (0, "dead")
@@ -806,29 +828,30 @@ def build_blocklist() -> tuple[list[str], dict[str, str], list[str]]:
     print(f"Merged {len(candidates)} unique domains (sorted)")
 
     cache = load_probe_cache()
+    remover_manual = load_remover()
     alive, cache = prune_dead_domains(candidates, cache)
     save_probe_cache(cache)
 
-    dead_export = {
-        d for d, (_, status) in cache.items() if status in ("dead", "dead_permanent")
+    auto_removed = {
+        d for d, (_, status) in cache.items() if _is_excluded_status(status)
     }
-    save_host_set(DEAD_FILE, dead_export)
+    remover = auto_removed | remover_manual
+    save_remover(remover)
 
     whitelist = load_whitelist()
     print(f"Whitelist entries: {len(whitelist)}")
+    print(f"Remover entries: {len(remover)} (dead/expired + manual)")
 
-    excluded = {d for d, (_, status) in cache.items() if _is_excluded_status(status)}
-    dead_from_file = load_host_set(DEAD_FILE) if DEAD_FILE.is_file() else set()
-    excluded |= dead_from_file
-    after_whitelist = [d for d in alive if d not in whitelist]
-    final = sorted(d for d in after_whitelist if d not in excluded)
+    final = sorted(
+        d for d in candidates if d not in whitelist and d not in remover
+    )
     final_sources = {d: sources.get(d, BLACKLIST_SOURCE) for d in final}
 
     print(
         f"Final list: {len(final)} domains "
-        f"({len(dead_export)} in dead/dead_permanent, removed from output)"
+        f"({len(remover)} removed via remover, {len(whitelist)} whitelisted)"
     )
-    return final, final_sources, source_order
+    return final, final_sources, source_order, remover
 
 
 def format_dnscrypt_blocklist(
@@ -891,23 +914,21 @@ def write_outputs(
     OUTPUT_ADGUARD.write_text(adguard_body, encoding="utf-8")
 
 
-def _verify_no_dead_in_outputs(domains: list[str]) -> None:
-    """Sanity check: config/dead must never appear in written outputs."""
-    if not DEAD_FILE.is_file():
-        return
-    dead = load_host_set(DEAD_FILE)
-    leaks = sorted(set(domains) & dead)
+def _verify_no_remover_in_outputs(domains: list[str], remover: set[str]) -> None:
+    """Sanity check: remover domains must never appear in written outputs."""
+    leaks = sorted(set(domains) & remover)
     if leaks:
         sample = ", ".join(leaks[:5])
-        print(f"Error: {len(leaks)} dead domains leaked into outputs (e.g. {sample})", file=sys.stderr)
+        print(f"Error: {len(leaks)} remover domains leaked into outputs (e.g. {sample})", file=sys.stderr)
         sys.exit(1)
 
 
 def main() -> None:
     ensure_runtime()
 
-    if not DEAD_FILE.is_file():
-        DEAD_FILE.write_text("", encoding="utf-8")
+    _migrate_legacy_dead_to_remover()
+    if not REMOVER_FILE.is_file():
+        REMOVER_FILE.write_text("", encoding="utf-8")
 
     for path, label in (
         (LISTS_FILE, "lists"),
@@ -918,14 +939,15 @@ def main() -> None:
             print(f"Error: missing config file {label} ({path})", file=sys.stderr)
             sys.exit(1)
 
-    domains, domain_sources, source_order = build_blocklist()
-    _verify_no_dead_in_outputs(domains)
+    domains, domain_sources, source_order, remover = build_blocklist()
+    _verify_no_remover_in_outputs(domains, remover)
     write_outputs(domains, domain_sources, source_order)
 
     print(
         f"Wrote {len(domains)} domains -> "
         f"{OUTPUT_PIHOLE.name}, {OUTPUT_HOSTS.name}, "
-        f"{OUTPUT_DNSCRYPT.name}, {OUTPUT_ADGUARD.name}"
+        f"{OUTPUT_DNSCRYPT.name}, {OUTPUT_ADGUARD.name}; "
+        f"{len(remover)} removed -> {OUTPUT_REMOVER.name}"
     )
 
 
