@@ -77,14 +77,13 @@ ADios/
 ├── pihole-hosts           ← 🕳️ plain domains for Pi-hole gravity
 ├── dnscrypt-hosts         ← 🔐 DNSCrypt blocked_names (section per source)
 ├── adguardhosts.txt       ← 🛡️ AdGuard / uBlock ||domain^ syntax
-├── remover.txt            ← 🗑️ domains stripped from all outputs (dead/expired)
 │
 ├── config/
 │   ├── build_hosts.py     ← ⚙️ build engine (Python 3.9+, no pip)
 │   ├── lists              ← URLs of remote blocklists to merge
 │   ├── blacklist          ← your extra domains to block
 │   ├── whitelist          ← domains that must NEVER be blocked
-│   ├── remover            ← domains that must NEVER appear in outputs
+│   ├── remover            ← 🗑️ domains that must NEVER appear in outputs (dead/expired)
 │   └── probe_cache        ← internal DNS probe state (auto-managed)
 │
 └── .github/workflows/
@@ -116,7 +115,7 @@ flowchart TD
 | 4️⃣ | Confirm dead candidates with **RDAP** (domain actually unregistered) |
 | 5️⃣ | Subtract [`config/whitelist`](config/whitelist) — keep services working |
 | 6️⃣ | Subtract [`config/remover`](config/remover) — drop dead / expired / manual removals |
-| 7️⃣ | Write `hosts`, `pihole-hosts`, `dnscrypt-hosts`, `adguardhosts.txt`, `remover.txt` |
+| 7️⃣ | Write `hosts`, `pihole-hosts`, `dnscrypt-hosts`, `adguardhosts.txt` |
 
 ### 🗑️ Whitelist vs Remover (read this once)
 
@@ -125,7 +124,7 @@ flowchart TD
 | `config/whitelist` | ✅ “Always allow” | Domain **never blocked**, even if it appears in source lists |
 | `config/remover` | ❌ “Always drop” | Domain **never in output files**, even if it appears in source lists |
 
-Example: `0--0.ml` is dead → lands in **`remover.txt`** → excluded from **`hosts`**, **`pihole-hosts`**, etc. **Every run**, automatically.
+Example: `0--0.ml` is dead → lands in **`config/remover`** → excluded from **`hosts`**, **`pihole-hosts`**, etc. **Every run**, automatically.
 
 ---
 
@@ -168,7 +167,7 @@ sudo sh -c 'cat hosts >> /etc/hosts'
 | 🕳️ **Pi-hole** | [`pihole-hosts`](pihole-hosts) | `https://raw.githubusercontent.com/AlexRabbit/ADios/master/pihole-hosts` |
 | 🔐 **DNSCrypt-proxy** | [`dnscrypt-hosts`](dnscrypt-hosts) | Point `blocked_names_file` to this file |
 | 🛡️ **AdGuard Home** | [`adguardhosts.txt`](adguardhosts.txt) | Import as DNS blocklist |
-| 🗑️ **Remover audit** | [`remover.txt`](remover.txt) | Domains intentionally excluded |
+| 🗑️ **Remover audit** | [`config/remover`](config/remover) | Dead/expired domains excluded from all outputs |
 
 ---
 
@@ -205,11 +204,11 @@ Workflow: [`.github/workflows/update-hosts.yml`](.github/workflows/update-hosts.
 |---------|-------|
 | Schedule | Every **48 hours** (UTC) |
 | Manual run | GitHub → **Actions** → **Update hosts** → **Run workflow** |
-| Commits | `hosts`, `pihole-hosts`, `dnscrypt-hosts`, `adguardhosts.txt`, `remover.txt`, `config/remover`, `config/probe_cache` |
+| Commits | `hosts`, `pihole-hosts`, `dnscrypt-hosts`, `adguardhosts.txt`, `config/remover`, `config/probe_cache` |
 
 **First publish:** include the generated output files from your first `ADios.bat` run so users can download lists immediately. GitHub Actions will refresh them every 48h after that.
 
-**Missing files?** The workflow **creates/updates** all outputs automatically — you do not need to create `remover.txt` by hand. An empty `config/remover` is fine on first clone; the build fills it.
+**Missing files?** The workflow **creates/updates** all outputs automatically. An empty `config/remover` is fine on first clone; the build fills it.
 
 ---
 
@@ -241,7 +240,7 @@ Playback-critical domains are **whitelisted** — Spotify/Twitch should keep wor
 </details>
 
 <details>
-<summary><b>🗑️ Why is remover.txt huge?</b></summary>
+<summary><b>🗑️ Why is config/remover huge?</b></summary>
 
 It lists ~100k+ domains that **used to appear** in blocklists but are **dead or expired** — keeping them would bloat your blocklist with useless entries. Remover is applied **every run** before writing outputs.
 </details>

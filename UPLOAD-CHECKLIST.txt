@@ -1,7 +1,7 @@
 ADios — GitHub upload checklist (AlexRabbit)
 ============================================
 
-Upload ONLY these files/folders. Do NOT upload .git unless you use git push directly.
+Upload ONLY these files/folders.
 
 REQUIRED — launchers & docs
   ADios.bat
@@ -15,39 +15,23 @@ REQUIRED — build engine
   config/lists
   config/blacklist
   config/whitelist
-  config/remover
+  config/remover          <- dead/expired domains (ONLY remover file)
   config/probe_cache
 
-REQUIRED — blocklist outputs (users download these)
+REQUIRED — blocklist outputs
   hosts
   pihole-hosts
   dnscrypt-hosts
   adguardhosts.txt
-  remover.txt
 
 REQUIRED — auto-update
   .github/workflows/update-hosts.yml
 
 DO NOT UPLOAD
-  .git/              (optional — use git push instead of manual zip)
+  remover.txt             <- removed; use config/remover only
+  .git/
   __pycache__/
   .cursor/
-  .vscode/
   *.log
-  *.tmp
-  *.bak
 
-NO SECRETS IN REPO
-  No API keys, tokens, passwords, or private paths found.
-  config/ contains only public blocklist URLs.
-
-FIRST TIME ON GITHUB
-  1. Upload all files above
-  2. Enable GitHub Actions (Settings → Actions → Allow)
-  3. Actions → "Update hosts" → Run workflow (optional immediate rebuild)
-  4. Every 48h GitHub Actions updates hosts, remover.txt, probe_cache automatically
-
-LOCAL USE (Windows)
-  Double-click ADios.bat — rebuilds everything in this folder.
-
-Author: AlexRabbit — https://github.com/AlexRabbit/ADios
+Author: AlexRabbit

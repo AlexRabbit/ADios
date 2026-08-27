@@ -37,9 +37,8 @@ if %BUILD_EXIT% neq 0 (
     echo    pihole-hosts     - Pi-hole gravity import
     echo    dnscrypt-hosts   - DNSCrypt-proxy blocked_names
     echo    adguardhosts.txt - AdGuard Home / uBlock syntax
-    echo    remover.txt      - Dead domains removed from lists
-    echo.
-    echo  Config updated: config\remover, config\probe_cache
+    echo    config\remover     - Dead domains removed from lists
+    echo    config\probe_cache - DNS probe state (auto-managed)
 )
 echo.
 pause

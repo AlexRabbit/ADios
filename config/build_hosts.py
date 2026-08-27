@@ -3,7 +3,7 @@
 ADios blocklist builder.
 
 Reads lists, blacklist, whitelist, remover, and probe_cache from this directory (config/).
-Writes hosts, pihole-hosts, dnscrypt-hosts, adguardhosts.txt, and remover.txt at the repository root.
+Writes hosts, pihole-hosts, dnscrypt-hosts, and adguardhosts.txt at the repository root.
 
 Pipeline: merge sources (track origin) → dedupe/sort → unfiltered DNS probe + WHOIS
 → probe_cache → whitelist + remover filter → write outputs.
@@ -69,7 +69,6 @@ OUTPUT_PIHOLE = ROOT / "pihole-hosts"
 OUTPUT_HOSTS = ROOT / "hosts"
 OUTPUT_DNSCRYPT = ROOT / "dnscrypt-hosts"
 OUTPUT_ADGUARD = ROOT / "adguardhosts.txt"
-OUTPUT_REMOVER = ROOT / "remover.txt"
 
 REQUEST_HEADERS = {
     "User-Agent": "ADios-build-hosts/2.0 (+https://github.com/AlexRabbit/ADios)",
@@ -374,16 +373,26 @@ def load_remover() -> set[str]:
 
 
 def save_remover(names: set[str]) -> None:
-    """Write remover list to config/remover and published remover.txt."""
+    """Write remover list to config/remover only."""
     save_host_set(REMOVER_FILE, names)
-    save_host_set(OUTPUT_REMOVER, names)
 
 
 def _migrate_legacy_dead_to_remover() -> None:
     if REMOVER_FILE.is_file() or not DEAD_FILE.is_file():
         return
     save_remover(load_host_set(DEAD_FILE))
-    print(f"Migrated legacy {DEAD_FILE.name} -> {REMOVER_FILE.name} and {OUTPUT_REMOVER.name}")
+    print(f"Migrated legacy {DEAD_FILE.name} -> {REMOVER_FILE.name}")
+
+
+def _migrate_legacy_root_remover_txt() -> None:
+    """One-time: merge old root remover.txt into config/remover, then delete it."""
+    legacy = ROOT / "remover.txt"
+    if not legacy.is_file():
+        return
+    merged = load_remover() | load_host_set(legacy)
+    save_remover(merged)
+    legacy.unlink()
+    print(f"Migrated legacy remover.txt -> {REMOVER_FILE.name}")
 
 
 def _name_cmp(domain: str) -> str:
@@ -927,6 +936,7 @@ def main() -> None:
     ensure_runtime()
 
     _migrate_legacy_dead_to_remover()
+    _migrate_legacy_root_remover_txt()
     if not REMOVER_FILE.is_file():
         REMOVER_FILE.write_text("", encoding="utf-8")
 
@@ -947,7 +957,7 @@ def main() -> None:
         f"Wrote {len(domains)} domains -> "
         f"{OUTPUT_PIHOLE.name}, {OUTPUT_HOSTS.name}, "
         f"{OUTPUT_DNSCRYPT.name}, {OUTPUT_ADGUARD.name}; "
-        f"{len(remover)} removed -> {OUTPUT_REMOVER.name}"
+        f"{len(remover)} removed -> config/{REMOVER_FILE.name}"
     )
 
 

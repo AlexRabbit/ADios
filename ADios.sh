@@ -19,5 +19,6 @@ python3 config/build_hosts.py
 
 echo ""
 echo "  [OK] Build complete."
-echo "  Outputs: hosts, pihole-hosts, dnscrypt-hosts, adguardhosts.txt, remover.txt"
+echo "  Outputs: hosts, pihole-hosts, dnscrypt-hosts, adguardhosts.txt"
+echo "  Remover: config/remover"
 echo ""
