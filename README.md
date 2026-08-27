@@ -46,8 +46,9 @@ flowchart LR
     A[📋 Blocklist URLs] --> B[🔄 GitHub Action]
     C[📄 Your Lists] --> B
     B --> D[🧹 Merge & Clean]
-    D --> E[✅ Whitelist]
-    E --> F[📁 hosts file]
+    D --> P[🔍 Unfiltered DNS Probe]
+    P --> E[✅ Whitelist]
+    E --> F[📁 Output files]
     F --> G[🚀 Push to Repo]
     style B fill:#2ea043
     style F fill:#0969da
@@ -57,9 +58,10 @@ flowchart LR
 |------|----------------|
 | 1️⃣ | Every 48 hours, GitHub Actions **fetches** all the blocklists we use. |
 | 2️⃣ | It **merges** them, **removes duplicates**, and **cleans** the format. |
-| 3️⃣ | It **removes** any domain on our whitelist (so Spotify, Twitch, etc. keep working). |
-| 4️⃣ | It writes the result into the **hosts** file and **pushes** it to this repo. |
-| 5️⃣ | You (or your Pi-hole, etc.) use that **hosts** file. Ads and trackers get blocked. ✨ |
+| 3️⃣ | It **probes dead domains** via unfiltered public DNS + RDAP/WHOIS (never your LAN, never Google/Cloudflare). |
+| 4️⃣ | It **removes** any domain on our whitelist (so Spotify, Twitch, etc. keep working). |
+| 5️⃣ | It writes **hosts**, **pihole-hosts**, **dnscrypt-hosts**, and **adguardhosts.txt**, then **pushes** to this repo. |
+| 6️⃣ | You (or your Pi-hole, etc.) use those files. Ads and trackers get blocked. ✨ |
 
 ---
 
@@ -114,9 +116,9 @@ Whitelisted domains (e.g. core Spotify/Twitch domains needed for playback) are *
 | Use case | What to use |
 |----------|-------------|
 | 🪟 **Windows / 🍎 macOS / 🐧 Linux** | [**hosts**](https://raw.githubusercontent.com/AlexRabbit/ADios/master/hosts) — copy into your system hosts file (see [Download & Install](#-download--install-step-by-step)). |
-| 🕳️ **Pi-hole** | [**pihole-hosts**](https://raw.githubusercontent.com/AlexRabbit/ADios/master/pihole-hosts) — plain domain list for gravity / adlist import. |
-| 🔐 **DNSCrypt-proxy** | [**dnscrypt-hosts**](https://raw.githubusercontent.com/AlexRabbit/ADios/master/dnscrypt-hosts) — `blocked_names` format for [dnscrypt-proxy](https://github.com/DNSCrypt/dnscrypt-proxy). |
-| 🛡️ **AdGuard / AdGuard Home** | Use the **hosts** file URL or import the list; AdGuard supports hosts-style blocklists. |
+| 🕳️ **Pi-hole** | [**pihole-hosts**](https://raw.githubusercontent.com/AlexRabbit/ADios/master/pihole-hosts) — plain sorted domain list for gravity / adlist import. |
+| 🔐 **DNSCrypt-proxy** | [**dnscrypt-hosts**](https://raw.githubusercontent.com/AlexRabbit/ADios/master/dnscrypt-hosts) — `blocked_names` file with section headers per source list (plain domain = blocks domain + subdomains). |
+| 🛡️ **AdGuard / AdGuard Home** | [**adguardhosts.txt**](https://raw.githubusercontent.com/AlexRabbit/ADios/master/adguardhosts.txt) — `||domain^` syntax. Or use the **hosts** file URL. |
 
 ---
 
@@ -125,7 +127,21 @@ Whitelisted domains (e.g. core Spotify/Twitch domains needed for playback) are *
 <details>
 <summary><b>🔄 How often is the list updated?</b></summary>
 
-**Every 48 hours.** The [Update hosts](.github/workflows/update-hosts.yml) workflow runs on a schedule (and can be triggered manually), rebuilds the list from all sources, and pushes **hosts**, **pihole-hosts**, and **dnscrypt-hosts** to this repo. You can re-download or re-pull the list anytime.
+**Every 48 hours.** The [Update hosts](.github/workflows/update-hosts.yml) workflow runs on a schedule (and can be triggered manually), rebuilds the list from all sources, and pushes **hosts**, **pihole-hosts**, **dnscrypt-hosts**, and **adguardhosts.txt** to this repo. You can re-download or re-pull the list anytime.
+</details>
+
+<details>
+<summary><b>🔍 How are dead domains removed?</b></summary>
+
+The build script probes domains using **explicitly unfiltered public DNS-over-HTTPS** resolvers (Public RDNS Open, dnsHome.de, Control D Unfiltered, dnswarden Uncensored). It **never** uses your LAN DNS, Google, or Cloudflare.
+
+- **Alive** if any resolver returns a DNS answer, or RDAP shows the domain is still registered.
+- **Dead** only if ≥2 resolvers return NXDOMAIN for both A and AAAA **and** RDAP confirms the domain is unregistered/expired.
+- **Inconclusive** results keep the domain (conservative — ad domains that fail DNS but still exist stay blocked).
+
+State is stored in **`config/probe_cache`** (`alive`, `dead`, `dead_permanent`). First dead mark is re-checked after 90 days; if still dead, it becomes **permanent**. Human-readable dead list: **`config/dead`**.
+
+Env overrides: `SKIP_DNS_CHECK=1`, `DNS_MAX_PROBE`, `VERIFIED_TTL_DAYS`, `DEAD_RECHECK_DAYS`, `DNS_PROBE_ENDPOINTS`.
 </details>
 
 <details>
@@ -146,7 +162,7 @@ Open it with a text editor (as Administrator on Windows, or with `sudo` on macOS
 <details>
 <summary><b>🔒 Is this safe?</b></summary>
 
-The list is built from well-known, community-maintained blocklists (AdAway, Steven Black, AdGuard, OISD, etc.). The build runs on GitHub’s servers and the result is plain text. You can inspect `config/build_hosts.py` and the source lists in `config/` (`lists`, `blacklist`, `whitelist`). On any machine with Python 3.9+, run `python3 config/build_hosts.py` — no pip or `requirements.txt` needed.
+The list is built from well-known, community-maintained blocklists (AdAway, Steven Black, AdGuard, OISD, etc.). The build runs on GitHub’s servers and the result is plain text. You can inspect `config/build_hosts.py` and the source lists in `config/` (`lists`, `blacklist`, `whitelist`, `probe_cache`). On any machine with Python 3.9+, run `python3 config/build_hosts.py` — no pip or `requirements.txt` needed.
 </details>
 
 <details>
