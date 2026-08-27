@@ -1,6 +1,8 @@
 If this helped you, consider starring the repo ⭐
 
-# ADiosADS 👋 
+# ADios ADS
+## Ultimate ADblocker for both: Hostlists and Addons AWAYS UPDATED
+### Use the correct for your addon or hostlists (They arent the same) You can also duel use them at the same time!
 
 Blocklists for DNS and browser adblockers. Maintained by [AlexRabbit](https://github.com/AlexRabbit).
 
