@@ -1,212 +1,286 @@
-If this helped you, consider starring the repo ⭐
-
 <div align="center">
 
 # 👋 ADios — Say Goodbye to Ads
 
-### *The Ultimate Hosts-Based Blocklist. One List. Every Device. Zero Nonsense.*
+### *One blocklist. Every device. Zero nonsense.*
+
+**by [AlexRabbit](https://github.com/AlexRabbit)**
+
+[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](LICENSE)
+[![Auto-Updated](https://img.shields.io/badge/Auto--Update-Every%2048h-success)](#-github-actions-auto-update)
+[![Python](https://img.shields.io/badge/Python-3.9%2B-blue?logo=python&logoColor=white)](#-quick-start-windows--double-click-first)
+[![Platform](https://img.shields.io/badge/Platform-Windows%20%7C%20macOS%20%7C%20Linux%20%7C%20Pi--hole-lightgrey)](#-compatibility-matrix)
+
+**Block ads on Twitch, Spotify, YouTube, Samsung TV apps, and the wider web — using lists your devices already understand.**
 
 <br>
 
-[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
-[![Auto-Updated](https://img.shields.io/badge/Auto--Update-Every%2048h-success)](#-how-it-works)
-[![Platform](https://img.shields.io/badge/Platform-Windows%20%7C%20macOS%20%7C%20Linux%20%7C%20Pi--hole-lightgrey)](#-compatibility)
-[![Maintained](https://img.shields.io/badge/Maintained-Yes-brightgreen)](https://github.com/AlexRabbit/ADios)
-
-**Block ads on Twitch, Spotify, YouTube, and pretty much everywhere else — using a simple list your computer already understands.**
-
-*No apps to install. No subscriptions. Just copy, paste, and breathe easier.*
-
-<!-- Optional: add a banner image to your repo (e.g. docs/banner.png) and uncomment:
-![ADios Banner](docs/banner.png)
--->
-
-<br>
+</div>
 
 ---
 
-## ✨ What Is This? (In Plain English)
+## 🖱️ Quick Start (Windows) — **double-click first**
 
-**ADios** is a **giant list of ad and tracker addresses** that your computer can use to **block them before they load**.
+> **This is the fastest way to use ADios on Windows. Do this before anything else.**
 
-- 🧹 **One list** — We merge dozens of trusted blocklists (AdAway, Steven Black, AdGuard, and more) into a single, clean file.
-- 🚫 **Whitelist included** — Important stuff (like making Spotify actually play music) is *not* blocked.
-- 🔄 **Auto-updated every 48 hours** — GitHub Actions rebuilds the list and pushes it to this repo. You get fresh blocks without lifting a finger.
-- 📂 **Standard format** — Works with your system **hosts file**, **Pi-hole**, **AdGuard**, **DNSMasq**, and similar tools.
+| Step | Action |
+|:----:|--------|
+| 1️⃣ | **Install Python 3.9+** from [python.org](https://www.python.org/downloads/) — check ✅ **“Add Python to PATH”** during install |
+| 2️⃣ | **Double-click `ADios.bat`** in this folder |
+| 3️⃣ | Wait for the build to finish (DNS probing can take several minutes) |
+| 4️⃣ | Use the generated files — especially **`hosts`** for your PC (see [Install on Windows](#-install-on-windows) below) |
 
-You don’t need to be a nerd. You just need to copy one file to the right place. We’ll show you exactly where.
+**What `ADios.bat` does:** runs `config/build_hosts.py`, merges all blocklist sources, probes dead domains via **unfiltered public DNS** (never your modem/router DNS), applies whitelist + remover, and writes every output file in this folder.
 
----
-
-
-## 🔄 How It Works
-
-```mermaid
-flowchart LR
-    A[📋 Blocklist URLs] --> B[🔄 GitHub Action]
-    C[📄 Your Lists] --> B
-    B --> D[🧹 Merge & Clean]
-    D --> P[🔍 Unfiltered DNS Probe]
-    P --> E[✅ Whitelist]
-    E --> F[📁 Output files]
-    F --> G[🚀 Push to Repo]
-    style B fill:#2ea043
-    style F fill:#0969da
+```
+Double-click ADios.bat  →  wait  →  copy hosts  →  ads blocked ✨
 ```
 
-| Step | What happens |
-|------|----------------|
-| 1️⃣ | Every 48 hours, GitHub Actions **fetches** all the blocklists we use. |
-| 2️⃣ | It **merges** them, **removes duplicates**, and **cleans** the format. |
-| 3️⃣ | It **probes dead domains** via unfiltered public DNS + RDAP/WHOIS (never your LAN, never Google/Cloudflare). |
-| 4️⃣ | It **removes** whitelist domains (keep working) and **remover** domains (dead/expired — no longer a threat). |
-| 5️⃣ | It writes **hosts**, **pihole-hosts**, **dnscrypt-hosts**, **adguardhosts.txt**, and **remover.txt**, then **pushes** to this repo. |
-| 6️⃣ | You (or your Pi-hole, etc.) use those files. Ads and trackers get blocked. ✨ |
+<details>
+<summary>🍎 <b>macOS / Linux quick start</b></summary>
+
+```bash
+chmod +x ADios.sh    # once
+./ADios.sh
+```
+
+Or directly: `python3 config/build_hosts.py`
+</details>
 
 ---
 
-## 📥 Download & Install (Step by Step)
+## ✨ What is ADios?
 
-### 🪟 Windows
+**ADios** merges trusted community blocklists into **one maintained, deduplicated, alive-only domain list** — then ships it in every format you need.
 
-| Step | What to do |
-|------|------------|
-| **1** | Click this link to open the list: **[Download the hosts file](https://raw.githubusercontent.com/AlexRabbit/ADios/master/hosts)**. |
-| **2** | Press `Ctrl + A` to select all, then `Ctrl + C` to copy. |
-| **3** | Open **Notepad** *as Administrator* (right‑click Notepad → “Run as administrator”). |
-| **4** | Go to **File → Open** and navigate to: `C:\Windows\System32\drivers\etc\` |
-| **5** | In the file type dropdown, choose **“All Files (*.*)”** so you can see **hosts**. |
-| **6** | Open **hosts**. **Make a backup first** (e.g. copy the file and name it `hosts.backup`). |
-| **7** | Scroll to the **bottom** of the file. Paste the copied list there. Save and close. |
-| **8** | Clear your browser cache (or restart the browser). Done! 🎉 |
-
-> ⚠️ **Important:** Always keep a backup of your original **hosts** file. If something goes wrong, you can restore it.
-
-### 🍎 macOS / 🐧 Linux
-
-| Step | What to do |
-|------|------------|
-| **1** | Download: **[hosts file](https://raw.githubusercontent.com/AlexRabbit/ADios/master/hosts)** (right‑click → Save As, or copy the raw content). |
-| **2** | Open **Terminal**. Back up your current hosts file: `sudo cp /etc/hosts /etc/hosts.backup` |
-| **3** | Append the list to your hosts file (replace with your download path if needed):  
-| | `sudo sh -c 'curl -sL https://raw.githubusercontent.com/AlexRabbit/ADios/master/hosts >> /etc/hosts'` |
-| **4** | Or manually: open `/etc/hosts` in an editor with sudo, paste at the bottom, save. |
-| **5** | Clear browser cache. Done! 🎉 |
-
+| Feature | What it means for you |
+|---------|------------------------|
+| 🧹 **One pipeline** | AdAway, AdGuard, streaming lists, and more → single clean output |
+| 🚫 **Whitelist** | Spotify / Twitch playback domains stay **unblocked** |
+| 🗑️ **Remover** | Dead / expired domains stay **out** of every list (inverse whitelist) |
+| 🔍 **Smart DNS probe** | Unfiltered public DoH + RDAP — **not** your LAN, modem, Pi-hole, or Google/Cloudflare |
+| 🔄 **Auto-update** | GitHub Actions rebuilds & publishes every **48 hours** |
+| 📂 **Multi-format** | `hosts`, Pi-hole, DNSCrypt, AdGuard — same domains, correct syntax |
 
 ---
 
-## 🛡️ What Gets Blocked
+## 📁 Repository structure (what each file does)
 
-| Category | What it means |
-|----------|----------------|
-| 📺 **Ads & trackers** | Common ad and analytics domains from the included lists. |
-| 📡 **Streaming ads** | Twitch, YouTube (e.g. Samsung TV app), and similar ad domains. |
-| 🎵 **In‑app ads** | Spotify, Deezer, and other in‑app ad endpoints where possible. |
-| 🦠 **Malware & abuse** | Domains from URLhaus and similar abuse lists. |
-| 📧 **Scam / spam** | Scam and spam domains from the included sources. |
-| 🔞 **Adult ads** | Adult ad networks (not adult content itself). |
+```
+ADios/
+├── ADios.bat              ← 🖱️ WINDOWS: double-click this first
+├── ADios.sh               ← macOS / Linux launcher
+├── README.md              ← you are here
+├── LICENSE                ← GPL-3.0 (AlexRabbit)
+│
+├── hosts                  ← 🪟 system hosts file entries (0.0.0.0 domain)
+├── pihole-hosts           ← 🕳️ plain domains for Pi-hole gravity
+├── dnscrypt-hosts         ← 🔐 DNSCrypt blocked_names (section per source)
+├── adguardhosts.txt       ← 🛡️ AdGuard / uBlock ||domain^ syntax
+├── remover.txt            ← 🗑️ domains stripped from all outputs (dead/expired)
+│
+├── config/
+│   ├── build_hosts.py     ← ⚙️ build engine (Python 3.9+, no pip)
+│   ├── lists              ← URLs of remote blocklists to merge
+│   ├── blacklist          ← your extra domains to block
+│   ├── whitelist          ← domains that must NEVER be blocked
+│   ├── remover            ← domains that must NEVER appear in outputs
+│   └── probe_cache        ← internal DNS probe state (auto-managed)
+│
+└── .github/workflows/
+    └── update-hosts.yml   ← auto-rebuild every 48h on GitHub
+```
 
-Whitelisted domains (e.g. core Spotify/Twitch domains needed for playback) are **removed** from the list so services keep working. ✅
+**Safe to publish:** no API keys, tokens, or private paths — only public list URLs and blocklist data.
 
 ---
 
-## ✅ Compatibility
+## 🔄 How the build works
 
-| Use case | What to use |
-|----------|-------------|
-| 🪟 **Windows / 🍎 macOS / 🐧 Linux** | [**hosts**](https://raw.githubusercontent.com/AlexRabbit/ADios/master/hosts) — copy into your system hosts file (see [Download & Install](#-download--install-step-by-step)). |
-| 🕳️ **Pi-hole** | [**pihole-hosts**](https://raw.githubusercontent.com/AlexRabbit/ADios/master/pihole-hosts) — plain sorted domain list for gravity / adlist import. |
-| 🔐 **DNSCrypt-proxy** | [**dnscrypt-hosts**](https://raw.githubusercontent.com/AlexRabbit/ADios/master/dnscrypt-hosts) — `blocked_names` file with section headers per source list (plain domain = blocks domain + subdomains). |
-| 🛡️ **AdGuard / AdGuard Home** | [**adguardhosts.txt**](https://raw.githubusercontent.com/AlexRabbit/ADios/master/adguardhosts.txt) — `||domain^` syntax. Or use the **hosts** file URL. |
-| 🗑️ **Remover list** | [**remover.txt**](https://raw.githubusercontent.com/AlexRabbit/ADios/master/remover.txt) — dead/expired domains stripped from all blocklists (inverse of whitelist). |
+```mermaid
+flowchart TD
+    A[config/lists URLs] --> B[Merge and dedupe]
+    C[config/blacklist] --> B
+    B --> D[Unfiltered DNS + RDAP probe]
+    D --> E[config/probe_cache]
+    E --> F[Apply whitelist]
+    F --> G[Apply remover]
+    G --> H[Write all output files]
+```
+
+| Step | Detail |
+|:----:|--------|
+| 1️⃣ | Fetch every URL in [`config/lists`](config/lists) |
+| 2️⃣ | Merge, dedupe, normalize hostnames |
+| 3️⃣ | Probe liveness via **Control D, OpenDNS, LibreDNS, dnsforge.de** (HTTPS DoH — bypasses modem adblock) |
+| 4️⃣ | Confirm dead candidates with **RDAP** (domain actually unregistered) |
+| 5️⃣ | Subtract [`config/whitelist`](config/whitelist) — keep services working |
+| 6️⃣ | Subtract [`config/remover`](config/remover) — drop dead / expired / manual removals |
+| 7️⃣ | Write `hosts`, `pihole-hosts`, `dnscrypt-hosts`, `adguardhosts.txt`, `remover.txt` |
+
+### 🗑️ Whitelist vs Remover (read this once)
+
+| File | Analogy | Effect |
+|------|---------|--------|
+| `config/whitelist` | ✅ “Always allow” | Domain **never blocked**, even if it appears in source lists |
+| `config/remover` | ❌ “Always drop” | Domain **never in output files**, even if it appears in source lists |
+
+Example: `0--0.ml` is dead → lands in **`remover.txt`** → excluded from **`hosts`**, **`pihole-hosts`**, etc. **Every run**, automatically.
+
+---
+
+## 📥 Install on Windows
+
+> Already built? (via `ADios.bat` or downloaded from GitHub) Skip to step 3.
+
+| Step | Action |
+|:----:|--------|
+| 1️⃣ | Run **`ADios.bat`** (or download [`hosts`](https://raw.githubusercontent.com/AlexRabbit/ADios/master/hosts) from GitHub) |
+| 2️⃣ | Open **`hosts`** in this folder → `Ctrl+A`, `Ctrl+C` |
+| 3️⃣ | Open **Notepad as Administrator** → File → Open → `C:\Windows\System32\drivers\etc\` |
+| 4️⃣ | Set file type to **All Files (*.*)** → open **`hosts`** |
+| 5️⃣ | **Backup first** (copy to `hosts.backup`) |
+| 6️⃣ | Scroll to bottom → paste → Save |
+| 7️⃣ | Restart browser or flush DNS: `ipconfig /flushdns` |
+
+---
+
+## 📥 Install on macOS / Linux
+
+```bash
+# Backup
+sudo cp /etc/hosts /etc/hosts.backup
+
+# Append ADios list (from GitHub)
+sudo sh -c 'curl -sL https://raw.githubusercontent.com/AlexRabbit/ADios/master/hosts >> /etc/hosts'
+
+# Or use your local build
+sudo sh -c 'cat hosts >> /etc/hosts'
+```
+
+---
+
+## ✅ Compatibility matrix
+
+| Tool | File | Raw URL |
+|------|------|---------|
+| 🪟 **Windows hosts** | [`hosts`](hosts) | `https://raw.githubusercontent.com/AlexRabbit/ADios/master/hosts` |
+| 🕳️ **Pi-hole** | [`pihole-hosts`](pihole-hosts) | `https://raw.githubusercontent.com/AlexRabbit/ADios/master/pihole-hosts` |
+| 🔐 **DNSCrypt-proxy** | [`dnscrypt-hosts`](dnscrypt-hosts) | Point `blocked_names_file` to this file |
+| 🛡️ **AdGuard Home** | [`adguardhosts.txt`](adguardhosts.txt) | Import as DNS blocklist |
+| 🗑️ **Remover audit** | [`remover.txt`](remover.txt) | Domains intentionally excluded |
+
+---
+
+## ⚙️ Advanced — manual build & environment
+
+**Requirements:** Python **3.9+** only. No `pip`, no `requirements.txt`.
+
+```bash
+python3 config/build_hosts.py
+```
+
+| Variable | Default | Purpose |
+|----------|---------|---------|
+| `SKIP_DNS_CHECK=1` | off | Fast local build — skip DNS probe |
+| `DNS_WORKERS=64` | 64 | Parallel DNS threads |
+| `DNS_MAX_PROBE=25000` | 25000 | Max domains probed per run |
+| `VERIFIED_TTL_DAYS=30` | 30 | Re-check alive domains after N days |
+| `DEAD_RECHECK_DAYS=90` | 90 | One re-check for dead; second fail → permanent |
+| `DNS_PROBE_ENDPOINTS` | *(built-in)* | Comma-separated DoH URLs override |
+
+**Example — quick rebuild without DNS:**
+```bash
+set SKIP_DNS_CHECK=1
+ADios.bat
+```
+
+---
+
+## 🤖 GitHub Actions auto-update
+
+Workflow: [`.github/workflows/update-hosts.yml`](.github/workflows/update-hosts.yml)
+
+| Setting | Value |
+|---------|-------|
+| Schedule | Every **48 hours** (UTC) |
+| Manual run | GitHub → **Actions** → **Update hosts** → **Run workflow** |
+| Commits | `hosts`, `pihole-hosts`, `dnscrypt-hosts`, `adguardhosts.txt`, `remover.txt`, `config/remover`, `config/probe_cache` |
+
+**First publish:** include the generated output files from your first `ADios.bat` run so users can download lists immediately. GitHub Actions will refresh them every 48h after that.
+
+**Missing files?** The workflow **creates/updates** all outputs automatically — you do not need to create `remover.txt` by hand. An empty `config/remover` is fine on first clone; the build fills it.
+
+---
+
+## 🛡️ What gets blocked
+
+| Category | Examples |
+|----------|----------|
+| 📺 Ads & trackers | AdAway, AdGuard registry lists |
+| 📡 Streaming ads | Twitch, YouTube (incl. Samsung TV), Spotify ad endpoints |
+| 🦠 Malware / abuse | URLhaus & similar feeds in sources |
+| 📧 Scam / spam | Community abuse lists |
+
+Playback-critical domains are **whitelisted** — Spotify/Twitch should keep working. Broken service? Open an issue with the domain to whitelist.
 
 ---
 
 ## ❓ FAQ
 
 <details>
-<summary><b>🔄 How often is the list updated?</b></summary>
+<summary><b>🖱️ Do I need to run ADios.bat if I only download from GitHub?</b></summary>
 
-**Every 48 hours.** The [Update hosts](.github/workflows/update-hosts.yml) workflow runs on a schedule (and can be triggered manually), rebuilds the list from all sources, and pushes **hosts**, **pihole-hosts**, **dnscrypt-hosts**, **adguardhosts.txt**, and **remover.txt** to this repo. You can re-download or re-pull the list anytime.
+**No.** If you pull pre-built files from this repo, copy `hosts` directly. Run `ADios.bat` only when **you** want to rebuild locally from latest sources + your custom whitelist/remover.
 </details>
 
 <details>
-<summary><b>🗑️ What is remover.txt / config/remover?</b></summary>
+<summary><b>📡 Will my modem / Pi-hole break the DNS dead-check?</b></summary>
 
-**Remover is the opposite of whitelist.**
+**No.** Probes use **direct HTTPS** to public DoH resolvers — your modem, router, or Pi-hole DNS is **never queried**. Local adblock cannot cause false “dead” results.
+</details>
 
-| File | Role |
+<details>
+<summary><b>🗑️ Why is remover.txt huge?</b></summary>
+
+It lists ~100k+ domains that **used to appear** in blocklists but are **dead or expired** — keeping them would bloat your blocklist with useless entries. Remover is applied **every run** before writing outputs.
+</details>
+
+<details>
+<summary><b>🔒 Is this safe to publish / fork?</b></summary>
+
+Yes. No secrets in repo — only public URLs, plaintext lists, and AlexRabbit’s build script. Review `config/lists` for third-party sources you trust.
+</details>
+
+<details>
+<summary><b>✏️ How do I add my own blocks or exceptions?</b></summary>
+
+| Goal | Edit |
 |------|------|
-| `config/whitelist` | Domains that must **never** be blocked (Spotify playback, etc.) |
-| `config/remover` | Domains that must **never** appear in outputs — dead, expired, or manually dropped |
+| Block extra domain | [`config/blacklist`](config/blacklist) |
+| Never block a domain | [`config/whitelist`](config/whitelist) |
+| Force-remove a domain | [`config/remover`](config/remover) |
+| Add another source list | [`config/lists`](config/lists) — one URL per line |
 
-Every run, DNS probing finds domains like `0--0.ml` that no longer resolve and are unregistered. Those go into **`config/remover`** and the published **`remover.txt`**. The build subtracts remover **and** whitelist from the merged list before writing `hosts`, `pihole-hosts`, `dnscrypt-hosts`, and `adguardhosts.txt`.
-
-You can also add domains manually to `config/remover` to force-remove them (same idea as editing whitelist).
+Then double-click **`ADios.bat`** again.
 </details>
-
-<details>
-<summary><b>🔍 How are dead domains detected?</b></summary>
-
-The build script probes domains using **explicitly unfiltered public DNS-over-HTTPS** resolvers (Control D Unfiltered, OpenDNS, LibreDNS, dnsforge.de). It **never** uses your LAN/modem DNS, Google, or Cloudflare — probes go direct over HTTPS, bypassing local adblock.
-
-- **Alive** if any resolver returns a DNS answer, or RDAP shows the domain is still registered.
-- **Dead** only if ≥2 resolvers return NXDOMAIN for both A and AAAA **and** RDAP confirms the domain is unregistered/expired.
-- **Inconclusive** results keep the domain (conservative — ad domains that fail DNS but still exist stay blocked).
-
-State is stored in **`config/probe_cache`** (`alive`, `dead`, `dead_permanent`). First dead mark is re-checked after 90 days; if still dead, it becomes **permanent**. All removed domains are listed in **`config/remover`** and **`remover.txt`**.
-
-Env overrides: `SKIP_DNS_CHECK=1`, `DNS_MAX_PROBE`, `VERIFIED_TTL_DAYS`, `DEAD_RECHECK_DAYS`, `DNS_PROBE_ENDPOINTS`.
-</details>
-
-<details>
-<summary><b>🚫 Will this break Spotify / Twitch / YouTube?</b></summary>
-
-We use a **whitelist** so that the domains those services need to work (playback, login, etc.) are *not* blocked. We only block **ad and tracking** domains. If something breaks, you can open an issue and we can add a domain to the whitelist.
-</details>
-
-<details>
-<summary><b>📁 Where is my hosts file?</b></summary>
-
-- **Windows:** `C:\Windows\System32\drivers\etc\hosts`  
-- **macOS / Linux:** `/etc/hosts`  
-
-Open it with a text editor (as Administrator on Windows, or with `sudo` on macOS/Linux).
-</details>
-
-<details>
-<summary><b>🔒 Is this safe?</b></summary>
-
-The list is built from well-known, community-maintained blocklists (AdAway, Steven Black, AdGuard, OISD, etc.). The build runs on GitHub’s servers and the result is plain text. You can inspect `config/build_hosts.py` and the source lists in `config/` (`lists`, `blacklist`, `whitelist`, `probe_cache`). On any machine with Python 3.9+, run `python3 config/build_hosts.py` — no pip or `requirements.txt` needed.
-</details>
-
-<details>
-<summary><b>📥 Do I need to update it myself?</b></summary>
-
-The **files on GitHub** update automatically every 48 hours. To get the latest list on *your* device, re-download or point your tool at the raw URLs (Pi-hole, DNSCrypt, system hosts).
-</details>
-
-
 
 ---
 
-## 📜 License & Thanks
+## 📜 License & credits
 
-- **License:** [GPL-3.0](LICENSE). Same for the build script and config; upstream lists keep their respective licenses.
-- **Sources:** This list aggregates from public, community-maintained blocklists (AdAway, Steven Black, AdGuard, OISD, FadeMind, URLhaus, and others). See **config/lists** in the repo for the full URL list. We don’t control those projects; we merge, deduplicate, and whitelist.
-
-**Backup hosts file (Windows):** [winhelp2002.mvps.org](http://winhelp2002.mvps.org/defaultwin7-hosts.zip) — keep a clean copy before making changes.
+- **Author:** [AlexRabbit](https://github.com/AlexRabbit) — **ADios**
+- **License:** [GPL-3.0](LICENSE)
+- **Sources:** Public community lists (AdAway, AdGuard Hostlists Registry, Steven Black derivatives, streaming community lists, etc.) — see [`config/lists`](config/lists). Upstream projects keep their own licenses.
 
 ---
 
 <div align="center">
 
-**ADios** — *one list, auto-updated, for hosts-based blocking everywhere.*
-
 **👋 ADios, ads.**
 
+*Built with care by **AlexRabbit** — one list, auto-updated, hosts-based blocking everywhere.*
+
+⭐ Star the repo if ADios helps you.
+
 </div>
-
-
-

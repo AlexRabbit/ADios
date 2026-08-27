@@ -1,1 +1,15 @@
 __pycache__/
+*.py[cod]
+*.pyo
+.Python
+.env
+.env.*
+*.log
+.DS_Store
+Thumbs.db
+desktop.ini
+*.tmp
+*.bak
+.cursor/
+.vscode/
+.idea/
