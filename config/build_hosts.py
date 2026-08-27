@@ -24,6 +24,7 @@ On a clean VPS/PC: clone the repo, then:
 
 from __future__ import annotations
 
+import base64
 import json
 import os
 import random
@@ -54,12 +55,13 @@ VERIFIED_FILE = CONFIG / "verified"  # legacy; migrated into probe_cache
 
 BLACKLIST_SOURCE = "config/blacklist"
 
-# Explicitly unfiltered public DoH resolvers (no Google, no Cloudflare).
+# Explicitly unfiltered/neutral public DoH resolvers (no Google, no Cloudflare).
+# Validated for reachability from CI/cloud; override with DNS_PROBE_ENDPOINTS if needed.
 DEFAULT_DNS_RESOLVERS: tuple[tuple[str, str], ...] = (
-    ("Public RDNS Open", "https://open.public-rdns.com/dns-query"),
-    ("dnsHome.de", "https://dns.dnshome.de/dns-query"),
     ("Control D Unfiltered", "https://freedns.controld.com/p0"),
-    ("dnswarden Uncensored", "https://doh.us.dnswarden.com/uncensored"),
+    ("OpenDNS", "https://doh.opendns.com/dns-query"),
+    ("LibreDNS", "https://doh.libredns.gr/dns-query"),
+    ("dnsforge.de", "https://dnsforge.de/dns-query"),
 )
 
 OUTPUT_PIHOLE = ROOT / "pihole-hosts"
@@ -406,6 +408,24 @@ def _load_dns_resolvers() -> tuple[tuple[str, str], ...]:
     return tuple(resolvers) if resolvers else DEFAULT_DNS_RESOLVERS
 
 
+def _doh_query_wire_get(endpoint: str, domain: str, qtype: int) -> tuple[int | None, bool]:
+    wire = _build_wire_query(domain, qtype)
+    dns_param = base64.urlsafe_b64encode(wire).decode().rstrip("=")
+    separator = "&" if "?" in endpoint else "?"
+    url = f"{endpoint}{separator}dns={dns_param}"
+    headers = {**REQUEST_HEADERS, "Accept": "application/dns-message"}
+    try:
+        request = Request(url, headers=headers, method="GET")
+        with urlopen(request, timeout=12) as response:
+            payload = response.read()
+        rcode, ancount = _parse_wire_response(payload)
+        if rcode < 0:
+            return None, False
+        return rcode, ancount > 0
+    except (HTTPError, URLError, TimeoutError, OSError, ValueError):
+        return None, False
+
+
 def _doh_query_wire(endpoint: str, domain: str, qtype: int) -> tuple[int | None, bool]:
     wire = _build_wire_query(domain, qtype)
     headers = {
@@ -422,18 +442,40 @@ def _doh_query_wire(endpoint: str, domain: str, qtype: int) -> tuple[int | None,
             return None, False
         return rcode, ancount > 0
     except (HTTPError, URLError, TimeoutError, OSError, ValueError):
-        return None, False
+        return _doh_query_wire_get(endpoint, domain, qtype)
 
 
 def _doh_query(endpoint: str, domain: str, rtype: int) -> tuple[int | None, bool]:
-    """Query one DoH resolver. Tries RFC 8484 wire POST."""
+    """Query one DoH resolver. Tries RFC 8484 wire POST, then GET."""
     return _doh_query_wire(endpoint, domain, rtype)
 
 
+_healthy_resolvers_cache: tuple[tuple[str, str], ...] | None = None
+
+
+def _healthy_resolvers(force: bool = False) -> tuple[tuple[str, str], ...]:
+    global _healthy_resolvers_cache
+    if _healthy_resolvers_cache is not None and not force:
+        return _healthy_resolvers_cache
+
+    healthy: list[tuple[str, str]] = []
+    for name, endpoint in _load_dns_resolvers():
+        status, has_answer = _doh_query(endpoint, "example.com", DNS_TYPE_A)
+        if status is not None and has_answer:
+            healthy.append((name, endpoint))
+        else:
+            print(f"Warning: resolver unavailable, skipping: {name} ({endpoint})", file=sys.stderr)
+
+    if not healthy:
+        print("Error: no DNS resolvers reachable via public DoH", file=sys.stderr)
+        sys.exit(1)
+
+    _healthy_resolvers_cache = tuple(healthy)
+    return _healthy_resolvers_cache
+
+
 def _dns_resolvers() -> tuple[tuple[str, str], ...]:
-    if not hasattr(_dns_resolvers, "_cached"):
-        _dns_resolvers._cached = _load_dns_resolvers()  # type: ignore[attr-defined]
-    return _dns_resolvers._cached  # type: ignore[attr-defined]
+    return _healthy_resolvers()
 
 
 def _dns_nxdomain_consensus(domain: str) -> ProbeResult:
@@ -442,6 +484,7 @@ def _dns_nxdomain_consensus(domain: str) -> ProbeResult:
     inconclusive = split/timeout (keep domain).
     """
     resolvers = _dns_resolvers()
+    min_consensus = min(MIN_NXDOMAIN_CONSENSUS, len(resolvers))
     any_answer = False
     a_nxdomain = 0
     aaaa_nxdomain = 0
@@ -469,10 +512,10 @@ def _dns_nxdomain_consensus(domain: str) -> ProbeResult:
         return "alive"
 
     if (
-        a_nxdomain >= MIN_NXDOMAIN_CONSENSUS
-        and aaaa_nxdomain >= MIN_NXDOMAIN_CONSENSUS
-        and a_responses >= MIN_NXDOMAIN_CONSENSUS
-        and aaaa_responses >= MIN_NXDOMAIN_CONSENSUS
+        a_nxdomain >= min_consensus
+        and aaaa_nxdomain >= min_consensus
+        and a_responses >= min_consensus
+        and aaaa_responses >= min_consensus
     ):
         return "dead"
 
@@ -565,27 +608,39 @@ def load_probe_cache() -> dict[str, tuple[int, ProbeStatus]]:
             if status_raw not in ("alive", "dead", "dead_permanent"):
                 status_raw = "alive"
             cache[domain] = (checked_at, status_raw)  # type: ignore[assignment]
-        return cache
+    else:
+        # One-time migration from legacy verified + dead files.
+        if VERIFIED_FILE.is_file():
+            for raw in read_lines(VERIFIED_FILE):
+                stripped = raw.strip()
+                if not stripped:
+                    continue
+                parts = stripped.split()
+                domain = purify_hostname(parts[0]) if parts else None
+                if not domain:
+                    continue
+                checked_at = int(parts[1]) if len(parts) >= 2 and parts[1].isdigit() else 0
+                cache[domain] = (checked_at, "alive")
 
-    # One-time migration from legacy verified + dead files.
-    if VERIFIED_FILE.is_file():
-        for raw in read_lines(VERIFIED_FILE):
-            stripped = raw.strip()
-            if not stripped:
-                continue
-            parts = stripped.split()
-            domain = purify_hostname(parts[0]) if parts else None
-            if not domain:
-                continue
-            checked_at = int(parts[1]) if len(parts) >= 2 and parts[1].isdigit() else 0
-            cache[domain] = (checked_at, "alive")
+        if DEAD_FILE.is_file():
+            for domain in load_host_set(DEAD_FILE):
+                if domain not in cache:
+                    cache[domain] = (0, "dead")
 
-    if DEAD_FILE.is_file():
-        for domain in load_host_set(DEAD_FILE):
-            if domain not in cache:
-                cache[domain] = (0, "dead")
-
+    _sync_dead_file_into_cache(cache)
     return cache
+
+
+def _sync_dead_file_into_cache(cache: dict[str, tuple[int, ProbeStatus]]) -> None:
+    """Every run: domains in config/dead are always excluded from outputs."""
+    if not DEAD_FILE.is_file():
+        return
+    for domain in load_host_set(DEAD_FILE):
+        entry = cache.get(domain)
+        if entry is None:
+            cache[domain] = (0, "dead")
+        elif entry[1] == "alive":
+            cache[domain] = (entry[0], "dead")
 
 
 def save_probe_cache(cache: dict[str, tuple[int, ProbeStatus]]) -> None:
@@ -763,6 +818,8 @@ def build_blocklist() -> tuple[list[str], dict[str, str], list[str]]:
     print(f"Whitelist entries: {len(whitelist)}")
 
     excluded = {d for d, (_, status) in cache.items() if _is_excluded_status(status)}
+    dead_from_file = load_host_set(DEAD_FILE) if DEAD_FILE.is_file() else set()
+    excluded |= dead_from_file
     after_whitelist = [d for d in alive if d not in whitelist]
     final = sorted(d for d in after_whitelist if d not in excluded)
     final_sources = {d: sources.get(d, BLACKLIST_SOURCE) for d in final}
@@ -834,6 +891,18 @@ def write_outputs(
     OUTPUT_ADGUARD.write_text(adguard_body, encoding="utf-8")
 
 
+def _verify_no_dead_in_outputs(domains: list[str]) -> None:
+    """Sanity check: config/dead must never appear in written outputs."""
+    if not DEAD_FILE.is_file():
+        return
+    dead = load_host_set(DEAD_FILE)
+    leaks = sorted(set(domains) & dead)
+    if leaks:
+        sample = ", ".join(leaks[:5])
+        print(f"Error: {len(leaks)} dead domains leaked into outputs (e.g. {sample})", file=sys.stderr)
+        sys.exit(1)
+
+
 def main() -> None:
     ensure_runtime()
 
@@ -850,6 +919,7 @@ def main() -> None:
             sys.exit(1)
 
     domains, domain_sources, source_order = build_blocklist()
+    _verify_no_dead_in_outputs(domains)
     write_outputs(domains, domain_sources, source_order)
 
     print(

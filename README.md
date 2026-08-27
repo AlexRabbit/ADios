@@ -133,7 +133,7 @@ Whitelisted domains (e.g. core Spotify/Twitch domains needed for playback) are *
 <details>
 <summary><b>🔍 How are dead domains removed?</b></summary>
 
-The build script probes domains using **explicitly unfiltered public DNS-over-HTTPS** resolvers (Public RDNS Open, dnsHome.de, Control D Unfiltered, dnswarden Uncensored). It **never** uses your LAN DNS, Google, or Cloudflare.
+The build script probes domains using **explicitly unfiltered public DNS-over-HTTPS** resolvers (Control D Unfiltered, OpenDNS, LibreDNS, dnsforge.de). It **never** uses your LAN/modem DNS, Google, or Cloudflare — probes go direct over HTTPS, bypassing local adblock.
 
 - **Alive** if any resolver returns a DNS answer, or RDAP shows the domain is still registered.
 - **Dead** only if ≥2 resolvers return NXDOMAIN for both A and AAAA **and** RDAP confirms the domain is unregistered/expired.
