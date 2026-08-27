@@ -1,6 +1,6 @@
 If this helped you, consider starring the repo ⭐
 
-👋 # ADiosADS
+# ADiosADS 👋 
 
 Blocklists for DNS and browser adblockers. Maintained by [AlexRabbit](https://github.com/AlexRabbit).
 
