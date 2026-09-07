@@ -17767,6 +17767,7 @@ www.youtube.com##yt-video-description-youchat-section-view-model
 studio.youtube.com##ytcp-creator-chat-trigger
 www.youtube.com##ytd-talk-to-recs-flow-renderer
 /CxRobotSdkJs.js
+||alhena.ai^$third-party
 ||api.coinmarketcap.com/chatbot/
 ||askmiso.com^$third-party
 ||asus-brand-assistant.asus.com/brand-assistant.js
@@ -18109,6 +18110,7 @@ dzen.ru,sportsdzen.ru##+js(prevent-fetch, /stats/bulk|stats/pixels|zen_audit/)
 progorod62.ru,ura.news##+js(prevent-fetch, _rsc=)
 evribiont.xyz##+js(prevent-setTimeout, adTestElement)
 aigenda.ru##+js(prevent-setTimeout, combinedDetector)
+themoscowtimes.com##+js(prevent-setTimeout, contribute-modal)
 forum.ixbt.com##+js(prevent-setTimeout, count_banners)
 redheadsound.studio##+js(prevent-setTimeout, initAds)
 i-ua.tv##+js(remove-attr, autoplay, [data-video-player="small"], stay)
@@ -18483,7 +18485,7 @@ ya.ru,yandex.*##.simple-popup__overlay:remove()
 ||youtube.com/embed/?enablejsapi=1&origin=*3dnews.*&widgetid=1$subdocument,badfilter,domain=3dnews.ru
 *$third-party,popunder,domain=fastpic.org
 fastpic.org##+js(abort-on-property-read, Element.prototype.attachShadow)
-fastpic.org,~new.fastpic.org##+js(abort-on-stack-trace, Event.prototype.preventDefault, inlineScript)
+fastpic.org,~new.fastpic.org##+js(abort-on-stack-trace, Event.prototype.preventDefault, /blob|injectedScript|inlineScript/)
 fastpic.org,~new.fastpic.org##+js(abort-on-stack-trace, EventTarget, inlineScript)
 fastpic.org,~new.fastpic.org##+js(abort-on-stack-trace, document.onclick, inlineScript)
 fastpic.org,~new.fastpic.org##+js(abort-on-stack-trace, onclick, inlineScript)
@@ -19627,8 +19629,8 @@ gizguide.com##a[href^="https://bit.ly/"]
 puzzleship.com##+js(no-fetch-if, client=ca-pub-)
 puzzleship.com##+js(no-fetch-if, adsbygoogle.js)
 puzzleship.com##.ad_banner.adsbox970x90:style(display: block !important)
-wykop.pl##.pub-slot-wrapper:remove()
-wykop.pl##.stream-home:has(.recommend-label a[href^="/reklama"])
+wykop.pl##.pub-slot-wrapper:style(position: absolute !important; left: -4000px !important; visibility: hidden !important; pointer-events: none !important;)
+wykop.pl##+js(spoof-css, .pub-slot-wrapper, left, 0px, visibility, visible)
 play.mercadolivre.com.br##+js(trusted-json-edit-fetch-response, $..durationInSeconds=0, propsToMatch, -ssai-vod-)
 play.mercadolivre.com.br##+js(mpegdash-prune, Period:has(> EventStream[schemeIdUri="urn:sva:advertising-wg:ad-id-signaling"]), /dash)
 /services/*^ix=*&rt=$script,3p
@@ -19636,6 +19638,7 @@ newsammo.com##+js(nostif, .showModal)
 newsammo.com##+js(no-fetch-if, adsbygoogle)
 freezehost.pro##+js(rmnt, script, .offsetHeight)
 *$image,3p,denyallow=googleapis.com,domain=vipbox1.org
+@@||samplette.io^$ghide
 
 ! ----- https://raw.githubusercontent.com/uBlockOrigin/uAssets/master/filters/resource-abuse.txt -----
 /edgemesh.*.js$script,domain=~edgemesh.com|~edgeno.de
