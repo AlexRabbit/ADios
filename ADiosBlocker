@@ -163,6 +163,17 @@
 ||xad.dnoticias.pt^
 ||adclient-uol.lp.uol.com.br^
 ||adv.r7.com^
+3xyaoi.com##+js(abort-current-script, RegExp.prototype.test, /detect/i)
+3xyaoi.com#@#.c-ads
+3xyaoi.com#@#.sponsored-ad
+3xyaoi.com#@#.ad_wrapper
+3xyaoi.com#@#.ad-holder
+3xyaoi.com#@#.body-top-ads
+3xyaoi.com#@#.adsbygoogle[data-ad-slot]
+portalyaoi.com##+js(abort-on-stack-trace, document.getElementById, triggerBlock)
+portalyaoi.com###lbl-interaction-trigger
+portalyaoi.com###lbl-block-overlay-x92
+portalyaoi.com###lbl-block-modal-x92
 minhatela.xyz###root > div.inset-0.fixed:style(display: none !important;)
 minhatela.xyz##body:style(overflow: auto !important;)
 hardwarepremium.com##+js(no-setTimeout-if, adsenseCargo)
@@ -1316,6 +1327,11 @@ guardianocturna.mx,3djuegos.com.mx,cine.com,3djuegospc.com,directoalpaladar.com,
 tiohentai.com,maistocadas.mus.br,serviporno.com,solvetic.com,gamesfull.app,agazeta.com.br,lasexta.com,extra.ec,globo.com,amomeupet.org,cifras.com.br,gaz.com.br,placar.com.br,futebolinterior.com.br,tvhistoria.com.br,tribunapr.uol.com.br,diariodonordeste.verdesmares.com.br,sbt.com.br,link.estadao.com.br,atomixhq.*,jc.ne10.uol.com.br,internetpasoapaso.com,acidadeon.com,leouve.com.br,larazon.es,infoescola.com,cbn.globoradio.globo.com,abril.com.br,odia.ig.com.br,especiais.g1.globo.com,tribunapr.com.br,anime-tube.tv##.ads
 latinomegahd.net,muyinteresante.okdiario.com,subrayado.com.uy,cl1ca.com,periodicocorreo.com.mx,guiavidaesaude.com,muyinteresante.com,reporteindigo.com,omelete.com.mx,c5n.com,t13.cl,solowrestling.mundodeportivo.com,todojujuy.com,mendozapost.com,meiobit.com,brasilparalelo.com.br,tvonline.fan,laprensagrafica.com,ahoragranada.com,correio24horas.com.br,cnnespanol.cnn.com,motociclismo.es,sub100.com.br,theenemy.com.br,manhwas.net,rpp.pe,ambito.com,economipedia.com,informador.mx,elinformador.com.co,cronista.com,rionegro.com.ar,diariodecuyo.com.ar,voydeviaje.com.ar,guarda14.com,viapais.com.ar,agazeta.com.br,eleconomista.com.mx,metropolitanafm.com.br,tycsports.com,elespectador.com,bnews.com.br,migalhas.com.br,losandes.com.ar,lavoz.com.ar,mundo.sputniknews.com,omelete.com.br,lapoliticaonline.*,valenciaplaza.com,dalealbo.cl,globo.com,defesanet.com.br,mibrujula.com,lyon.kim,26noticias.com.ar,auniao.com,clickpb.com.br,emagister.com,lanacion.com.ar,parana-online.com.br,r7.com,toxico-pc.com,uol.com.br##body .banner
 actualidadiphone.com,lucrandoideias.com,proandroid.com,lusometeo.com,kltutors.com,eloutput.com,mundobytes.com,techondicas.com,jornalrepercussao.com.br,zonaaps.com,gamevicio.com,blog.desdelinux.net,megacanais.com,terrabrasilnoticias.com,psxbrasil.com.br,elrincondecabra.com,atelevisao.com,ahnegao.com.br,anmosugoi.com,linuxadictos.com,juegosdepcfull.com,pizzafria.ig.com.br,paraveronline.org,sayrodigital.net,cineplus123.org,cinemitas.org,androidayuda.com,sport.es,comandoplay.com,comandotorrents.to,adrenaline.com.br,ncultura.pt,animesdigital.org,wwwhatsnew.com,descargaseriestv.com,lifeder.com,elrellano.com,elintransigente.com,comando.la,remender.pe,noticiasautomotivas.com.br,idinheiro.com.br,diariodocomercio.com.br##body .code-block:not(#style_important)
+subsbr.net##.xbr-single-vast-wrap
+subsbr.net##+js(adjust-setTimeout, tick)
+brasilescola.uol.com.br##div.destaque-page-row > div.destaque-page-col:has(> div[class^="area-publicidade"])
+portalyaoi.com##+js(addEventListener-defuser, click, , elements, a.reward_ads[href])
+portalyaoi.com##+js(set-attr, a.reward_ads[data-url], href, [data-url])
 ||hispajav.com/samoari/hta-300x250
 animegratis.org##[id^="sideAd"]
 animegratis.org##.amazon-ep-card
@@ -3117,7 +3133,7 @@ eleconomista.es##.bannerInferior
 eleconomista.es##.bannerIntermedio
 eleconomista.es##.adsLinicom
 letras-lyrics.com.br##div[class^="pub"]
-poder360.com.br##.advertisement
+omelete.com.br,poder360.com.br##.advertisement
 poder360.com.br##div[class^="box-banner-footer"]
 /freewheel-adManager-$script,domain=antena3.com|lasexta.com
 /googleAdServer.$script,domain=antena3.com|lasexta.com
@@ -6105,6 +6121,9 @@ cz.de,dewezet.de,dieharke.de,dnn.de,gnz.de,goettinger-tageblatt.de,haz.de,kn-onl
 bostonherald.com,denverpost.com,eastbaytimes.com,mercurynews.com,ocregister.com,pressenterprise.com,sandiegouniontribune.com,twincities.com##+js(ra, subscriptions-section, [subscriptions-section="content"], stay)
 bostonherald.com,denverpost.com,eastbaytimes.com,mercurynews.com,ocregister.com,pressenterprise.com,sandiegouniontribune.com,twincities.com##[subscriptions-section="content-not-granted"]
 .de/thenewsbar/config/$xmlhttprequest,~third-party,domain=aerokurier.de|auto-motor-und-sport.de|flugrevue.de|motorradonline.de|womenshealth.de
+businessdailyafrica.com,monitor.co.ug,mwananchi.co.tz,mwanaspoti.co.tz,nation.africa,thecitizen.co.tz,theeastafrican.co.ke##+js(rc, nmgp, div.article-page .nmgp, stay)
+businessdailyafrica.com,monitor.co.ug,mwananchi.co.tz,mwanaspoti.co.tz,nation.africa,thecitizen.co.tz,theeastafrican.co.ke##+js(ra, hidden, div.article-page [hidden], stay)
+businessdailyafrica.com,monitor.co.ug,mwananchi.co.tz,mwanaspoti.co.tz,nation.africa,thecitizen.co.tz,theeastafrican.co.ke##div.modal,[id*='wall'],section.wall-guard,div.spinner
 staradvertiser.com##div.fade
 staradvertiser.com##+js(ra, style, div#hsa-paywall-content[style], stay)
 staradvertiser.com##+js(rc, overflow-hidden, body.overflow-hidden, stay)
@@ -17882,7 +17901,7 @@ auto.ru##+js(abort-on-property-read, Object.prototype.isTopAd)
 e1.ru,nova.rambler.ru##+js(abort-on-property-read, Object.prototype.loadBanner)
 24smi.org##+js(abort-on-property-read, Object.prototype.render)
 gismeteo.by,gismeteo.kz,gismeteo.ru##+js(abort-on-property-read, Object.prototype.scriptsViaXhr)
-drive2.ru,razlozhi.ru##+js(abort-on-property-read, Object.prototype.yaContextCb)
+razlozhi.ru##+js(abort-on-property-read, Object.prototype.yaContextCb)
 f1comp.ru,tagaev.com,times.zt.ua##+js(abort-on-property-read, PUM.getPopup)
 gencit.info##+js(abort-on-property-read, Radish)
 sinoptik.ua##+js(abort-on-property-read, SIN.AdsLoader)
@@ -17963,7 +17982,7 @@ cikavosti.com,dialogs.org.ua,fakty.ua,gorodkiev.com.ua,informator.ua,kriminal.tv
 bombardir.ru,comp-service.kiev.ua,inforesist.org,www.xcom-shop.ru##+js(abort-on-property-read, window.alert)
 softportal.com##+js(abort-on-property-read, window.block)
 growhow.in.ua##+js(abort-on-property-read, wpsite_clickable_data)
-80-e.ru,examenpdd.com,rg.ru,shadowcore.ru##+js(abort-on-property-read, yaContextCb)
+80-e.ru,blitzfoxhub.com,examenpdd.com,rg.ru,shadowcore.ru##+js(abort-on-property-read, yaContextCb)
 vsetut.su##+js(abort-on-property-read, zfgformats)
 transkarpatia.net##+js(abort-on-property-write, NiceScroll)
 24pdd.ru##+js(abort-on-property-write, adsBlocked)
@@ -17974,7 +17993,6 @@ fssp.gov.ru,southpark.su,turkcinema.org##+js(abort-on-property-write, document.o
 fssp.gov.ru,southpark.su,turkcinema.org##+js(abort-on-property-write, document.ondragstart)
 fssp.gov.ru,southpark.su,turkcinema.org##+js(abort-on-property-write, document.onselectstart)
 phys-kids.com##+js(abort-on-property-write, fetch)
-kakprosto.ru##+js(abort-on-property-write, window.yaProxy)
 tvzvezda.ru##+js(abort-on-stack-trace, Object.prototype.autoplay, assets)
 ya.ru##+js(abort-on-stack-trace, Object.prototype.loadAdvertScriptMode, /yastatic\.net/)
 shadowcore.ru##+js(abort-on-stack-trace, document.createElement, checkAboba)
@@ -17982,16 +18000,17 @@ ai-next.ru##+js(abort-on-stack-trace, document.getElementById, /723-|ai-2-/)
 doramatv.ru,mintmanga.com##+js(abort-on-stack-trace, document.getElementById, /createAdblockBlock|createBlock/)
 forums.rusmedserv.com##+js(abort-on-stack-trace, fetch, eval)
 7days.ru##+js(addEventListener-defuser, /^(?:contextmenu|keydown)$/)
-drive2.ru,shedevrum.ai##+js(addEventListener-defuser, /beforeunload|pagehide/, 0x)
 biqle.org,biqle.ru##+js(addEventListener-defuser, /click|mousedown/, popunder)
 lrepacks.net##+js(addEventListener-defuser, /click|mousedown/, setClickedUrl)
 ~id.rambler.ru,rambler.ru,~vp.rambler.ru##+js(addEventListener-defuser, DOMContentLoaded, .j-mini-player__video)
 sibnet.ru##+js(addEventListener-defuser, DOMContentLoaded, /EventTracker|utm_campaign/)
+blitzfoxhub.com##+js(addEventListener-defuser, DOMContentLoaded, AnalyticMonitor)
 buhplatforma.com.ua,dzplatforma.com.ua,medplatforma.com.ua,oblikbudget.com.ua,oplatforma.com.ua,pro-op.com.ua,prokadry.com.ua##+js(addEventListener-defuser, DOMContentLoaded, StrategyHandler)
 doramaland.plus##+js(addEventListener-defuser, DOMContentLoaded, _Modal)
 xv-ru.com##+js(addEventListener-defuser, DOMContentLoaded, exo_tracker)
 litnet.com##+js(addEventListener-defuser, DOMContentLoaded, feedback)
 allboxing.ru##+js(addEventListener-defuser, DOMContentLoaded, popup)
+drive2.ru,shedevrum.ai##+js(addEventListener-defuser, beforeunload, /477|setCookies|srcElement/)
 vedomosti.ru##+js(addEventListener-defuser, click, '', elements, a[href*="?from="])
 magnit.ru,regnum.ru##+js(addEventListener-defuser, click, '', elements, a[href*="utm_campaign"])
 forbes.ru##+js(addEventListener-defuser, click, '', elements, a[href*="utm_campaign="])
@@ -18005,7 +18024,6 @@ aione.ru,carservic.ru,iptv.org.ua,newxboxone.ru,tva.org.ua,ufchgu.ru##+js(addEve
 megaprogz.ru,programhub.ru##+js(addEventListener-defuser, download, isMonetized)
 trychatgpt.ru##+js(addEventListener-defuser, error, '', elements, [data-status="loading"])
 romakatya.ru##+js(addEventListener-defuser, load, AdBlock)
-blackwot.ru##+js(addEventListener-defuser, load, detect-modal)
 bonus-tv.ru##+js(addEventListener-defuser, loadstart, isImmediatePropagationStopped)
 rutube.ru##+js(addEventListener-defuser, message, __messagesAtom)
 www.vesti.ru##+js(addEventListener-defuser, scroll, players)
@@ -18020,7 +18038,6 @@ comedy-radio.ru,kufar.by,radioromantika.ru,relax-fm.ru,rg.ru,sm.news,veseloeradi
 drive2.ru##+js(cookie-remover, hurricane)
 24smi.org##+js(cookie-remover, isab)
 shedevrum.ai##+js(cookie-remover, shedevrum-aab)
-kakprosto.ru##+js(cookie-remover, yadb)
 portalvirtualreality.ru##+js(href-sanitizer, a[href*="&link=https://"], ?link)
 e.mail.ru,mail.rambler.ru,mail.yandex.ru,octavius.mail.ru##+js(href-sanitizer, a[href*=".mck"][href*=".ru/c/"], ?u)
 softoroom.org##+js(href-sanitizer, a[href*=".php?go="], ?go)
@@ -18061,6 +18078,7 @@ kufar.by##+js(json-prune, data, errors)
 smotrim.ru##+js(json-prune, data.adverts data.ageRestriction)
 1plus1.video##+js(json-prune, dl bpas)
 pikabu.ru##+js(json-prune, isVideoAutoplayMode)
+drive2.ru##+js(json-prune, offers)
 igromania.ru##+js(json-prune, results.fixed)
 ya.ru##+js(json-prune, rythm_market)
 znanija.com##+js(json-prune, tiers.TIER_ANY)
@@ -18304,6 +18322,7 @@ lostfilm.download,lostfilm.life,lostfilm.one,lostfilm.pro,lostfilm.today,lostfil
 gamemag.ru##.content-text:has(em:has-text(erid:)) a > strong:style(font-weight: inherit !important)
 gamemag.ru##.content-text:has(em:has-text(erid:)) a:style(pointer-events: none !important; color: inherit !important)
 playground.ru##.dfp-container:remove()
+shedevrum.ai##.fixed#root-toasts[style^="top:"]
 online-fix.me#@#.full-story-header:style(color: #222 !important)
 reshuent.ru,sdamgia.ru##.googlead.pub_300x250.pub_300x250m.pub_728x90.text-ad.textAd.text_ad.text_ads.text-ads.text-ad-links:style(display: block !important)
 rbc.ru##.js-index-doscroll audio[autoplay]:remove()
@@ -18860,6 +18879,15 @@ javxxx.me###player_3x2_container_inner
 /player/plugins/vast-*.js$script
 /wp-content/themes/spacex/assets/js/funx.js
 ||contentsprinter.xyz^
+@@||boards.net^$ghide
+@@||freeforums.net^$ghide
+@@||proboards.com^$ghide
+/tortoise.min.js$domain=boards.net|freeforums.net|proboards.com
+boards.net,freeforums.net,proboards.com##+js(acs, $, vglnk)
+boards.net,freeforums.net,proboards.com##[id^="ad-"]
+boards.net,freeforums.net,proboards.com###remove_ads_link
+boards.net,freeforums.net,proboards.com###ad1
+freeforums.net##div[id^="FreeForums_net_InThread"]
 hostserverz.com##+js(no-xhr-if, googlesyndication)
 youboxtv.com##+js(rmnt, script, '"hidden"')
 beta.xfreehd.com##.col-md-12:has(a[href^="https://landing.brazzersnetwork.com/"])
@@ -19024,6 +19052,10 @@ comix.to##+js(json-edit-fetch-response, .result.items.*[?.content*="'+'"], props
 comix.to##+js(ra, onerror, img[onerror], stay)
 lofi-nopixel.com##.nitro-ad-container
 lofi-nopixel.com##.font-semibold.hover\:underline.text-primary.cursor-pointer.group.p-0\.5.text-xs.text-center.block
+lofi-nopixel.com,lofi-onx.com,lofi-prodigy.com,lofi-prestige.com##div[data-testid="ad-anchor"]
+lofi-nopixel.com,lofi-onx.com,lofi-prodigy.com,lofi-prestige.com##aside[data-testid="ad-rail"]
+lofi-nopixel.com,lofi-onx.com,lofi-prodigy.com,lofi-prestige.com##div[data-testid="ad-in-feed"]
+lofi-nopixel.com,lofi-onx.com,lofi-prodigy.com,lofi-prestige.com##div[data-testid="ad-anchor-spacer"]
 kaa.lt##+js(acs, EventTarget.prototype.addEventListener, window.open)
 kaa.lt##+js(set, KAA.state.revspot, undefined)
 kaa.lt##+js(nosiif, enforceVideoShield)
@@ -19089,6 +19121,7 @@ chatgpt.com##+js(trusted-json-edit, [?.type=="ads"].visibility.status="hidden")
 chatgpt.com##+js(trusted-json-edit, ..suppress_ads=true)
 chatgpt.com##+js(json-prune, messages.*.ads messages.*.renderedAdsHtml)
 chatgpt.com##+js(trusted-replace-outbound-text, TextDecoder.prototype.decode, /<template data-assistant-ads-html=""><aside aria-label.+?<\/aside><\/template>/)
+chatgpt.com##+js(trusted-replace-outbound-text, TextDecoder.prototype.decode, /<template for="conversation-partial-control" data-web-mobile-dpu-apply="append"><span data-conversation-control="assistant-ads".+?<\/aside><\/template><\/span><\/template>/)
 ourcoincash.xyz,softdevelopp.com##+js(noeval-if, Adblock)
 ||umamianal.vercel.app^$domain=willow.arlen.icu
 willow.arlen.icu##+js(nowoif)
@@ -19674,11 +19707,20 @@ freezehost.pro##+js(rmnt, script, .offsetHeight)
 instamod.app##div[data-pop]:remove-attr(data-pop)
 instamod.app##+js(nowoif)
 filmez.club##+js(nowoif)
-eurostream.cfd##+js(nowoif)
+eurostream.*##+js(nowoif)
 kongregate.com##+js(nostif, .offsetHeight)
 ||js.gay-torrents.net/cleanup.js
 phys.org##+js(set-local-storage-item, scxNewsHits, $remove$)
 link.softoroom.org##+js(trusted-replace-node-text, script, /(setTimeout\([\s\S]*?createElement\('a'\)[\s\S]*?\}\,)\s*\d{4}(\);)/, $1 0$2)
+||glomex.cloud/v*/bid-slots?
+temp-mail.africa##+js(rmnt, script, /detect/i)
+@@||vidzer.me/stream?$ghide
+v2ex.com##ins.adsbygoogle[data-ad-client]
+v2ex.com##ins.adsbygoogle[data-ad-slot]
+aniwixi.xyz##body > [style^="position: fixed; top: 0; left: 0;"][style*="z-index: 999999;"][target="_blank"]
+aniwixi.xyz##+js(aeld, , triggerPopunder)
+aniwixi.xyz###wixi-single-ad-overlay
+||xml.pops.gg^$popup,doc
 
 ! ----- https://raw.githubusercontent.com/uBlockOrigin/uAssets/master/filters/resource-abuse.txt -----
 /edgemesh.*.js$script,domain=~edgemesh.com|~edgeno.de
@@ -21020,6 +21062,7 @@ fuckingfast.*##+js(remove-node-text, script, '"+"')
 ||wp-lib.dev^
 ||srv.ui-wp.dev^
 ||js.core-ui.dev^
+||||unnajd.com^^
 /^https:\/\/[a-z-]+\.cdn-[a-z]\.net\/$/$xhr,3p
 /^https:\/\/\d+\.cfd\/[a-z]{3}tag[a-z]{3}\/v\d\/[a-zA-Z0-9]+:C\d\.js\b/$script,3p,match-case,to=cfd
 /^https:\/\/[0-9]+\.cfd\/[a-z][a-z][a-z]tag[a-z][a-z][a-z]\/v[0-9]\/[a-zA-Z0-9]+:C[0-9]\.js\b/$script,3p,match-case
