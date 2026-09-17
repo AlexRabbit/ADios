@@ -163,6 +163,7 @@
 ||xad.dnoticias.pt^
 ||adclient-uol.lp.uol.com.br^
 ||adv.r7.com^
+remedioscase.xyz##+js(prevent-fetch, adsbygoogle)
 pastes.app###support-notice-modal
 3xyaoi.com##+js(abort-current-script, RegExp.prototype.test, /detect/i)
 3xyaoi.com#@#.c-ads
@@ -1328,6 +1329,8 @@ guardianocturna.mx,3djuegos.com.mx,cine.com,3djuegospc.com,directoalpaladar.com,
 tiohentai.com,maistocadas.mus.br,serviporno.com,solvetic.com,gamesfull.app,agazeta.com.br,lasexta.com,extra.ec,globo.com,amomeupet.org,cifras.com.br,gaz.com.br,placar.com.br,futebolinterior.com.br,tvhistoria.com.br,tribunapr.uol.com.br,diariodonordeste.verdesmares.com.br,sbt.com.br,link.estadao.com.br,atomixhq.*,jc.ne10.uol.com.br,internetpasoapaso.com,acidadeon.com,leouve.com.br,larazon.es,infoescola.com,cbn.globoradio.globo.com,abril.com.br,odia.ig.com.br,especiais.g1.globo.com,tribunapr.com.br,anime-tube.tv##.ads
 latinomegahd.net,muyinteresante.okdiario.com,subrayado.com.uy,cl1ca.com,periodicocorreo.com.mx,guiavidaesaude.com,muyinteresante.com,reporteindigo.com,omelete.com.mx,c5n.com,t13.cl,solowrestling.mundodeportivo.com,todojujuy.com,mendozapost.com,meiobit.com,brasilparalelo.com.br,tvonline.fan,laprensagrafica.com,ahoragranada.com,correio24horas.com.br,cnnespanol.cnn.com,motociclismo.es,sub100.com.br,theenemy.com.br,manhwas.net,rpp.pe,ambito.com,economipedia.com,informador.mx,elinformador.com.co,cronista.com,rionegro.com.ar,diariodecuyo.com.ar,voydeviaje.com.ar,guarda14.com,viapais.com.ar,agazeta.com.br,eleconomista.com.mx,metropolitanafm.com.br,tycsports.com,elespectador.com,bnews.com.br,migalhas.com.br,losandes.com.ar,lavoz.com.ar,mundo.sputniknews.com,omelete.com.br,lapoliticaonline.*,valenciaplaza.com,dalealbo.cl,globo.com,defesanet.com.br,mibrujula.com,lyon.kim,26noticias.com.ar,auniao.com,clickpb.com.br,emagister.com,lanacion.com.ar,parana-online.com.br,r7.com,toxico-pc.com,uol.com.br##body .banner
 actualidadiphone.com,lucrandoideias.com,proandroid.com,lusometeo.com,kltutors.com,eloutput.com,mundobytes.com,techondicas.com,jornalrepercussao.com.br,zonaaps.com,gamevicio.com,blog.desdelinux.net,megacanais.com,terrabrasilnoticias.com,psxbrasil.com.br,elrincondecabra.com,atelevisao.com,ahnegao.com.br,anmosugoi.com,linuxadictos.com,juegosdepcfull.com,pizzafria.ig.com.br,paraveronline.org,sayrodigital.net,cineplus123.org,cinemitas.org,androidayuda.com,sport.es,comandoplay.com,comandotorrents.to,adrenaline.com.br,ncultura.pt,animesdigital.org,wwwhatsnew.com,descargaseriestv.com,lifeder.com,elrellano.com,elintransigente.com,comando.la,remender.pe,noticiasautomotivas.com.br,idinheiro.com.br,diariodocomercio.com.br##body .code-block:not(#style_important)
+mercadobitcoin.com.br##a[href^="https://cripto.mb.com.br/"] > img
+mercadobitcoin.com.br##li.mb-sidebar-widget:has(> div[class^="create-account-widget"] a[href^="https://cripto.mb.com.br/"])
 pastes.app##section.relative > .bg-primary-50
 subsbr.net##.xbr-single-vast-wrap
 subsbr.net##+js(adjust-setTimeout, tick)
@@ -5646,7 +5649,7 @@ simple.ripley.com.pe#@#.dfp-ad-unit
 
 ! ----- https://gitflic.ru/project/magnolia1234/bypass-paywalls-clean-filters/blob/raw?file=bpc-paywall-filter.txt -----
 ||amplitude.com^$xmlhttprequest,third-party
-||axate.io$script,third-party
+||axate.io^$script,third-party
 ||loader.*.com/prod/*/loader.min.js$script
 ||cdn.*.com/prod/*/loader.min.js$script
 ||blueconic.net^$third-party
@@ -5666,7 +5669,7 @@ simple.ripley.com.pe#@#.dfp-ad-unit
 ||js.pelcro.com^$script,third-party
 /xbuilder/experience/execute$xmlhttprequest,domain=~automobilwoche.de|~frontline.thehindu.com|~thedispatch.com
 @@||piano.io^$domain=hbr.org|japantimes.co.jp
-@@||tinypass.com$script,domain=ajc.com|thelogic.co
+@@||tinypass.com^$script,domain=ajc.com|thelogic.co
 ||api.pico.tools/client/query/*$xmlhttprequest,~third-party
 ||api.pico.tools/popup/null/*$xmlhttprequest,~third-party
 gadget.pico.tools##+js(json-prune, locked)
@@ -5779,7 +5782,7 @@ eastwest.eu##+js(ra, style, .paywall, stay)
 eastwest.eu##+js(rc, paywall, .paywall, stay)
 eastwest.eu###testo_articolo > p, #testo_articolo > h3
 eastwest.eu##.offerta_abbonamenti
-||apw.economictimes.indiatimes.com$xmlhttprequest,~third-party
+||apw.economictimes.indiatimes.com^$xmlhttprequest,~third-party
 ||economist.com/latest/wall-ui.js$script,~third-party
 ||editorialedomani.it/pelcro.js$script,~third-party
 elespanol.com##+js(rc, content-not-granted-paywall, div.content-not-granted-paywall, stay)
@@ -5822,7 +5825,7 @@ foreignpolicy.com##+js(rc, content-gated, body:not(.is-fp-insider) div.content-g
 ||fortune.com/api/tinypass.min.js$script,~third-party
 foxnews.com##+js(ra, class, div[class*="gated-overlay"], stay)
 foxnews.com##div.article-gating-wrapper
-||freitag.de$inline-script
+||freitag.de^$inline-script
 ||ftm.eu/js/routing$script,~third-party
 ||ftm.nl/js/routing$script,~third-party
 ftm.eu,ftm.nl##+js(rc, foldable, div.foldable, stay)
@@ -5875,7 +5878,7 @@ lanacion.com.ar##+js(set-local-storage-item, /^/, $remove$)
 lance.com.br##+js(rc, h-[550px], div.paywall-content[class*="h-\["], stay)
 ||latimes.com/meteringjs/$script,~third-party
 ||californiatimes.com/caltimes/latimes/Bootstrap.js$script,third-party,domain=latimes.com
-||ev.lavanguardia.com$xmlhttprequest,~third-party
+||ev.lavanguardia.com^$xmlhttprequest,~third-party
 lavanguardia.com,mundodeportivo.com##span.content-ad,span.hidden-ad,span.ad-unit,div.ad-div
 ledevoir.com##+js(cookie-remover, pw6)
 legrandcontinent.eu##+js(rc, paywall|pw|softwall, body, stay)
@@ -5901,10 +5904,10 @@ marketwatch.com##+js(cookie-remover, cX_P)
 ||adobedtm.com/*/launch-*.js$script,domain=medscape.com
 mexiconewsdaily.com##+js(rc, tdb-block-inner, body.single div.td-post-content > div.tdb-block-inner, stay)
 ||motorsportmagazine.com/wp-admin/admin-ajax.php$xmlhttprequest,~third-party
-||ev.mundodeportivo.com$xmlhttprequest,~third-party
+||ev.mundodeportivo.com^$xmlhttprequest,~third-party
 ||musicomh.com/wp-content/*/bundle.js$script,~third-party
 mv-voice.com##+js(cookie-remover, /^/)
-||cdn.registerdisney.go.com$script,domain=nationalgeographic.com
+||cdn.registerdisney.go.com^$script,domain=nationalgeographic.com
 ||nationalgeographic.com.es/Content/js/lib/runtime.min.js$script,~third-party
 nationalgeographic.it##+js(ra, style, section[style], stay)
 nationalgeographic.it##section.paywall-container
@@ -5995,7 +5998,7 @@ study.com##+js(ra, class, div.hidden[ng-non-bindable], stay)
 study.com##div.article-cutoff-div
 ||suomensotilas.fi/wp-content/plugins/epflpw/js/pw.js$script,~third-party
 suomensotilas.fi##+js(rc, epfl-pw-obscured, div.epfl-pw-obscured, stay)
-/\.telegram\.hr\/.+\/(\w+-){3,}/$inline-script
+/\.telegram\.hr\/.+\/(\w+-){3,}/$inline-script,domain=telegram.hr
 ||telegraph.co.uk/martech/js/$script,~third-party
 tes.com##+js(cookie-remover, /tg_paywall/)
 tes.com##+js(ra, class, div.tg-paywall-body-overlay, stay)
@@ -6016,7 +6019,7 @@ theglobeandmail.com##+js(set, window.Fusion.globalContent._id, 0)
 ||cdn.piano.io/api/tinypass.min.js$script,domain=www.thehindu.com
 frontline.thehindu.com##+js(rc, articlepaywall, body.articlepaywall, stay)
 frontline.thehindu.com##div[class^="article-standard_piano-inline"]
-||theintercept.com$inline-script
+||theintercept.com^$inline-script
 thelampmagazine.com##+js(ra, class, div.paywall-gradient, stay)
 thelampmagazine.com##section.p-8
 thelogic.co##+js(cookie-remover, firstarticle)
@@ -6056,7 +6059,6 @@ worldeconomics.com##div#paywall,div.StickyFooter,div#scrollable
 ||ynet.co.il/*/article/*?rel=plus$inline-script
 ynet.co.il###yitwall:remove()
 al.com,cleveland.com,lehighvalleylive.com,masslive.com,mlive.com,nj.com,oregonlive.com,pennlive.com,silive.com,syracuse.com##+js(rc, article__paragraph--blur, .article__paragraph--blur, stay)
-al.com,cleveland.com,lehighvalleylive.com,masslive.com,mlive.com,nj.com,oregonlive.com,pennlive.com,silive.com,syracuse.com##+js(set, window.adiData.entryTags, 0)
 accountingtoday.com,americanbanker.com,benefitnews.com,bondbuyer.com,dig-in.com,financial-planning.com,nationalmortgagenews.com##+js(set, window.contentGating.ungate, true)
 bendigoadvertiser.com.au,bordermail.com.au,canberratimes.com.au,centralwesterndaily.com.au,dailyadvertiser.com.au,dailyliberal.com.au,examiner.com.au,illawarramercury.com.au,newcastleherald.com.au,northerndailyleader.com.au,standard.net.au,theadvocate.com.au,thecourier.com.au,westernadvocate.com.au##+js(rc, subscribe-truncate, .subscribe-truncate, stay)
 bendigoadvertiser.com.au,bordermail.com.au,canberratimes.com.au,centralwesterndaily.com.au,dailyadvertiser.com.au,dailyliberal.com.au,examiner.com.au,illawarramercury.com.au,newcastleherald.com.au,northerndailyleader.com.au,standard.net.au,theadvocate.com.au,thecourier.com.au,westernadvocate.com.au##+js(rc, subscriber-hider, .subscriber-hider, stay)
@@ -6160,20 +6162,20 @@ thelocal.at,thelocal.ch,thelocal.com,thelocal.de,thelocal.dk,thelocal.es,theloca
 policorner.ca##div.free-text,div.subscribe-box
 /wp-content/plugins/incognito_dectector/$script,~third-party
 ##button.everlit-overlay-btn
-||gyrovague.com$xmlhttprequest,third-party
-||top-fwz1.mail.ru$script,third-party
+||gyrovague.com^$xmlhttprequest,third-party
+||top-fwz1.mail.ru^$script,third-party
 ||jeuneafrique.com/cdn-cgi/trace$xmlhttprequest,~third-party
 ||assets.guim.co.uk/assets/SignInGate*.js$script,domain=theguardian.com
 theguardian.com##[name="SlotBodyEnd"],div[data-cy="contributions-liveblog-epic"]
 timesofindia.indiatimes.com##+js(ra, style, body[style], stay)
 timesofindia.indiatimes.com##div[class]:has(>div.loginWallPopUP)
-@@||consentmanager.net$script,third-party
+@@||consentmanager.net^$script,third-party
 #@#.cmpwrapper
 @@||cookielaw.org^$xmlhttprequest,domain=blick.ch
 @@||sdk.privacy-center.org^$script,third-party
 @@/wrapperMessagingWithoutDetection.js$script,~third-party,domain=handelsblatt.com
 ##+js(rc, didomi-popup-open, body.didomi-popup-open, stay)
-||htlbid.com$script,third-party
+||htlbid.com^$script,third-party
 ||flip-pay.com/*/flip-pay.js$script,third-party,domain=clareecho.ie|euractiv.com|pressgazette.co.uk|thedailymash.co.uk
 clareecho.ie##+js(rc, td-post-content, div.td-post-content, stay)
 ##+js(ra, class, div.wkwp-paywall, stay)
@@ -6214,7 +6216,7 @@ businesstoday.in##div#magazinePayWallStrip
 cardiologie-pratique.com##+js(ra, class, div.wrap-node, stay)
 ||jsdelivr.net/*/catholicherald-auth0-poool-*/index.js$script,third-party,domain=thecatholicherald.com
 cmcmarkets.com##+js(rc, activePaywall, .activePaywall, stay)
-||cnv-medien.de$inline-script
+||cnv-medien.de^$inline-script
 ||commercialobserver.com/wp-admin/admin-ajax.php$xmlhttprequest,~third-party
 connexionfrance.com##+js(cookie-remover, /^/)
 connexionfrance.com##div#subscribe-banner
@@ -6261,7 +6263,7 @@ insiderwire.com##div.iw-auth-gate,aside.iw-ad
 internationalepolitik.de##+js(set-local-storage-item, paywall-nids, $remove$)
 ||invmed.co/bootstrap/bootstrap.min.js$script,domain=investing.com
 ipsoa.it##+js(ra, style, div.paywall, stay)
-||jerseyeveningpost.com$inline-script
+||jerseyeveningpost.com^$inline-script
 jewishinsider.com##+js(rc, paywalled-content, section.paywalled-content, stay)
 jewishinsider.com##+js(rc, whitePopup, body.whitePopup, stay)
 jewishinsider.com##div.regModalOuter
@@ -6271,7 +6273,7 @@ kommersant.ru##+js(rc, doc--regwall, article.doc--regwall, stay)
 kommersant.ru##section.regwall
 kunststoffe.de,qz-online.de##+js(ra, style, div[style^="filter: blur"], stay)
 kunststoffe.de,qz-online.de##dialog#paywall-dialog
-||lapost.com$inline-script
+||lapost.com^$inline-script
 lapost.com##+js(ra, style, div.article-content, stay)
 ||lataco.com/_next/*/%5B...slug*.js$script,~third-party
 ||lasvegasadvisor.com/opt/*.js$script,~third-party
@@ -6291,7 +6293,7 @@ meritnation.com##.view-full-answer
 meritnation.com##+js(rc, maxHeight75px, div.exp_content.maxHeight75px, stay)
 mims.com##+js(rc, partial-gated-content, article.partial-gated-content, stay)
 mims.com##div#blazor-error-ui
-||moscout.com$inline-script
+||moscout.com^$inline-script
 museumsassociation.org##+js(rc, paywall, body.paywall, stay)
 museumsassociation.org##+js(ra, style, body[style], stay)
 museumsassociation.org##div#paywall-wrapper,div.advertising
@@ -6317,7 +6319,7 @@ publishersweekly.com##+js(ra, class|style, div#contentdiv.loggedInOnly, stay)
 publishersweekly.com##div#contentdiv.loggedOutOnly
 ||racketmn.com/_next/*/%5BsiteSlug*.js$script,~third-party
 ||racquetmag.com/_next/*/%5BsiteSlug*.js$script,~third-party
-||rdhmag.com$inline-script
+||rdhmag.com^$inline-script
 rockdelux.com##+js(ra, class|style, body, stay)
 rockdelux.com##+js(ra, style, div#body, stay)
 rockdelux.com##div.bg-paywall
@@ -6365,7 +6367,7 @@ aap.thestreet.com##+js(rc, is-paywalled, body.is-paywalled, stay)
 realmoney.thestreet.com##+js(cookie-remover, /^PWT/)
 thefederal.com##+js(ra, class, div.hide.paywall-content, stay)
 thefederal.com##div#premium_access_message_text,div.para_text_cl,div#lock_message,div.login_space
-||thetablet.org$inline-script
+||thetablet.org^$inline-script
 thetablet.org##+js(rc, gated-content, body.gated-content, stay)
 tidningenridsport.se##+js(ra, class|style, div.mctos, stay)
 tidningenridsport.se##+js(rc, cli-barmodal-open, body.cli-barmodal-open, stay)
@@ -17890,6 +17892,7 @@ techmusic.ru##+js(abort-current-inline-script, window.onload, _uWnd)
 dynamo.kiev.ua##+js(abort-current-script, document.getElementById, document.body.style.overflow)
 lenta.news,lenta.ru##+js(abort-current-script, window._lentaData, url_for_scroll)
 tapochek.net##+js(abort-on-property-read, ABNS)
+agroreview.com,agroweek.com##+js(abort-on-property-read, AWB)
 htmlweb.ru##+js(abort-on-property-read, AdbBanner)
 fapreactor.com,pornreactor.cc,reactor.cc##+js(abort-on-property-read, CTRManager.host3)
 anifap.com,anifap.xyz,anipoisk.org,anitokyo.tv,anitokyo1.top,hcdn.online,kinofilm.co##+js(abort-on-property-read, ClickUndercookie)
@@ -17971,6 +17974,7 @@ kolizhanka.com.ua##+js(abort-on-property-read, nocontext)
 stoigr.org##+js(abort-on-property-read, noselect)
 it-actual.ru##+js(abort-on-property-read, onload)
 freehat.cc,hlamer.ru,lostpix.com,potokcdn.com,prostoporno.help,saltday.ru,uploadimagex.com,wowskill.ru,xittv.net##+js(abort-on-property-read, open)
+film.ru##+js(abort-on-property-read, posterPlayer)
 sm.news##+js(abort-on-property-read, preventSelection)
 zab.ru##+js(abort-on-property-read, scrollw)
 anime-chan.me##+js(abort-on-property-read, sparkle)
@@ -17990,9 +17994,10 @@ cikavosti.com,dialogs.org.ua,fakty.ua,gorodkiev.com.ua,informator.ua,kriminal.tv
 bombardir.ru,comp-service.kiev.ua,inforesist.org,www.xcom-shop.ru##+js(abort-on-property-read, window.alert)
 softportal.com##+js(abort-on-property-read, window.block)
 growhow.in.ua##+js(abort-on-property-read, wpsite_clickable_data)
-80-e.ru,blitzfoxhub.com,examenpdd.com,rg.ru,shadowcore.ru##+js(abort-on-property-read, yaContextCb)
+80-e.ru,blitzfoxhub.com,examenpdd.com##+js(abort-on-property-read, yaContextCb)
 vsetut.su##+js(abort-on-property-read, zfgformats)
 transkarpatia.net##+js(abort-on-property-write, NiceScroll)
+shadowcore.ru##+js(abort-on-property-write, __trap_run)
 24pdd.ru##+js(abort-on-property-write, adsBlocked)
 doctorrouter.ru,ranobe-novels.ru,tests24.su,vita-water.ru##+js(abort-on-property-write, ai_front)
 newxboxone.ru,ufchgu.ru##+js(abort-on-property-write, disableSelection)
@@ -18004,7 +18009,6 @@ phys-kids.com##+js(abort-on-property-write, fetch)
 tvzvezda.ru##+js(abort-on-stack-trace, Object.prototype.autoplay, assets)
 ya.ru##+js(abort-on-stack-trace, Object.prototype.feed, yandex-portal.naydex.net)
 ya.ru##+js(abort-on-stack-trace, Object.prototype.loadAdvertScriptMode, /yastatic\.net/)
-shadowcore.ru##+js(abort-on-stack-trace, document.createElement, checkAboba)
 ai-next.ru##+js(abort-on-stack-trace, document.getElementById, /723-|ai-2-/)
 doramatv.ru,mintmanga.com##+js(abort-on-stack-trace, document.getElementById, /createAdblockBlock|createBlock/)
 forums.rusmedserv.com##+js(abort-on-stack-trace, fetch, eval)
@@ -18511,7 +18515,7 @@ ya.ru,yandex.*##.simple-popup__overlay:remove()
 ||myfootball.*/betking/$media,redirect=noopmp4-1s
 ||oc.kg/background/*.mp4$media,redirect=noop-0.1s.mp3
 ||partnerprofitboost.com^$popunder
-||pikabu.ru/ajax/*_*?*=$xmlhttprequest,responseheader=llasalbbubrrl
+||pikabu.ru/ajax/$xmlhttprequest,responseheader=llasalbbubrrl
 ||pravo.by/local/templates/.default/js/addtocopy.js
 ||pronpic.org^$subdocument,redirect=noopframe,domain=pronpic.org
 ||pronpic.org^$third-party,badfilter
@@ -19737,6 +19741,8 @@ svetserialu.to##body > .loader ~ div[class][style]:not([id])
 ||ktepkolfi.in^
 thertstv.com##+js(nostif, .adsbygoogle)
 ||assets.thertstv.com/|$script
+||second-hand.it/js/hinweis.js
+second-hand.it##.werbung-container
 
 ! ----- https://raw.githubusercontent.com/uBlockOrigin/uAssets/master/filters/resource-abuse.txt -----
 /edgemesh.*.js$script,domain=~edgemesh.com|~edgeno.de
