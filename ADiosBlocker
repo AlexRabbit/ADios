@@ -1329,6 +1329,7 @@ guardianocturna.mx,3djuegos.com.mx,cine.com,3djuegospc.com,directoalpaladar.com,
 tiohentai.com,maistocadas.mus.br,serviporno.com,solvetic.com,gamesfull.app,agazeta.com.br,lasexta.com,extra.ec,globo.com,amomeupet.org,cifras.com.br,gaz.com.br,placar.com.br,futebolinterior.com.br,tvhistoria.com.br,tribunapr.uol.com.br,diariodonordeste.verdesmares.com.br,sbt.com.br,link.estadao.com.br,atomixhq.*,jc.ne10.uol.com.br,internetpasoapaso.com,acidadeon.com,leouve.com.br,larazon.es,infoescola.com,cbn.globoradio.globo.com,abril.com.br,odia.ig.com.br,especiais.g1.globo.com,tribunapr.com.br,anime-tube.tv##.ads
 latinomegahd.net,muyinteresante.okdiario.com,subrayado.com.uy,cl1ca.com,periodicocorreo.com.mx,guiavidaesaude.com,muyinteresante.com,reporteindigo.com,omelete.com.mx,c5n.com,t13.cl,solowrestling.mundodeportivo.com,todojujuy.com,mendozapost.com,meiobit.com,brasilparalelo.com.br,tvonline.fan,laprensagrafica.com,ahoragranada.com,correio24horas.com.br,cnnespanol.cnn.com,motociclismo.es,sub100.com.br,theenemy.com.br,manhwas.net,rpp.pe,ambito.com,economipedia.com,informador.mx,elinformador.com.co,cronista.com,rionegro.com.ar,diariodecuyo.com.ar,voydeviaje.com.ar,guarda14.com,viapais.com.ar,agazeta.com.br,eleconomista.com.mx,metropolitanafm.com.br,tycsports.com,elespectador.com,bnews.com.br,migalhas.com.br,losandes.com.ar,lavoz.com.ar,mundo.sputniknews.com,omelete.com.br,lapoliticaonline.*,valenciaplaza.com,dalealbo.cl,globo.com,defesanet.com.br,mibrujula.com,lyon.kim,26noticias.com.ar,auniao.com,clickpb.com.br,emagister.com,lanacion.com.ar,parana-online.com.br,r7.com,toxico-pc.com,uol.com.br##body .banner
 actualidadiphone.com,lucrandoideias.com,proandroid.com,lusometeo.com,kltutors.com,eloutput.com,mundobytes.com,techondicas.com,jornalrepercussao.com.br,zonaaps.com,gamevicio.com,blog.desdelinux.net,megacanais.com,terrabrasilnoticias.com,psxbrasil.com.br,elrincondecabra.com,atelevisao.com,ahnegao.com.br,anmosugoi.com,linuxadictos.com,juegosdepcfull.com,pizzafria.ig.com.br,paraveronline.org,sayrodigital.net,cineplus123.org,cinemitas.org,androidayuda.com,sport.es,comandoplay.com,comandotorrents.to,adrenaline.com.br,ncultura.pt,animesdigital.org,wwwhatsnew.com,descargaseriestv.com,lifeder.com,elrellano.com,elintransigente.com,comando.la,remender.pe,noticiasautomotivas.com.br,idinheiro.com.br,diariodocomercio.com.br##body .code-block:not(#style_important)
+businessinsider.es##.col-ads
 mercadobitcoin.com.br##a[href^="https://cripto.mb.com.br/"] > img
 mercadobitcoin.com.br##li.mb-sidebar-widget:has(> div[class^="create-account-widget"] a[href^="https://cripto.mb.com.br/"])
 pastes.app##section.relative > .bg-primary-50
@@ -6165,7 +6166,7 @@ policorner.ca##div.free-text,div.subscribe-box
 ||gyrovague.com^$xmlhttprequest,third-party
 ||top-fwz1.mail.ru^$script,third-party
 ||jeuneafrique.com/cdn-cgi/trace$xmlhttprequest,~third-party
-||assets.guim.co.uk/assets/SignInGate*.js$script,domain=theguardian.com
+||assets.guim.co.uk/assets/StickyBottomBanner-island.client.web.*.js$script,domain=theguardian.com
 theguardian.com##[name="SlotBodyEnd"],div[data-cy="contributions-liveblog-epic"]
 timesofindia.indiatimes.com##+js(ra, style, body[style], stay)
 timesofindia.indiatimes.com##div[class]:has(>div.loginWallPopUP)
@@ -6214,7 +6215,8 @@ businesstoday.in##+js(cookie-remover, magazineSession)
 businesstoday.in##div#magazinePayWallStrip
 ||nitrocdn.com/*/paywall.$script,domain=capitalaberto.com.br
 cardiologie-pratique.com##+js(ra, class, div.wrap-node, stay)
-||jsdelivr.net/*/catholicherald-auth0-poool-*/index.js$script,third-party,domain=thecatholicherald.com
+cdt.ch##div#piano-article-lock:remove()
+cdt.ch##div.piano-fallback
 cmcmarkets.com##+js(rc, activePaywall, .activePaywall, stay)
 ||cnv-medien.de^$inline-script
 ||commercialobserver.com/wp-admin/admin-ajax.php$xmlhttprequest,~third-party
@@ -6352,6 +6354,7 @@ subscriptioninsider.com##div.dialog-widget
 /\.subscriptioninsider\.com\/.+\/(\w+-){3,}/$inline-script,domain=subscriptioninsider.com
 the-decoder.com##+js(ra, class, div.paywall-hidden-content, stay)
 the-decoder.com##section.paywall-content
+||jsdelivr.net/*/catholicherald-auth0-poool-*/index.js$script,third-party,domain=thecatholicherald.com
 thecore.in##+js(ra, class, div.paywall-content, stay)
 thecore.in##div.story,div#subscription_paid_message,div#footer_login_wall
 thecountersignal.com##+js(ra, class, body.single div.elementor-widget-container, stay)
@@ -6531,6 +6534,9 @@ consent.yahoo.com##+js(trusted-click-element, button.reject-all, , 2500)
 digi24.ro,digisport.ro,digitalfoundry.net,egx.net,eurogamer.it,gmx.*,mail.com,mcmcomiccon.com,nachrichten.at,nintendolife.com,oe24.at,paxsite.com,peacocktv.com,player.pl,pricerunner.com,pricerunner.se,pricerunner.dk,proximus.be,proximus.com,purexbox.com,pushsquare.com,southparkstudios.com,starwarscelebration.com,thehaul.com,timeextension.com,travelandleisure.com,tunein.com,videoland.com,wizzair.com,wetter.at##+js(trusted-click-element, #onetrust-accept-btn-handler, , 2800)
 dicebreaker.com,eurogamer.cz,eurogamer.es,eurogamer.net,eurogamer.nl,eurogamer.pl,eurogamer.pt,gamesindustry.biz,jelly.deals,reedpop.com,rockpapershotgun.com,thepopverse.com,vg247.com,videogameschronicle.com##+js(trusted-click-element, button[title="Accept and continue"], , 2800)
 dicebreaker.com,eurogamer.cz,eurogamer.es,eurogamer.net,eurogamer.nl,eurogamer.pl,eurogamer.pt,gamesindustry.biz,jelly.deals,reedpop.com,rockpapershotgun.com,thepopverse.com,vg247.com,videogameschronicle.com##+js(trusted-click-element, button[title="Accept All Cookies"], , 2800)
+oscaro.com,boulanger.com#@##didomi-host
+oscaro.com#@#+js(trusted-click-element, .didomi-continue-without-agreeing, , 1000)
+@@||sdk.privacy-center.org^$script,domain=oscaro.com|boulanger.com
 
 ! ----- https://raw.githubusercontent.com/brave/adblock-lists/master/brave-lists/brave-firstparty-regional.txt -----
 ###ad-haute
@@ -18543,6 +18549,8 @@ ya.ru,yandex.*##.simple-popup__overlay:remove()
 ||youtube.com/embed/?enablejsapi=1&origin=*3dnews.*&widgetid=1$subdocument,badfilter,domain=3dnews.ru
 *$third-party,popunder,domain=fastpic.org
 fastpic.org##+js(abort-on-property-read, Element.prototype.attachShadow)
+fastpic.org,~new.fastpic.org##+js(abort-on-property-read, MouseEvent)
+fastpic.org,~new.fastpic.org##+js(abort-on-property-read, document.dispatchEvent)
 fastpic.org,~new.fastpic.org##+js(abort-on-stack-trace, Event.prototype.preventDefault, /blob|injectedScript|inlineScript/)
 fastpic.org,~new.fastpic.org##+js(abort-on-stack-trace, Event.prototype.stopImmediatePropagation, /blob|injectedScript|inlineScript/)
 fastpic.org,~new.fastpic.org##+js(abort-on-stack-trace, Event.prototype.stopPropagation, /blob|injectedScript|inlineScript/)
@@ -19735,14 +19743,19 @@ aniwixi.xyz##body > [style^="position: fixed; top: 0; left: 0;"][style*="z-index
 aniwixi.xyz##+js(aeld, , triggerPopunder)
 aniwixi.xyz###wixi-single-ad-overlay
 ||xml.pops.gg^$popup,doc
-svetserialu.to##+js(rmnt, script, /detect/i)
-svetserialu.to##body > .loader ~ div[class][style]:not([id])
+svetserialu.*##+js(rmnt, script, /detect/i)
+svetserialu.*##body > .loader ~ div[class][style*="z-index"]:not([id])
+||svetserialu.*/assets/js/popads.js
+||svetserialu.*/assets/js/ads.js
 ||traingon.top/static/content-access.js
 ||ktepkolfi.in^
 thertstv.com##+js(nostif, .adsbygoogle)
 ||assets.thertstv.com/|$script
 ||second-hand.it/js/hinweis.js
 second-hand.it##.werbung-container
+up-4ever.net##+js(rmnt, script, .offsetHeight)
+up-4ever.net##.u4dl-spotcol.u4dl-choice
+reuters.com##+js(rmnt, script, rcom_bdScriptLoaded)
 
 ! ----- https://raw.githubusercontent.com/uBlockOrigin/uAssets/master/filters/resource-abuse.txt -----
 /edgemesh.*.js$script,domain=~edgemesh.com|~edgeno.de
