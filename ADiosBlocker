@@ -163,6 +163,7 @@
 ||xad.dnoticias.pt^
 ||adclient-uol.lp.uol.com.br^
 ||adv.r7.com^
+starckfilmestorrent.site##+js(abort-on-stack-trace, console.log, detectAdBlock)
 remedioscase.xyz##+js(prevent-fetch, adsbygoogle)
 pastes.app###support-notice-modal
 3xyaoi.com##+js(abort-current-script, RegExp.prototype.test, /detect/i)
@@ -1329,6 +1330,7 @@ guardianocturna.mx,3djuegos.com.mx,cine.com,3djuegospc.com,directoalpaladar.com,
 tiohentai.com,maistocadas.mus.br,serviporno.com,solvetic.com,gamesfull.app,agazeta.com.br,lasexta.com,extra.ec,globo.com,amomeupet.org,cifras.com.br,gaz.com.br,placar.com.br,futebolinterior.com.br,tvhistoria.com.br,tribunapr.uol.com.br,diariodonordeste.verdesmares.com.br,sbt.com.br,link.estadao.com.br,atomixhq.*,jc.ne10.uol.com.br,internetpasoapaso.com,acidadeon.com,leouve.com.br,larazon.es,infoescola.com,cbn.globoradio.globo.com,abril.com.br,odia.ig.com.br,especiais.g1.globo.com,tribunapr.com.br,anime-tube.tv##.ads
 latinomegahd.net,muyinteresante.okdiario.com,subrayado.com.uy,cl1ca.com,periodicocorreo.com.mx,guiavidaesaude.com,muyinteresante.com,reporteindigo.com,omelete.com.mx,c5n.com,t13.cl,solowrestling.mundodeportivo.com,todojujuy.com,mendozapost.com,meiobit.com,brasilparalelo.com.br,tvonline.fan,laprensagrafica.com,ahoragranada.com,correio24horas.com.br,cnnespanol.cnn.com,motociclismo.es,sub100.com.br,theenemy.com.br,manhwas.net,rpp.pe,ambito.com,economipedia.com,informador.mx,elinformador.com.co,cronista.com,rionegro.com.ar,diariodecuyo.com.ar,voydeviaje.com.ar,guarda14.com,viapais.com.ar,agazeta.com.br,eleconomista.com.mx,metropolitanafm.com.br,tycsports.com,elespectador.com,bnews.com.br,migalhas.com.br,losandes.com.ar,lavoz.com.ar,mundo.sputniknews.com,omelete.com.br,lapoliticaonline.*,valenciaplaza.com,dalealbo.cl,globo.com,defesanet.com.br,mibrujula.com,lyon.kim,26noticias.com.ar,auniao.com,clickpb.com.br,emagister.com,lanacion.com.ar,parana-online.com.br,r7.com,toxico-pc.com,uol.com.br##body .banner
 actualidadiphone.com,lucrandoideias.com,proandroid.com,lusometeo.com,kltutors.com,eloutput.com,mundobytes.com,techondicas.com,jornalrepercussao.com.br,zonaaps.com,gamevicio.com,blog.desdelinux.net,megacanais.com,terrabrasilnoticias.com,psxbrasil.com.br,elrincondecabra.com,atelevisao.com,ahnegao.com.br,anmosugoi.com,linuxadictos.com,juegosdepcfull.com,pizzafria.ig.com.br,paraveronline.org,sayrodigital.net,cineplus123.org,cinemitas.org,androidayuda.com,sport.es,comandoplay.com,comandotorrents.to,adrenaline.com.br,ncultura.pt,animesdigital.org,wwwhatsnew.com,descargaseriestv.com,lifeder.com,elrellano.com,elintransigente.com,comando.la,remender.pe,noticiasautomotivas.com.br,idinheiro.com.br,diariodocomercio.com.br##body .code-block:not(#style_important)
+semana.com##div[id^="DE-"]
 nexusmangas.com##.relative.bg-transparent[style^="min-height: "]:has(> .justify-center > .adsbygoogle)
 businessinsider.es##.col-ads
 mercadobitcoin.com.br##a[href^="https://cripto.mb.com.br/"] > img
@@ -1495,7 +1497,7 @@ devoracine.com###unlock-overlay
 embedplayer2.xyz,playerflixapi.com,superflixapi.fit##+js(no-window-open-if, _blank)
 ||developersone.com.br/load.php$domain=playerflixapi.com
 legendei.net##.entry-content > a[target="_blank"] > img
-legendei.net###colunas:style(display: block !important;)
+modapkbr.com,legendei.net###colunas:style(display: block !important;)
 legendei.net###topMessage:style(display: none !important;)
 legendei.net##div[id^="connAdArea"]:style(display: none !important;)
 retrowbfsgames.com##.code-block:has(a[href*="?key="])
@@ -5648,6 +5650,766 @@ simple.ripley.com.pe#@#.dfp-ad-unit
 @@||prisacom.com/RealMedia/ads/*/eplayer/$domain=as.com
 @@||t26.net/ads/yahooads.css
 @@||tvn.cl/include/ads/zona.js
+
+! ----- https://gitflic.ru/project/magnolia1234/bypass-paywalls-clean-filters/blob/raw?file=bpc-paywall-filter.txt -----
+||amplitude.com^$xmlhttprequest,third-party
+||axate.io^$script,third-party
+||loader.*.com/prod/*/loader.min.js$script
+||cdn.*.com/prod/*/loader.min.js$script
+||blueconic.net^$third-party
+/[a-z]{1}\d{2,3}\.\w+\.(co(m|\.uk)|net|org)\/script\.js/$script,~third-party
+||cxense.com^$script,third-party,domain=~journaldemontreal.com|~journaldequebec.com|~wsj.com
+||cxense.com^$script,domain=bizjournals.com,important
+||ensighten.com/*/Bootstrap.js$script,third-party
+||evolok.net^$third-party
+||fewcents.co/*/paywall*.js$script,third-party
+||hadrianpaywall.com^$third-party
+.com/pugpig-websmartbanner.js$script,~third-party
+.de/sub/js/pc-offer-west.js$script,~third-party
+||js.matheranalytics.com^$script,third-party
+||newsmemory.com?meter$third-party
+||olytics.omeda.com^$third-party
+||onecount.net^$third-party
+||js.pelcro.com^$script,third-party
+/xbuilder/experience/execute$xmlhttprequest,domain=~automobilwoche.de|~frontline.thehindu.com|~thedispatch.com
+@@||piano.io^$domain=hbr.org|japantimes.co.jp
+@@||tinypass.com^$script,domain=ajc.com|thelogic.co
+||api.pico.tools/client/query/*$xmlhttprequest,~third-party
+||api.pico.tools/popup/null/*$xmlhttprequest,~third-party
+gadget.pico.tools##+js(json-prune, locked)
+||poool.fr^$third-party
+||qiota.com^$xmlhttprequest,third-party
+||sophi.io^$third-party
+||steadyhq.com^$script,third-party
+||wallkit.net/js/$script,third-party
+||zephr.com/zephr-browser/$script,third-party
+/arc/subs/p.min.js$script,~third-party
+||arc-cdn.net/arc/subs/p.min.js$script,third-party
+/c/assets/pigeon.js$script,~third-party
+/evolok/*ev-em.min.js$script,domain=~vikatan.com
+/evolok/*ev-widgets.min.js$script
+/paywall/evercookie_get.js$script,~third-party
+/shared-content/art/tncms/api/access.*.js$script,~third-party
+/wp-content/plugins/leaky-paywall/js/leaky-paywall-cookie.js$script,~third-party,important
+/wp-json/leaky-paywall/v1/check-restrictions$xmlhttprequest,~third-party
+/wp-content/plugins/newspack-plugin/dist/*-gate-metering.js$script,~third-party
+/wp-content/plugins/pmpro-limit-post-views/js/pmprolpv.js$script,~third-party
+/wp-content/*/plugins/rcp-view-limit/$script,~third-party
+/zephr/feature$xmlhttprequest
+abqjournal.com##+js(rc, lab-paywall-locked, div.lab-paywall-locked, stay)
+||abril.com.br/*/abril-paywall/$script,~third-party
+adweek.com##+js(cookie-remover, blaize_session)
+||adweek.com/wp-content/plugins/adw-zephr/$script,~third-party
+ajc.com##+js(ra, class, div.story-paygate_placeholder, stay)
+ajc.com##div.video-blocker
+ajc.com##+js(set, window.Fusion.globalContent._id, 0)
+ajc.com##+js(set, window.Fusion.globalContent.content_restrictions.content_code, 0)
+alternatives-economiques.fr###temp-paywall
+alternatives-economiques.fr##+js(ra, style, div[data-ae-poool], stay)
+ambito.com##+js(cookie-remover, TDNotesRead)
+||americanaffairsjournal.org/wp-content/mu-plugins/app/src/paywall/paywall.js$script,~third-party
+||anandabazar.com/subscription-assets/js/paywall*.js$script,~third-party
+||anandabazar.com/*/cid/$inline-script
+anandabazar.com##div.paywallouterbox,div.readarticlebox,div.showmorebox
+anandabazar.com##+js(ra, class, div.readmoreouterbox, stay)
+anandabazar.com##+js(ra, id, article#outerboxarticlebox, stay)
+anandabazar.com##+js(ra, class, div.expcontainer, stay)
+artforum.com##+js(cookie-remover, /^/)
+||artnet.com/paywall-ajax.php$xmlhttprequest,~third-party
+artnet.com##div.article-body:style(display:block !important;)
+artnet.com##div[id^="issuem-leaky-paywall-"]
+asia.nikkei.com##div.tp-modal,div.tp-backdrop
+asia.nikkei.com##+js(rc, tp-modal-open, body.tp-modal-open, stay)
+magazine.atavist.com##+js(set-local-storage-item, /^/, $remove$)
+||tonos.gjirafa.tech/init/access$xmlhttprequest,domain=atlantico.fr
+automobilwoche.de##+js(set, window.Fusion.globalContent._id, 0)
+automobilwoche.de##+js(set, window.Fusion.globalContent.content_restrictions, {})
+axios.com##div[data-cy="pro-paywall"],div[class^="Modal_paywall"],div[class^="Modal_cta"]
+axios.com##+js(ra, style, html[style], stay)
+bhaskar.com##div.paywallBlockedContent~div:remove()
+bhaskar.com##article div:empty
+bhaskar.com##+js(ra, class, div.paywallBlockedContent, stay)
+||bizjournals.com/*.html?rel=plus$inline-script
+||bwbx.io/s3/fence/fortress-client/*.css$stylesheet,third-party,domain=bloomberg.com
+||bloombergadria.com/*/news$inline-script
+bloombergadria.com##+js(ra, style, article.single-news[style], stay)
+||meter.bostonglobe.com/js/meter.js$script,~third-party
+/\.businessinsider\.com\/chunks\/scripts\/\d.+\.js/$script,domain=businessinsider.com,~third-party
+businessinsider.jp##+js(ra, hidden, div.piano-paywall-container[hidden], stay)
+||businessoffashion.com/arc-platform-proxy.js$script,~third-party
+||businesspost.ie/api/tinypass.min.js$script,~third-party
+capital.fr##+js(ra, class|hidden, div#articleWall-paid, stay)
+capital.fr##div#articleWall-paid:style(margin-top: 40px !important;)
+capital.fr##+js(ra, class, div#articleWall, stay)
+capital.fr##div#articleWall-wrapper
+cartacapital.com.br##+js(rc, contentSoft, div.contentSoft, stay)
+cartacapital.com.br##div[class^="s-freemium"],div.maggazine-add
+cen.acs.org##+js(cookie-remover, cenLoginP)
+cen.acs.org##.meteredBar
+challenges.fr##div.amorce.manual
+challenges.fr##+js(ra, class|hidden, .user-paying-content, stay)
+||cdn.piano.io/api/tinypass.min.js$script,domain=clicrbs.com.br
+||clicrbs.com.br/paywall-api/count/$xmlhttprequest,~third-party
+cnbc.com##div.ArticleGate-proGate
+cnbc.com##+js(ra, class|hidden, span[hidden], stay)
+cnn.com##div[data-component-id="subwall"]
+cnn.com##+js(ra, style, html[style], stay)
+cnn.com##+js(ra, style, body[style], stay)
+cnn.com##+js(set-local-storage-item, /reg_?wall/i, $remove$)
+columbian.com##+js(cookie-remover, blaize_session)
+columbian.com##div.modal,div#onesignal-slidedown-container
+chronicle.com,philanthropy.com##div[data-content-summary]
+chronicle.com,philanthropy.com##+js(ra, hidden|ppajfrg86rdhoubtirllb2bf1xsaknzus, div[class~="contentBody" i][hidden], stay)
+citywire.com##+js(rc, article-locked, .article-locked, stay)
+citywire.com##+js(rc, m-article--locked, .m-article--locked, stay)
+citywire.com##+js(rc, m-media-container--locked, .m-media-container--locked, stay)
+citywire.com##+js(rc, m-article__body--locked, .m-article__body--locked, stay)
+citywire.com##registration-widget,div.alert--locked
+||zonda.clarin.com^$script,domain=clarin.com|lavoz.com.ar|ole.com.ar
+||commentary.org/*/js/dg-locker-public.js$script,~third-party
+||connaissancedesarts.com/wp-content/*/vendor/iptools-jquery-inview.min.js$script,~third-party
+||paywall.correiodopovo.com.br$script,~third-party
+||corriereobjects.it/*/js/_paywall.sjs$script,domain=corriere.it
+cronista.com##+js(rc, article-body--blurred, div.article-body--blurred, stay)
+cronista.com##div.paywall-chain--show
+csmonitor.com##+js(set-local-storage-item, /^/, $remove$)
+csmonitor.com##.paywall
+cyclingnews.com##+js(rc, paywall-locker, div.paywall-locker, stay)
+denik.cz##+js(ra, class, div.paywall, stay)
+diepresse.com##+js(ra, class, div.premium-content.hide, stay)
+diepresse.com##div.paywall-container--locked
+discovermagazine.com##body:style(overflow: auto !important;)
+discovermagazine.com##div.fIkXwQ,div[style*="fadeIn"],div[role="button"][aria-label="Dismiss Dialog"]
+||dn.se/check-paywall-v2.js,~third-party
+||dwell.com/article/*?rel=plus$inline-script
+eastwest.eu##+js(ra, style, .paywall, stay)
+eastwest.eu##+js(rc, paywall, .paywall, stay)
+eastwest.eu###testo_articolo > p, #testo_articolo > h3
+eastwest.eu##.offerta_abbonamenti
+||apw.economictimes.indiatimes.com^$xmlhttprequest,~third-party
+||economist.com/latest/wall-ui.js$script,~third-party
+||editorialedomani.it/pelcro.js$script,~third-party
+elespanol.com##+js(rc, content-not-granted-paywall, div.content-not-granted-paywall, stay)
+elespanol.com##div.full-suscriptor-container
+elconfidencial.com##+js(rc, newsType__content--closed, div.newsType__content--closed, stay)
+||elobservador.com.uy/shares$xmlhttprequest,~third-party
+||elpais.com.uy/user/authStatus$script,~third-party
+||prisa.com/dist/subs/pmwall/*/pmwall.min.js$script,domain=elpais.com
+||verne.elpais.com/*.html$inline-script
+eltiempo.com##+js(rc, c-articulo-exclusivo, div.c-articulo-exclusivo, stay)
+eltiempo.com##+js(rc, modulos, div.modulos, stay)
+em.com.br##+js(rc, compress-text, div.compress-text, stay)
+enotes.com##section#enotes-paywall
+enotes.com##+js(ra, class, div.u-paywall, stay)
+||estadao.com.br/paywall/$script,~third-party
+||estadao.com.br/access.js$script,~third-party
+euobserver.com##+js(rc, show, div.membership-upsell.show, stay)
+||exame.com/_next/static/chunks/app/%5B*.js$script,~third-party
+||specials.fd.nl/_next/static/chunks/framework-*.js$script,~third-party
+specials.fd.nl##div[class^="Opening_contentContainer"],section[class^="ScrollyText_"]:style(color: white)
+fieldandstream.com##div[class^="mailmunch-"]
+fieldandstream.com##+js(ra, class, html[class], stay)
+||financialexpress.com/*/min/premiumStoryContent.js$script,~third-party
+financialexpress.com##+js(rc, paywall, .paywall, stay)
+financialexpress.com##div.pcl-wrap
+firstthings.com##div.leaky_paywall_message_wrap
+||fokus.se/app/plugins/sesamy-fpg/assets/js/sesamy-fpg.js$script,~third-party
+||folha.uol.com.br/paywall/js/$script,~third-party
+||paywall.folha.uol.com.br^$script,xmlhttprequest,~third-party
+forbes.com##+js(ra, class, html[class], stay)
+forbes.com##+js(ra, class, body[class], stay)
+forbes.com.au##+js(cookie-remover, blaize_session)
+forbes.com##div.halfway-hardwall-insertion-point:remove()
+||foreignaffairs.com/modules/custom/fa_paywall_js/js/paywall.js$script,~third-party
+||foreignaffairs.com/sites/default/files/assets/css/css_*.css*delta=0$stylesheet,~third-party
+foreignaffairs.com##.article-dropcap:style(height: auto !important;)
+foreignaffairs.com##.paywall,.loading-indicator,.messages--container--bottom
+foreignpolicy.com##body:not(.is-fp-insider) div.content-ungated
+foreignpolicy.com##+js(rc, content-gated, body:not(.is-fp-insider) div.content-gated.content-gated--main-article, stay)
+||fortune.com/api/tinypass.min.js$script,~third-party
+foxnews.com##+js(ra, class, div[class*="gated-overlay"], stay)
+foxnews.com##div.article-gating-wrapper
+||freitag.de^$inline-script
+||ftm.eu/js/routing$script,~third-party
+||ftm.nl/js/routing$script,~third-party
+ftm.eu,ftm.nl##+js(rc, foldable, div.foldable, stay)
+ftm.eu,ftm.nl##div.banner-pp
+gauchazh.clicrbs.com.br##+js(ra, class, div.m-paid-content>div.hidden, stay)
+groene.nl##+js(cookie-remover, rlist)
+harpers.org##+js(cookie-remover, hr_session)
+||harpers.org/wp-content/themes/timber/static/js/modal*.js
+||adobedtm.com/*/launch-*.js$script,domain=hbr.org
+||cdn.tinypass.com/api/tinypass.min.js$script,domain=hbr.org
+||hilltimes.com/*/js/loadingoverlay/loadingoverlay.min.js$script,~third-party
+hindustantimes.com##+js(rc, paywall, .paywall, stay)
+hindustantimes.com##+js(rc, hide, .hide, stay)
+hindustantimes.com##div.paywall-container,div[class^="sub-paywall-version"],section[amp-access="NOT userSubscribed"]
+hotnews.ro##+js(rc, hn-paywall, div.hn-paywall, stay)
+hotnews.ro##+js(ra, hidden|inert, div.article-single-content[hidden], stay)
+ilfattoquotidiano.it##+js(rc, cropped, article[id].cropped, stay)
+ilfattoquotidiano.it##div#ifq-paywall-metered
+ilfoglio.it##+js(ra, class, div.paywall-wrapper__story-content, stay)
+ilfoglio.it##div.paywall
+ilsole24ore.com##+js(ra, style, body[style], stay)
+ilsole24ore.com##div.s24_adb
+||inc42.com/wp-admin/admin-ajax.php|$xmlhttprequest,~third-party
+indianexpress.com##+js(ra, class|style, div.paywall, stay)
+indianexpress.com##+js(ra, class, p.first_intro_para, stay)
+indianexpress.com##div.ev-premium-paywall
+||liveapp.inews.co.uk/*/content.html$inline-script
+inkl.com##+js(ra, class, div.paywall, stay)
+inkl.com##div.gradient-container
+investors.com##+js(cookie-remover, __tbc)
+irishexaminer.com/##+js(cookie-remover, blaize_session)
+japantimes.co.jp##+js(cookie-remover, xbc)
+journaldemontreal.com,journaldequebec.com##+js(rc, composer-content, div.article-main-txt.composer-content, stay)
+journaldunet.com##div.reg_wall
+journaldunet.com##+js(ra, style, div.entry_reg_wall[style], stay)
+||jpost.com/js/js_article.min.js$script,~third-party
+||internazionale.it/templates_js_ajax.inc.php$xmlhttprequest,~third-party
+krautreporter.de##section.js-access-wall,div.js-paywall-divider,#steady-checkout
+krautreporter.de##+js(rc, blurred, .blurred, stay)
+krautreporter.de##+js(rc, json-ld-paywall-marker, .json-ld-paywall-marker, stay)
+ksta.de,rundschau-online.de##+js(cookie-remover, anon_cookie)
+ksta.de,rundschau-online.de##+js(ra, style, div[data-article-content], stay)
+ksta.de,rundschau-online.de##div.dm-paywall-wrapper,div.dm-slot,div.dm-zephr-banner
+||cdn.tinypass.com/api/tinypass.min.js$script,domain=kurier.at
+kurier.at##+js(ra, class|style, div.paywall, stay)
+kurier.at##div#cfs-paywall-container
+||glanacion.com/*/metering/*.js$script,domain=lanacion.com.ar
+lanacion.com.ar##+js(cookie-remover, /^metering_arc/)
+lanacion.com.ar##+js(set-local-storage-item, /^/, $remove$)
+lance.com.br##+js(rc, h-[550px], div.paywall-content[class*="h-\["], stay)
+||latimes.com/meteringjs/$script,~third-party
+||californiatimes.com/caltimes/latimes/Bootstrap.js$script,third-party,domain=latimes.com
+||ev.lavanguardia.com^$xmlhttprequest,~third-party
+lavanguardia.com,mundodeportivo.com##span.content-ad,span.hidden-ad,span.ad-unit,div.ad-div
+ledevoir.com##+js(cookie-remover, pw6)
+legrandcontinent.eu##+js(rc, paywall|pw|softwall, body, stay)
+lejdd.fr,parismatch.com,public.fr###poool-container,#poool-widget-content,#poool-widget,.forbidden
+lejdd.fr,parismatch.com,public.fr##+js(ra, data-poool-mode, .cnt[data-poool-mode="hide"], stay)
+lepoint.fr,lexpress.fr##+js(set, window.Fusion.globalContent.content_restrictions, {})
+/\.lequipe\.fr\/assets\/js\/.*[wW]all.+\.js/$script,~third-party
+||livemint.com/lm-img/subscription/$script,~third-party
+livemint.com##+js(rc, paywall, div.paywall, stay)
+livemint.com##div[class^="storyPaywall_paywallStory_"]:remove()
+labusinessjournal.com##+js(cookie-remover, /^/)
+labusinessjournal.com###css-only-modals
+/\.emol\.cl\/(.+\/)?(pram-modal|PramModal)\.min\.js/$script,domain=lasegunda.com
+||lavoz.com.ar/sites/*/paywall/*/pw.js$script,third-party
+letelegramme.fr##+js(rc, tlg-paywalled, div.tlg-paywalled, stay)
+loebclassics.com##+js(cookie-remover, hupLclFreeReadsCookie)
+||cdn.loeildelaphotographie.com/wp-content/*/hague-child/js/script-$script,~third-party
+loeildelaphotographie.com##+js(ra, class, .paywall, stay)
+loeildelaphotographie.com##.premium-pic-box,.membership-promo-container,.login_form_litle
+loeildelaphotographie.com##+js(ra, style, img[style*="blur"], stay)
+lrb.co.uk##+js(set-local-storage-item, /^lrb_/, $remove$)
+marketwatch.com##+js(cookie-remover, cX_P)
+||adobedtm.com/*/launch-*.js$script,domain=medscape.com
+mexiconewsdaily.com##+js(rc, tdb-block-inner, body.single div.td-post-content > div.tdb-block-inner, stay)
+||motorsportmagazine.com/wp-admin/admin-ajax.php$xmlhttprequest,~third-party
+||ev.mundodeportivo.com^$xmlhttprequest,~third-party
+||musicomh.com/wp-content/*/bundle.js$script,~third-party
+mv-voice.com##+js(cookie-remover, /^/)
+||cdn.registerdisney.go.com^$script,domain=nationalgeographic.com
+||nationalgeographic.com.es/Content/js/lib/runtime.min.js$script,~third-party
+nationalgeographic.it##+js(ra, style, section[style], stay)
+nationalgeographic.it##section.paywall-container
+||nautil.us/_next/static/chunks/pages/_sites/%5BsiteSlug%5D/%5B...slug*.js$script,~third-party
+||newsday.com/nd-user/nd_user_ace.bundle.js$script,~third-party
+newsday.com##+js(ra, class, html[class], stay)
+newrepublic.com##div.article-scheduled-modal
+||blink.net/*/blink-sdk.js$script,domain=newrepublic.com|thebaffler.com
+||townnews.com/*/tncms/*/scripts/engage.min.js$script,third-party,domain=nola.com|shreveportbossieradvocate.com|theadvocate.com
+nrc.nl##+js(cookie-remover, counter)
+||nrc.nl/paywall-api/api/zephr$xmlhttprequest,~third-party
+nrc.nl##div[id$="modal__overlay"],div.header__subscribe-bar,div.banner
+||nsctotal.com.br/wp-content/themes/nsctotal/js/paywall.min.js$script,~third-party
+||nybooks.com/wp-admin/admin-ajax.php$xmlhttprequest,~third-party
+nybooks.com##+js(rc, paywall-article, .paywall-article, stay)
+nybooks.com##div.toast-cta
+||meter-svc.nytimes.com/meter.js$xmlhttprequest,~third-party
+||nytimes.com/svc/onsite-messaging/query$xmlhttprequest,~third-party
+||mwcm.nyt.com/$script,domain=nytimes.com
+nytimes.com##div#dock-container
+||cooking.nytimes.com/api/*/access$xmlhttprequest,~third-party
+nzgeo.com##+js(cookie-remover, visits)
+nzgeo.com##div#paywall-bottom
+||nzherald.co.nz/zephr/$xmlhttprequest,~third-party
+nzherald.co.nz##+js(set, window.Fusion.globalContent.isPremium, false)
+nzz.ch,themarket.ch##+js(rc, nzzinteraction, .nzzinteraction, stay)
+nzz.ch##+js(ra, class, div.barrier, stay)
+||tms.danzz.ch/scripts/t.min.js$script,domain=nzz.ch|themarket.ch
+||observador.pt/wp-content/*/paywall-compact-new.min.js$script,~third-party
+/\.ogj\.com\/.+\/\d{8,}\//$inline-script,domain=ogj.com
+||oko.press/_next/static/chunks/pages/%5Bslug*.js$script,~third-party
+paloaltoonline.com##+js(cookie-remover, /^/)
+||pastemagazine.com/wp-content/cache/autoptimize/js/autoptimize_*.js$script,~third-party
+pb.pl##+js(ra, class, section.o-article-content, stay)
+pb.pl##div.o-piano-template-loader-box
+pitchfork.com##+js(cookie-remover, pay_ent_msmp)
+pourleco.com##+js(ra, style, div[class*="article-"][style], stay)
+pourleco.com##div[data-pleco-poool^="paywall"],div[data-pleco-transition="fade"]
+philosophynow.org##+js(cookie-remover, /^/)
+profil.at##+js(ra, class|style, div.paywall, stay)
+profil.at##div#cfs-paywall-container,div.consentOverlay
+||kinja-static.com/assets/*/regwalled-content.*.js$script,domain=qz.com
+||reviewjournal.com/wp-content/plugins/*/loader_prod.min.js$script,~third-party
+||revistaoeste.com/wp-content/*/js/app.*.js$script,~third-party
+||revistaoeste.com/revista/$inline-script
+revistaoeste.com##+js(ra, class, div.loading_content, stay)
+revistaoeste.com##+js(rc, expandable, div.expandable, stay)
+revistaoeste.com##svg.spinner-eclipse
+rotowire.com##+js(ra, class, div.pw-content, stay)
+rotowire.com##+js(ra, class, div.article__body > div[class^="img_"], stay)
+rotowire.com##div.paywall-full,div.article-preview-fader
+/\.rugbypass\.com\/plus\/\w/$inline-script,domain=rugbypass.com
+rugbypass.com##.plus-article-offer
+rugbypass.com##+js(rc, premium-fold-bottom, .premium-fold-bottom, stay)
+rugbypass.com##+js(rc, fade, .fade, stay)
+scholastic.com##+js(ra, class, body.modal-open, stay)
+scholastic.com##div.paywallModalElement,div.modal-backdrop
+schwaebische.de##+js(ra, style, body[style], stay)
+science.org##div.alert-read-limit
+science.org##+js(rc, alert-read-limit__overlay, body.alert-read-limit__overlay, stay)
+sciencenews.org##+js(cookie-remover, blaize_session)
+sciencesetavenir.fr##div.amorce.manual
+sciencesetavenir.fr##+js(ra, class|hidden, .user-paying-content, stay)
+||scientificamerican.com/api/tinypass.min.js$script,~third-party
+scientificamerican.com##+js(cookie-remover, article_meter)
+scotsman.com,yorkshirepost.co.uk##+js(rc, premium|no-entitlement, div.premium.no-entitlement, stay)
+||seattletimes.com/wp-content/*/st-advertising-bundle.js$script,~third-party
+||seattletimes.com/wp-content/*/st-user-messaging-main-bundle.js$script,~third-party
+sfstandard.com##+js(cookie-remover, sfs-experiment-bucketing)
+sfstandard.com##div.sticky,div#__next > div[style="display:inline"]
+slideshare.net##+js(rc, limit-overlay, .limit-overlay, stay)
+slideshare.net##+js(set-local-storage-item, /^/, $remove$)
+sofrep.com##+js(cookie-remover, sofrep_news_ids)
+sofrep.com##+js(ra, class, div.paywall, stay)
+sofrep.com##+js(rc, fader, div.fader, stay)
+sofrep.com##div.non-paywall,div#paywall_wrap
+spektrum.de##+js(rc, pw-premium, article.pw-premium, stay)
+spektrum.de##+js(ra, style, body[style], stay)
+spglobal.com##+js(cookie-remover, count)
+startribune.com##div.modal-backdrop
+startribune.com##body[class]:style(overflow: auto !important; position: static !important;)
+||stereogum.com/_next/static/chunks/pages/_sites/%5BsiteSlug%5D/%5B...slug*.js$script,~third-party
+||straitstimes.com/opinion/$inline-script
+/\.straitstimes\.com\/.+(\w+-){3,}.+\?rel=plus/$inline-script,domain=straitstimes.com
+study.com##+js(ra, class, div.faded-content, stay)
+study.com##+js(ra, class, div.hidden[ng-non-bindable], stay)
+study.com##div.article-cutoff-div
+||suomensotilas.fi/wp-content/plugins/epflpw/js/pw.js$script,~third-party
+suomensotilas.fi##+js(rc, epfl-pw-obscured, div.epfl-pw-obscured, stay)
+/\.telegram\.hr\/.+\/(\w+-){3,}/$inline-script,domain=telegram.hr
+||telegraph.co.uk/martech/js/$script,~third-party
+tes.com##+js(cookie-remover, /tg_paywall/)
+tes.com##+js(ra, class, div.tg-paywall-body-overlay, stay)
+tes.com##div.js-paywall-info,div.tg-paywall-message
+||texasmonthly.com/script.js$script,~third-party
+texasmonthly.com##div.promo-in-body
+the-scientist.com##+js(rc, paywall, div.paywall, stay)
+the-scientist.com##div.gated-fader,div#Modal
+the-star.co.ke##+js(ra, class, div.premium-gate__content, stay)
+the-star.co.ke##div.premium-gate__paywall,div.premium-content figure:not(:has(img))
+||theartnewspaper.com/_next/static/chunks/pages/access-allowed-*.js$script,~third-party
+||theatlantic.com/zephr/decision-engine$xmlhttprequest,~third-party
+theatlantic.com##aside#paywall,div[class^="LostInventoryMessage_"]
+||cloudfunctions.net/gated-countView$xmlhttprequest,domain=thediplomat.com
+thedispatch.com##+js(cookie-remover, xbc)
+||thedispatch.com/next-250/$inline-script
+theglobeandmail.com##+js(set, window.Fusion.globalContent._id, 0)
+||cdn.piano.io/api/tinypass.min.js$script,domain=www.thehindu.com
+frontline.thehindu.com##+js(rc, articlepaywall, body.articlepaywall, stay)
+frontline.thehindu.com##div[class^="article-standard_piano-inline"]
+||theintercept.com^$inline-script
+thelampmagazine.com##+js(ra, class, div.paywall-gradient, stay)
+thelampmagazine.com##section.p-8
+thelogic.co##+js(cookie-remover, firstarticle)
+||thenation.com/wp-content/themes/*/js/paywall/main.js$script,~third-party
+||thenewatlantis.com/*/thenewatlantis/js/gate.js$script,~third-party
+||thenewatlantis.com/*/thenewatlantis/js/donate.js$script,~third-party
+thenewworld.co.uk##div[data-show-fade-on-noaccess],div[data-show-subs-blocked]
+thenewworld.co.uk##+js(ra, data-show-has-access, div[data-show-has-access], stay)
+thepointmag.com##+js(cookie-remover, monthly_history)
+thepointmag.com##div.overlay,div#tpopup-
+thequint.com##div.zsqcu
+thequint.com##+js(ra, class|style, div#story-body-wrapper, stay)
+||thetimes.com/wp-content/plugins/tm-wp-zephr/$script,~third-party
+thetimes.com##html:style(overflow: auto !important;)
+thetimes.com##body:style(overflow: auto !important;)
+thetimes.com##+js(rc, TeaserPage, body.TeaserPage, stay)
+thetimes.com##div#paywall-portal-page-footer
+theweek.com##+js(rc, paywall-locker, div.paywall-locker, stay)
+theweek.com##div.kiosq-main-layer
+thewrap.com##+js(cookie-remover, blaize_session)
+timeshighereducation.com##+js(rc, paywall-fade, div.paywall-fade, stay)
+timeshighereducation.com##div.paywall-active
+||timesofindia.indiatimes.com/*.cms?rel=plus$inline-script
+tomshardware.com##+js(rc, paywall-locker, div.paywall-locker, stay)
+tomshardware.com##div#kiosq-app-paywall-js
+unherd.com##+js(ra, id, div#premiumcontent, stay)
+unherd.com##div#premiumpreview
+/\.vn\.at\/.+\/\d{4}\//$inline-script,domain=vn.at
+||washingtonpost.com/*/tetro-client/$script,~third-party
+||weser-kurier.de/assets/*/wk-bundle.min.js$script,~third-party
+||account.winnipegfreepress.com/api/v*/auth/identify$xmlhttprequest,~third-party
+winnipegfreepress.com##.billboard-ad-space,.ad,.article-ad,.fixed-sky
+worldeconomics.com##+js(rc, blurred, div.blurred, stay)
+worldeconomics.com##+js(rc, blurredImage, div.blurredImage, stay)
+worldeconomics.com##+js(rc, noscroll, body.noscroll, stay)
+worldeconomics.com##div#paywall,div.StickyFooter,div#scrollable
+||ynet.co.il/*/article/*?rel=plus$inline-script
+ynet.co.il###yitwall:remove()
+al.com,cleveland.com,lehighvalleylive.com,masslive.com,mlive.com,nj.com,oregonlive.com,pennlive.com,silive.com,syracuse.com##+js(rc, article__paragraph--blur, .article__paragraph--blur, stay)
+accountingtoday.com,americanbanker.com,benefitnews.com,bondbuyer.com,dig-in.com,financial-planning.com,nationalmortgagenews.com##+js(set, window.contentGating.ungate, true)
+bendigoadvertiser.com.au,bordermail.com.au,canberratimes.com.au,centralwesterndaily.com.au,dailyadvertiser.com.au,dailyliberal.com.au,examiner.com.au,illawarramercury.com.au,newcastleherald.com.au,northerndailyleader.com.au,standard.net.au,theadvocate.com.au,thecourier.com.au,westernadvocate.com.au##+js(rc, subscribe-truncate, .subscribe-truncate, stay)
+bendigoadvertiser.com.au,bordermail.com.au,canberratimes.com.au,centralwesterndaily.com.au,dailyadvertiser.com.au,dailyliberal.com.au,examiner.com.au,illawarramercury.com.au,newcastleherald.com.au,northerndailyleader.com.au,standard.net.au,theadvocate.com.au,thecourier.com.au,westernadvocate.com.au##+js(rc, subscriber-hider, .subscriber-hider, stay)
+bendigoadvertiser.com.au,bordermail.com.au,canberratimes.com.au,centralwesterndaily.com.au,dailyadvertiser.com.au,dailyliberal.com.au,examiner.com.au,illawarramercury.com.au,newcastleherald.com.au,northerndailyleader.com.au,standard.net.au,theadvocate.com.au,thecourier.com.au,westernadvocate.com.au##+js(rc, hidden, div.flex-col div.hidden, stay)
+bendigoadvertiser.com.au,bordermail.com.au,canberratimes.com.au,centralwesterndaily.com.au,dailyadvertiser.com.au,dailyliberal.com.au,examiner.com.au,illawarramercury.com.au,newcastleherald.com.au,northerndailyleader.com.au,standard.net.au,theadvocate.com.au,thecourier.com.au,westernadvocate.com.au##+js(ra, style, html[style], stay)
+bendigoadvertiser.com.au,bordermail.com.au,canberratimes.com.au,centralwesterndaily.com.au,dailyadvertiser.com.au,dailyliberal.com.au,examiner.com.au,illawarramercury.com.au,newcastleherald.com.au,northerndailyleader.com.au,standard.net.au,theadvocate.com.au,thecourier.com.au,westernadvocate.com.au##+js(ra, style, body[style], stay)
+bendigoadvertiser.com.au,bordermail.com.au,canberratimes.com.au,centralwesterndaily.com.au,dailyadvertiser.com.au,dailyliberal.com.au,examiner.com.au,illawarramercury.com.au,newcastleherald.com.au,northerndailyleader.com.au,standard.net.au,theadvocate.com.au,thecourier.com.au,westernadvocate.com.au##+js(ra, class, div[class^="gradient-mask-"], stay)
+bendigoadvertiser.com.au,bordermail.com.au,canberratimes.com.au,centralwesterndaily.com.au,dailyadvertiser.com.au,dailyliberal.com.au,examiner.com.au,illawarramercury.com.au,newcastleherald.com.au,northerndailyleader.com.au,standard.net.au,theadvocate.com.au,thecourier.com.au,westernadvocate.com.au##div.blocker,.story-generic__iframe,div.transition-all,div[id^="headlessui-dialog"]
+/\.com\/[-\w]+$/$script,~third-party,domain=architecturaldigest.com|bonappetit.com|cntraveler.com|epicurious.com|gq.com|newyorker.com|vanityfair.com|vogue.com|wired.com
+/www\.vogue\.co\.uk\/[-\w]+$/$script,~third-party
+||voguebusiness.com/journey/compiler/build-*.js$script,~third-party
+voguebusiness.com##+js(cookie-remover, userId)
+/\.vanityfair\.it\/[-\w]+$/$script,~third-party
+adage.com,autonews.com,chicagobusiness.com,crainscleveland.com,crainsdetroit.com,crainsgrandrapids.com,crainsnewyork.com,modernhealthcare.com,pionline.com,plasticsnews.com,rubbernews.com,tirebusiness.com,utech-polyurethane.com##+js(set, window.Fusion.globalContent._id, 0)
+adage.com,autonews.com,chicagobusiness.com,crainscleveland.com,crainsdetroit.com,crainsgrandrapids.com,crainsnewyork.com,modernhealthcare.com,pionline.com,plasticsnews.com,rubbernews.com,tirebusiness.com,utech-polyurethane.com##+js(set, window.Fusion.globalContent.content_restrictions, {})
+.com/profiles/*/crain_pelcro_user.js$script,~third-party,domain=360dx.com|genomeweb.com|precisionmedicineonline.com
+european-rubber-journal.com##+js(rc, truncated, div.truncated, stay)
+european-rubber-journal.com##div.article-overlay,div.gradient
+dailymail.co.uk,mailonsunday.co.uk,thisismoney.co.uk##+js(rc, is-paywalled-article, body.is-paywalled-article, stay)
+||dailymail.co.uk/static/mol-adverts/$script
+||lastampa.it/*/news/$inline-script
+lastampa.it##+js(cookie-remover, blaize_session)
+lastampa.it##aside#widgetDP,div[id^="adv"]
+||scripts.repubblica.it/pw/pw.js$script,domain=italian.tech
+italian.tech##div#ph-paywall:remove()
+italian.tech##+js(ra, style, div#article-body, stay)
+centrepresseaveyron.fr,journaldemillau.fr,ladepeche.fr,lindependant.fr,midilibre.fr,nrpyrenees.fr,petitbleu.fr,rugbyrama.fr##+js(ra, style|data-state, div.p402_premium, stay)
+centrepresseaveyron.fr,journaldemillau.fr,ladepeche.fr,lindependant.fr,midilibre.fr,nrpyrenees.fr,petitbleu.fr,rugbyrama.fr##div.paywall
+sudouest.fr,charentelibre.fr,larepubliquedespyrenees.fr##div.article-premium-footer,div.footer-premium,div.article-body-wrapper.visible-not-premium,div.pub,div.ph-easy-subscription
+sudouest.fr,charentelibre.fr,larepubliquedespyrenees.fr##+js(rc, visible-premium, div.visible-premium, stay)
+||nicematin.com/build/js/viewpay.*.js$script,domain=monacomatin.mc|nicematin.com|varmatin.com
+||diariocorreo.pe/pf/dist/engine/react.js$script,~third-party
+||elcomercio.pe/pf/dist/engine/react.js$script,~third-party
+||gestion.pe/pf/dist/engine/react.js$script,~third-party
+diariocorreo.pe,elcomercio.pe,gestion.pe##+js(ra, class|style, .paywall, stay)
+diariocorreo.pe,elcomercio.pe,gestion.pe##+js(rc, story-contents--fade, p.story-contents--fade, stay)
+diariocorreo.pe,elcomercio.pe,gestion.pe##div[class^="content_gpt"]
+||elmercurio.com/assets/js/merPramV2.js$script,~third-party
+||elmercurio.com/assets/js/vendor/modal.js$script,~third-party
+||emol.cl/js/deportes/FuncionesComun.min.js$script,domain=elmercurio.com
+||emol.cl/assets/js/merPramV2.js$script,domain=elmercurio.com
+||emol.cl/assets/js/vendor/modal.js$script,domain=elmercurio.com
+elmercurio.com##+js(rc, lessreadmore, article.lessreadmore, stay)
+elmercurio.com##div[id*="bt_readmore_"]
+||australvaldivia.cl/impresa/*/assets/vendor.js$script,~third-party
+||mercuriovalpo.cl/impresa/*/assets/vendor.js$script,~third-party
+||pasedigital.cl/API/User/Status$script,domain=australvaldivia.cl|mercuriovalpo.cl
+diaridegirona.cat,diariocordoba.com,diariodeibiza.es,diariodemallorca.es,elcorreogallego.es,elcorreoweb.es,eldia.es,elperiodico.com,elperiodicodearagon.com,elperiodicoextremadura.com,elperiodicomediterraneo.com,epe.es,farodevigo.es,informacion.es,laopinioncoruna.es,laopiniondemalaga.es,laopiniondemurcia.es,laopiniondezamora.es,laprovincia.es,levante-emv.com,lne.es,mallorcazeitung.es,regio7.cat,superdeporte.es##+js(rc, ft-helper-closenews, p.ft-helper-closenews, stay)
+gazzettadimodena.it,gazzettadireggio.it,iltirreno.it,lanuovaferrara.it,lanuovasardegna.it##+js(cookie-remover, /__mtr$/)
+gazzettadimodena.it,gazzettadireggio.it,iltirreno.it,lanuovaferrara.it,lanuovasardegna.it##div.MuiSnackbar-root
+.com/_assets/jam/$script,~third-party,domain=bicycling.com|cosmopolitan.com|countryliving.com|delish.com|elle.com|elledecor.com|esquire.com|goodhousekeeping.com|harpersbazaar.com|housebeautiful.com|menshealth.com|oprahdaily.com|popularmechanics.com|prevention.com|roadandtrack.com|runnersworld.com|townandcountrymag.com|womenshealthmag.com
+ctinsider.com,ctpost.com,expressnews.com,houstonchronicle.com,nhregister.com,sfchronicle.com,statesman.com,timesunion.com##div#mod-target-div
+ctinsider.com,ctpost.com,expressnews.com,houstonchronicle.com,nhregister.com,sfchronicle.com,statesman.com,timesunion.com##body:style(overflow: visible!important)
+||cedscdn.it/*/PaywallMeter.js$script,domain=corriereadriatico.it|ilgazzettino.it|ilmattino.it|ilmessaggero.it|quotidianodipuglia.it
+||cedsdigital.it/*/PaywallMeter.js$script,domain=corriereadriatico.it|ilgazzettino.it|ilmattino.it|ilmessaggero.it|quotidianodipuglia.it
+corriereadriatico.it,ilgazzettino.it,ilmattino.it,ilmessaggero.it,quotidianodipuglia.it##+js(ra, subscriptions-section, [subscriptions-section="content"], stay)
+corriereadriatico.it,ilgazzettino.it,ilmattino.it,ilmessaggero.it,quotidianodipuglia.it##[subscriptions-section="content-not-granted"]
+||*dive.com/static/js/dist/contentGate.bundle.js$script,~third-party
+.com/static/js/dist/contentGate.bundle.js$script,~third-party,domain=cfo.com|pharmavoice.com|proformative.com|socialmediatoday.com
+profi.de,topagrar.com,wochenblatt.com##+js(ra, class|style, div.paywall-full-content[style], stay)
+profi.de,wochenblatt.com##div.m-paywall__textFadeOut,div[id^="paymentprocess-"]
+||topagrar.com/*/news/$inline-script
+topagrar.com##div.paywall-package
+cz.de,dewezet.de,dieharke.de,dnn.de,gnz.de,goettinger-tageblatt.de,haz.de,kn-online.de,landeszeitung.de,ln-online.de,lvz.de,maz-online.de,ndz.de,neuepresse.de,op-marburg.de,ostsee-zeitung.de,paz-online.de,remszeitung.de,rga.de,rnd.de,saechsische.de,siegener-zeitung.de,szlz.de,sn-online.de,solinger-tageblatt.de,tah.de,torgauerzeitung.de,waz-online.de##+js(set, window.Fusion.globalContent.isPaid, false)
+||bc.*.com/script.js$script,~third-party,domain=centralmaine.com|pressherald.com|sunjournal.com
+||mcclatchy.com/mcc-paywall.js$script,third-party
+.com/wp-content/plugins/loader-wp/static/loader.min.js$script,~third-party
+bostonherald.com,denverpost.com,eastbaytimes.com,mercurynews.com,ocregister.com,pressenterprise.com,sandiegouniontribune.com,twincities.com##+js(ra, subscriptions-section, [subscriptions-section="content"], stay)
+bostonherald.com,denverpost.com,eastbaytimes.com,mercurynews.com,ocregister.com,pressenterprise.com,sandiegouniontribune.com,twincities.com##[subscriptions-section="content-not-granted"]
+.de/thenewsbar/config/$xmlhttprequest,~third-party,domain=aerokurier.de|auto-motor-und-sport.de|flugrevue.de|motorradonline.de|womenshealth.de
+businessdailyafrica.com,monitor.co.ug,mwananchi.co.tz,mwanaspoti.co.tz,nation.africa,thecitizen.co.tz,theeastafrican.co.ke##+js(rc, nmgp, div.article-page .nmgp, stay)
+businessdailyafrica.com,monitor.co.ug,mwananchi.co.tz,mwanaspoti.co.tz,nation.africa,thecitizen.co.tz,theeastafrican.co.ke##+js(ra, hidden, div.article-page [hidden], stay)
+businessdailyafrica.com,monitor.co.ug,mwananchi.co.tz,mwanaspoti.co.tz,nation.africa,thecitizen.co.tz,theeastafrican.co.ke##div.modal,[id*='wall'],section.wall-guard,div.spinner
+staradvertiser.com##div.fade
+staradvertiser.com##+js(ra, style, div#hsa-paywall-content[style], stay)
+staradvertiser.com##+js(rc, overflow-hidden, body.overflow-hidden, stay)
+hawaiitribune-herald.com,thegardenisland.com,westhawaiitoday.com##+js(ra, style, div#single-paywall, stay)
+hawaiitribune-herald.com,thegardenisland.com,westhawaiitoday.com##div#single-login-box,div#single-excerpt
+/temptation/resolve$xmlhttprequest,~third-party,domain=demorgen.be|flair.nl|humo.be|libelle.nl|margriet.nl|parool.nl|trouw.nl|volkskrant.nl
+||temptation.*/temptation.js$script,~third-party,domain=demorgen.be|flair.nl|humo.be|libelle.nl|margriet.nl|parool.nl|trouw.nl|volkskrant.nl
+@@||myprivacy-static.dpgmedia.net/consent.js$script,third-party
+@@/wrapperMessagingWithoutDetection.js$script,~third-party,domain=demorgen.be|flair.nl|humo.be|libelle.nl|margriet.nl|parool.nl|trouw.nl|volkskrant.nl
+||temptation.*/temptation.js$script,~third-party,domain=ad.nl|bd.nl|bndestem.nl|destentor.nl|ed.nl|gelderlander.nl|pzc.nl|tubantia.nl|hln.be
+||temptation.*/rest/$xmlhttprequest,~third-party,domain=ad.nl|bd.nl|bndestem.nl|destentor.nl|ed.nl|gelderlander.nl|pzc.nl|tubantia.nl|hln.be
+auto-swiat.pl,businessinsider.com.pl,forbes.pl,komputerswiat.pl,newsweek.pl,onet.pl##+js(ra, class|style, div.contentPremium[style], stay)
+businessinsider.com.pl##div#content-premium-offer
+schwarzwaelder-bote.de,stuttgarter-nachrichten.de,stuttgarter-zeitung.de##+js(rc, restricted-area, div.restricted-area, stay)
+schwarzwaelder-bote.de,stuttgarter-nachrichten.de,stuttgarter-zeitung.de##div.mod-paywall
+24heures.ch,bazonline.ch,derbund.ch,tagesanzeiger.ch,tdg.ch##+js(cookie-remover, xbc)
+computerweekly.com,lemagit.fr,techtarget.com##+js(rc, paywall, div.paywall, stay)
+computerweekly.com,lemagit.fr,techtarget.com##p#firstP,div#inlineRegistrationWrapper
+||theepochtimes.com/rules/get$xmlhttprequest,~third-party
+||theepochtimes.com/api/rule/$xmlhttprequest,~third-party
+||epochbase.com/rules/get$xmlhttprequest,third-party
+/\/epoch\.org\.il\/.+\/\d{5,}\//$inline-script,domain=epoch.org.il
+thelocal.at,thelocal.ch,thelocal.com,thelocal.de,thelocal.dk,thelocal.es,thelocal.fr,thelocal.it,thelocal.no,thelocal.se##+js(ra, style, div#articleBody, stay)
+thelocal.at,thelocal.ch,thelocal.com,thelocal.de,thelocal.dk,thelocal.es,thelocal.fr,thelocal.it,thelocal.no,thelocal.se##p#articleBodyForbidden,div.tl-ad-container,div.ml-manual-widget-container
+||flowerstreatment.com^$third-party
+||guidecent.com^$script,third-party
+||memberstack.com/scripts/v*/memberstack.js$script,third-party
+policorner.ca##div.free-text,div.subscribe-box
+/wp-content/plugins/incognito_dectector/$script,~third-party
+##button.everlit-overlay-btn
+||gyrovague.com^$xmlhttprequest,third-party
+||top-fwz1.mail.ru^$script,third-party
+||jeuneafrique.com/cdn-cgi/trace$xmlhttprequest,~third-party
+||assets.guim.co.uk/assets/StickyBottomBanner-island.client.web.*.js$script,domain=theguardian.com
+theguardian.com##[name="SlotBodyEnd"],div[data-cy="contributions-liveblog-epic"]
+timesofindia.indiatimes.com##+js(ra, style, body[style], stay)
+timesofindia.indiatimes.com##div[class]:has(>div.loginWallPopUP)
+@@||consentmanager.net^$script,third-party
+#@#.cmpwrapper
+@@||cookielaw.org^$xmlhttprequest,domain=blick.ch
+@@||sdk.privacy-center.org^$script,third-party
+@@/wrapperMessagingWithoutDetection.js$script,~third-party,domain=handelsblatt.com
+##+js(rc, didomi-popup-open, body.didomi-popup-open, stay)
+||htlbid.com^$script,third-party
+||flip-pay.com/*/flip-pay.js$script,third-party,domain=clareecho.ie|euractiv.com|pressgazette.co.uk|thedailymash.co.uk
+clareecho.ie##+js(rc, td-post-content, div.td-post-content, stay)
+##+js(ra, class, div.wkwp-paywall, stay)
+##div.wkwp-paywall-block
+.com/webfiles/*/js/metering.js$script,third-party,domain=hbook.com|libraryjournal.com|slj.com
+20minutes.fr##+js(rc, qiota_reserve, div.qiota_reserve, stay)
+||20minutes.fr/v-ajax/subscribe-modal$xmlhttprequest,~third-party
+aaii.com##+js(rc, fadeout, .fadeout, stay)
+aaii.com##.greybox-signup
+aftenposten.no##div.hyperion-css-1cc2qe9,div[class^="advertory-"],button[aria-controls="summary-details"]
+aftenposten.no##body:style(overflow: auto !important)
+aftenposten.no##+js(ra, class, div#summary-details, stay)
+amboss.com##+js(cookie-remover, ssobma)
+amboss.com##div#optly-remaining-articles-banner,div[class^="InfoBanner_InfoBanner"]
+||tinypass.com/api/tinypass.min.js$script,domain=arabianbusiness.com
+arabianbusiness.com##+js(ra, class, div.ev-meter-content, stay)
+||arktimes.com/wp-content/plugins/newspack-plugin/dist/memberships-gate-metering.js$script,~third-party
+artsprofessional.co.uk##+js(cookie-remover, /pw$/)
+||atribuna.com.br/assets/js-v*/story.js$script,~third-party
+babi.sh##+js(ra, style, div[style*="filter:blur"], stay)
+babi.sh##+js(ra, style, div[style*="; overflow: hidden"][style*="; height:"], stay)
+babi.sh##div[style="width: 100%; opacity: 1; transform: none;"]
+bisnow.com##+js(ra, style, div.story-container > p[style], stay)
+bisnow.com##div.storyLogin
+bizwest.com##div.fp-paywall
+bizwest.com##+js(ra, class, div.fp-content, stay)
+bookriot.com##+js(ra, class, div.rhc-gated-content-wrapper, stay)
+bookriot.com##+js(ra, class, div.rhc-gated-content-blur, stay)
+bookriot.com##div.rhc-gated-content-overlay
+boredpanda.com##+js(rc, open-list-items, div.open-list-items, stay)
+boredpanda.com##div#show-all-images-block-premium
+||boston.com/api/tinypass.min.js$script,~third-party
+brainly.com,brainly.com.br##+js(set-local-storage-item, /^/, $remove$)
+||account.brandonsun.com/api/v*/auth/identify$xmlhttprequest,~third-party
+brusselstimes.com##+js(ra, style, div[style*="height: 0;"], stay)
+businessden.com,richmondbizsense.com##+js(ra, class, div.cp-paywall-user, stay)
+businessden.com,richmondbizsense.com##div#copperpress-paywall
+businesstoday.in##+js(cookie-remover, magazineSession)
+businesstoday.in##div#magazinePayWallStrip
+||nitrocdn.com/*/paywall.$script,domain=capitalaberto.com.br
+cardiologie-pratique.com##+js(ra, class, div.wrap-node, stay)
+cdt.ch##div#piano-article-lock:remove()
+cdt.ch##div.piano-fallback
+cmcmarkets.com##+js(rc, activePaywall, .activePaywall, stay)
+||cnv-medien.de^$inline-script
+||commercialobserver.com/wp-admin/admin-ajax.php$xmlhttprequest,~third-party
+connexionfrance.com##+js(cookie-remover, /^/)
+connexionfrance.com##div#subscribe-banner
+||darwin.cx/dcxpw-init.js$script,domain=cspdailynews.com|restaurantbusinessonline.com
+dasinvestment.com##+js(rc, paywall-blurred, div.paywall-blurred, stay)
+dasinvestment.com##div#paywall
+||diariodonordeste.verdesmares.com.br/js/com.atex.gong.paywall.membership.js$script,~third-party
+divisare.com##div.blocker
+divisare.com##+js(ra, style, body[style], stay)
+dominionpost.com##+js(rc, entry-content, article > div.entry-content, stay)
+||gstatic.com/firebasejs/*/firebase-auth-compat.js$script,domain=eleconomista.com.ar
+elfinancierocr.com##+js(ra, style, div.article-body-wrapper__styled[style], stay)
+elfinancierocr.com##div.post
+emma.de##div.grid-box-body:style(height: 100% !important;)
+epaper.indiatimes.com##div.epaperBlockerWrap
+/\/every\.to\/[-\w]+\//$inline-script,domain=every.to
+every.to##+js(ra, style, div#post-body-full, stay)
+||eviemagazine.com/api/trpc/post.paywall$xmlhttprequest,~third-party
+flamman.se##+js(rc, paywall, div.paywall, stay)
+flamman.se##div#subscribe
+forbes.sk##+js(ra, style, div.post-content-soft-paywall, stay)
+forbes.sk##div#custom-html-locker
+gocomics.com##div[data-paywall]
+gocomics.com##html:style(overflow: auto !important;)
+||golf.com/wp-content/themes/golf/compiled/js/wsumApp.js$script,~third-party
+gothamist.com##+js(rc, leadin, div.leadin, stay)
+gothamist.com##div.wall-wrapper
+hartfordbusiness.com##+js(ra, style, div.expandable-paywall-premium-content[style], stay)
+hartfordbusiness.com##div.paywall-container
+hcn.org##+js(ra, content, meta[name="UID"], stay)
+heatmap.news##+js(ra, style, div.body-description, stay)
+heatmap.news##div.regwall-container
+hsfo.dk##+js(ra, class, div.article__parts--paywalled, stay)
+impactloop.com,impactloop.se##+js(ra, data-display-if, div[data-display-if="paid"], stay)
+impactloop.com,impactloop.se##div.paywall,div[class^="reg-wall-"],div#article-preview
+inman.com##+js(rc, paywalled-block, .paywalled-block, stay)
+inman.com##+js(ra, class, div.entry-content-inner, stay)
+inman.com##div.content-wrap > div:not([class]):style(margin: 5% !important)
+inman.com##.ism-article-block
+||cloudfront.net/imonkey-blog-*.min.js$script,domain=insidermonkey.com
+insiderwire.com##+js(ra, class, div.iw-lede-faded, stay)
+insiderwire.com##+js(ra, class, div.iw-gated, stay)
+insiderwire.com##div.iw-auth-gate,aside.iw-ad
+internationalepolitik.de##+js(set-local-storage-item, paywall-nids, $remove$)
+||invmed.co/bootstrap/bootstrap.min.js$script,domain=investing.com
+ipsoa.it##+js(ra, style, div.paywall, stay)
+||jerseyeveningpost.com^$inline-script
+jewishinsider.com##+js(rc, paywalled-content, section.paywalled-content, stay)
+jewishinsider.com##+js(rc, whitePopup, body.whitePopup, stay)
+jewishinsider.com##div.regModalOuter
+||jornaldocomercio.com/*/json/paywall.json$xmlhttprequest,~third-party
+jornaljoca.com.br##+js(acis, $, paywall)
+kommersant.ru##+js(rc, doc--regwall, article.doc--regwall, stay)
+kommersant.ru##section.regwall
+kunststoffe.de,qz-online.de##+js(ra, style, div[style^="filter: blur"], stay)
+kunststoffe.de,qz-online.de##dialog#paywall-dialog
+||lapost.com^$inline-script
+lapost.com##+js(ra, style, div.article-content, stay)
+||lataco.com/_next/*/%5B...slug*.js$script,~third-party
+||lasvegasadvisor.com/opt/*.js$script,~third-party
+||lasvegasadvisor.com/js/access.min.js$script,~third-party
+lavialibera.it##+js(ra, class, div.text-preview, stay)
+lavialibera.it##div.save_modal
+legalbites.in##+js(ra, class, div.hide.paywall-content, stay)
+legalbites.in##div#subscription_paid_message,div.restricted_message > div.story
+lepetitjournal.net##.message-restricted-woocommerce
+lepetitjournal.net##+js(rc, excerpt, div.excerpt, stay)
+lydogbillede.dk,lydogbilde.no##+js(rc, thecontent, div.thecontent, stay)
+lydogbillede.dk,lydogbilde.no##+js(ra, style, div#MoreLink_content-container[style], stay)
+lydogbillede.dk,lydogbilde.no##div.paywallbox,div#MoreLink_fade-out-div
+marketnews.com##+js(ra, class, div.body-description, stay)
+||cloudfront.net/js/prometeo-media/$script,domain=menorca.info|ultimahora.es
+meritnation.com##.view-full-answer
+meritnation.com##+js(rc, maxHeight75px, div.exp_content.maxHeight75px, stay)
+mims.com##+js(rc, partial-gated-content, article.partial-gated-content, stay)
+mims.com##div#blazor-error-ui
+||moscout.com^$inline-script
+museumsassociation.org##+js(rc, paywall, body.paywall, stay)
+museumsassociation.org##+js(ra, style, body[style], stay)
+museumsassociation.org##div#paywall-wrapper,div.advertising
+musicbusinessworldwide.com##+js(ra, class, .mb-article__body, stay)
+nacion.com##+js(ra, style, div.article-body-wrapper__styled[style], stay)
+nacion.com##div.post
+narcity.com##+js(ra, style, div.body-description[style], stay)
+narcity.com##div#login-wall,div#overlay,div.brid-container,div.brandsnippet-article,div[class$='ad-wrapper']
+||newbostonpost.com/*/paywall/js/main.js$script,~third-party
+newoxfordreview.org##+js(rc, not-viewable, div.not-viewable, stay)
+nu.nl##+js(rc, authorized-content, div.authorized-content, stay)
+nu.nl##+js(rc, semi-authorized-content, div.semi-authorized-content, stay)
+nu.nl##article#LOGIN
+opopular.com.br##+js(rc, restricted, div.restricted, stay)
+opopular.com.br##div.PJLV-ihxtsVt-css
+||opovo.com.br/*/js/auth/auth_new_menu.min.js$script,~third-party
+||pebmed.com.br/wp-content/*/paywall/dist/js/app.js$script,~third-party
+||perspectivemedia.com/wp-admin/admin-ajax.php$xmlhttprequest,~third-party
+perspectivemedia.com##div.hustle-ui
+popbitch.com##+js(ra, class, div[class*="-premium"], stay)
+psypost.org##+js(cookie-remover, issuem_lp)
+publishersweekly.com##+js(ra, class|style, div#contentdiv.loggedInOnly, stay)
+publishersweekly.com##div#contentdiv.loggedOutOnly
+||racketmn.com/_next/*/%5BsiteSlug*.js$script,~third-party
+||racquetmag.com/_next/*/%5BsiteSlug*.js$script,~third-party
+||rdhmag.com^$inline-script
+rockdelux.com##+js(ra, class|style, body, stay)
+rockdelux.com##+js(ra, style, div#body, stay)
+rockdelux.com##div.bg-paywall
+scroll.in##+js(rc, article-locked, article.article-locked, stay)
+||serenitymarkets.com/wp-content/themes/Divi-child/assets/js/encriptar.js$script,~third-party
+serenitymarkets.com##+js(ra, class, div.blur_content, stay)
+||shrm.org/*/js/paywall*.js$script,~third-party
+skepticalinquirer.org##+js(rc, google-bot, div.google-bot, stay)
+solarserver.de##+js(ra, style, div.paywall, stay)
+solarserver.de##+js(ra, class, div.paywall-blurred, stay)
+solarserver.de##div.paywall-box
+/\.solicitorsjournal\.com\/_next\/static\/chunks\/\d.+\.js/$script,domain=solicitorsjournal.com,~third-party
+||southernstar.ie/js/tollbridge.js$script,~third-party
+spectator.org##+js(cookie-remover, /pw$/)
+speakup.it##div.paywall-container
+||spectrejournal.com/wp-content/plugins/elementor/*/dialog.min.js$script,~third-party
+spiked-online.com##+js(set-local-storage-item, nudges, {})
+splainer.in##+js(rc, hide-section, .hide-section, stay)
+splainer.in##.subscription-prompt
+||splinter.com/wp-content/themes/pastemagazine/js/pm_custom.js$script,~third-party
+standcolumbia.org##+js(ra, class, div.stu-lock-content, stay)
+standcolumbia.org##div.stu-blur-overlay
+stateaffairs.com##div.c-memberships-message
+stateaffairs.com##+js(rc, access-restricted, body.access-restricted, stay)
+stockunlock.com##div[class*="-root"][class*="css-"]:style(filter: none !important; pointer-events: auto !important)
+stockunlock.com##div.css-coxdc8
+strangematters.coop##+js(cookie-remover, pmpro_lpv_count)
+subscriptioninsider.com##+js(rc, dialog-prevent-scroll, body.dialog-prevent-scroll, stay)
+subscriptioninsider.com##div.dialog-widget
+/\.subscriptioninsider\.com\/.+\/(\w+-){3,}/$inline-script,domain=subscriptioninsider.com
+t-nation.com##+js(rc, topic-in-gated-category, body.topic-in-gated-category, stay)
+t-nation.com##div.custom-gated-topic-container
+the-decoder.com##+js(ra, class, div.paywall-hidden-content, stay)
+the-decoder.com##section.paywall-content
+||jsdelivr.net/*/catholicherald-auth0-poool-*/index.js$script,third-party,domain=thecatholicherald.com
+thecore.in##+js(ra, class, div.paywall-content, stay)
+thecore.in##div.story,div#subscription_paid_message,div#footer_login_wall
+thecountersignal.com##+js(ra, class, body.single div.elementor-widget-container, stay)
+||thedriftmag.com/wp-content/plugins/drift-paywall-plugin/$script,~third-party
+theindianalawyer.com##+js(rc, restricted-non-subscriber, article.restricted-non-subscriber, stay)
+theindianalawyer.com##+js(ra, style, article-content>p, stay)
+theindianalawyer.com##div#vue-growler,div#js-modal
+thejc.com##+js(ra, class, div.paywall, stay)
+thejc.com##div.poool-widget
+||thenationalpulse.com/wp-content/*/assets/js/national-pulse.js$script,~third-party
+||theschooloflife.com/app/plugins/*/woocommerce.min.js$script,~third-party
+aap.thestreet.com##+js(rc, is-paywalled, body.is-paywalled, stay)
+realmoney.thestreet.com##+js(cookie-remover, /^PWT/)
+thefederal.com##+js(ra, class, div.hide.paywall-content, stay)
+thefederal.com##div#premium_access_message_text,div.para_text_cl,div#lock_message,div.login_space
+||thetablet.org^$inline-script
+thetablet.org##+js(rc, gated-content, body.gated-content, stay)
+tidningenridsport.se##+js(ra, class|style, div.mctos, stay)
+tidningenridsport.se##+js(rc, cli-barmodal-open, body.cli-barmodal-open, stay)
+tidningenridsport.se##div.locked
+trailsoffroad.com##.paywall
+||tygodnikpowszechny.pl/sites/default/files/js/js_$script,~third-party
+wbjournal.com##+js(ra, style, div.expandable-paywall-premium-content, stay)
+wbjournal.com##div.paywall-container
+wbez.org##div.email-wall-content-lock:remove()
+||zeitzeichen.net/sites/default/files/js/js_*.js$script,~third-party
+||ampproject.org/*/amp-access-$script,domain=~cambridge.org|~cmjornal.pt
+||ampproject.org/*/amp-subscriptions-$script
+@@||ampproject.org/v0/amp-consent-$script
+artnet.com,bostonglobe.com,dallasnews.com,latimes.com,sandiegouniontribune.com##+js(ra, subscriptions-section, [subscriptions-section="content"], stay)
+artnet.com,bostonglobe.com,dallasnews.com,latimes.com,sandiegouniontribune.com##[subscriptions-section="content-not-granted"]
+digiday.com,inc42.com,indianexpress.com,indiatoday.in,mid-day.com,telegraph.co.uk##+js(ra, amp-access-hide, [amp-access][amp-access-hide], stay)
+amp.elle.fr,challenges.fr,sciencesetavenir.fr##+js(ra, amp-access-hide, [amp-access][amp-access-hide], stay)
+dhnet.be,lalibre.be,lavenir.net,moustique.be##+js(rc, is-preview, div.preview, stay)
+dhnet.be,lalibre.be,lavenir.net,moustique.be##+js(rc, is-hidden, div.is-hidden, stay)
+adelaidenow.com.au,cairnspost.com.au,codesports.com.au,couriermail.com.au,dailytelegraph.com.au,geelongadvertiser.com.au,goldcoastbulletin.com.au,heraldsun.com.au,ntnews.com.au,theaustralian.com.au,thechronicle.com.au,themercury.com.au,townsvillebulletin.com.au,weeklytimesnow.com.au##+js(ra, subscriptions-section, [subscriptions-section="content"], stay)
+adelaidenow.com.au,cairnspost.com.au,codesports.com.au,couriermail.com.au,dailytelegraph.com.au,geelongadvertiser.com.au,goldcoastbulletin.com.au,heraldsun.com.au,ntnews.com.au,theaustralian.com.au,thechronicle.com.au,themercury.com.au,townsvillebulletin.com.au,weeklytimesnow.com.au##[subscriptions-section="content-not-granted"]
+corriere.it,ilfattoquotidiano.it##+js(ra, subscriptions-section, [subscriptions-section="content"], stay)
+corriere.it,ilfattoquotidiano.it##[subscriptions-section="content-not-granted"]
+ilgiorno.it,ilrestodelcarlino.it,iltelegrafolivorno.it,lanazione.it,quotidiano.net##+js(ra, amp-access-hide, [amp-access][amp-access-hide], stay)
+amp.bnd.com,amp.charlotteobserver.com,amp.elnuevoherald.com,amp.fresnobee.com,amp.kansas.com,amp.kansascity.com,amp.kentucky.com,amp.mcclatchydc.com,amp.miamiherald.com,amp.newsobserver.com,amp.sacbee.com,amp.star-telegram.com,amp.thestate.com,amp.tri-cityherald.com##+js(ra, subscriptions-section, [subscriptions-section="content"], stay)
+amp.bnd.com,amp.charlotteobserver.com,amp.elnuevoherald.com,amp.fresnobee.com,amp.kansas.com,amp.kansascity.com,amp.kentucky.com,amp.mcclatchydc.com,amp.miamiherald.com,amp.newsobserver.com,amp.sacbee.com,amp.star-telegram.com,amp.thestate.com,amp.tri-cityherald.com##[subscriptions-section="content-not-granted"]
+amp.sacbee.com##+js(ra, subscriptions-action, div[subscriptions-action][subscriptions-display="NOT data.hasError"], stay)
+amp.elmundo.es,amp.expansion.com,amp.marca.com,elespanol.com,em.com.br,folha.uol.com.br,gazetadopovo.com.br##+js(ra, subscriptions-section, [subscriptions-section="content"], stay)
+amp.elmundo.es,amp.expansion.com,amp.marca.com,elespanol.com,em.com.br,folha.uol.com.br,gazetadopovo.com.br##[subscriptions-section="content-not-granted"]
+eldiario.es,elespectador.com,elpais.com,estadao.com.br,infolibre.es,sabado.pt##+js(ra, amp-access-hide, [amp-access][amp-access-hide], stay)
+abc.es,canarias7.es,diariosur.es,diariovasco.com,elcomercio.es,elcorreo.com,eldiariomontanes.es,elnortedecastilla.es,hoy.es,ideal.es,larioja.com,lasprovincias.es,laverdad.es,lavozdigital.es##+js(ra, amp-access-hide, [amp-access][amp-access-hide], stay)
+abc.es##+js(ra, id, body#top, stay)
 
 ! ----- https://raw.githubusercontent.com/brave/adblock-lists/master/brave-lists/brave-android-specific.txt -----
 diariodocentrodomundo.com.br,01net.com,gizchina.com,pocketpc.ch##.mrf-adv__wrapper
@@ -17072,6 +17834,7 @@ www.youtube.com##ytd-talk-to-recs-flow-renderer
 ||asus-brand-assistant.asus.com/brand-assistant.js
 ||azurefd.net/cdns/copilot_v3.min.js$script,domain=nus.edu.sg
 ||booosted.com^$third-party
+||callnowbutton.com^$third-party
 ||cdn.gist.ai^$third-party
 ||cdn.whoop.com/v0/chat/chat.js$domain=support.whoop.com
 ||chat.cdn-plain.com^
@@ -17086,6 +17849,7 @@ www.youtube.com##ytd-talk-to-recs-flow-renderer
 ||sdk.whtvr.ai^$third-party
 ||srv.divee.ai^$third-party
 ||urbandictionary.ai^
+||w.replied.chat^$third-party
 ||widget.brambles.ai^$third-party
 ||widget.indexfox.ai^
 ||widget.kapa.ai^$third-party
@@ -17149,7 +17913,7 @@ tapochek.net##+js(abort-on-property-read, ABNS)
 agroreview.com,agroweek.com##+js(abort-on-property-read, AWB)
 htmlweb.ru##+js(abort-on-property-read, AdbBanner)
 fapreactor.com,pornreactor.cc,reactor.cc##+js(abort-on-property-read, CTRManager.host3)
-anifap.com,anifap.xyz,anipoisk.org,anitokyo.tv,anitokyo1.top,hcdn.online,kinofilm.co##+js(abort-on-property-read, ClickUndercookie)
+anifap.com,anifap.xyz,anipoisk.org,anitokyo.tv,anitokyo1.top,hcdn.online##+js(abort-on-property-read, ClickUndercookie)
 comedy-radio.ru,radioromantika.ru,relax-fm.ru,sm.news,veseloeradio.ru,www.e1.ru##+js(abort-on-property-read, Date.prototype.toUTCString)
 vk.com,vk.ru##+js(abort-on-property-read, Groups.showDisclaimer)
 rutor.org##+js(abort-on-property-read, Light.Popup)
@@ -17168,6 +17932,7 @@ e1.ru,nova.rambler.ru##+js(abort-on-property-read, Object.prototype.loadBanner)
 gismeteo.by,gismeteo.kz,gismeteo.ru##+js(abort-on-property-read, Object.prototype.scriptsViaXhr)
 razlozhi.ru##+js(abort-on-property-read, Object.prototype.yaContextCb)
 f1comp.ru,tagaev.com,times.zt.ua##+js(abort-on-property-read, PUM.getPopup)
+root-nation.com##+js(abort-on-property-read, RNRRM)
 gencit.info##+js(abort-on-property-read, Radish)
 sinoptik.ua##+js(abort-on-property-read, SIN.AdsLoader)
 porngames.su,rintor.info,rintor.net##+js(abort-on-property-read, TotemToolsObject)
@@ -17417,6 +18182,7 @@ news.rambler.ru##+js(prevent-fetch, &origin_type=rtb, url:/rutube.ru/api/tags/vi
 dzen.ru,sportsdzen.ru##+js(prevent-fetch, /stats/bulk|stats/pixels|zen_audit/)
 progorod62.ru,ura.news##+js(prevent-fetch, _rsc=)
 evribiont.xyz##+js(prevent-setTimeout, adTestElement)
+kinofilm.io##+js(prevent-setTimeout, baitHidden)
 aigenda.ru##+js(prevent-setTimeout, combinedDetector)
 themoscowtimes.com##+js(prevent-setTimeout, contribute-modal)
 forum.ixbt.com##+js(prevent-setTimeout, count_banners)
@@ -17704,6 +18470,7 @@ ozon.ru##div[data-widget="banner"]:matches-path(/my/reviews/promo):style(display
 link.softoroom.org##div[id] > a[title]:hover:style(color: #1a73e8 !important; text-decoration: underline !important)
 link.softoroom.org##div[id] > a[title]:style(font-size: 20px !important)
 pronpic.org##div[style="color:red;font-size:25px;"], .adblock_loock
+epscape.*##+js(prevent-setTimeout, shouldShowPrompt)
 fanserial.*,fanserialstv.net,hdrezka.*,rezka.*##+js(set-constant, Object.prototype.preroll, undefined)
 fap-guru.*,seks-studentki.*,sex-studentki.*##+js(addEventListener-defuser, DOMContentLoaded, click_time)
 fishki.net,game4you.top,hot.game,innal.top,mp3party.net,naylo.top,rustorka.*,rustorkacom.lib##+js(href-sanitizer, [href*="url=https"], ?url)
@@ -19030,6 +19797,22 @@ mfw09.org##body > div[style*="2147483647"]
 ||rapidfire.cc/s.js^
 xboxdynasty.de##+js(rmnt, script, /adblock/i)
 bhoomtv.org##+js(rmnt, script, /adblock/i)
+mangatrend.org##+js(rmnt, script, shown_at)
+||okteve.com/xplay/ad-serve.php
+||okteve.com/xplay/ad-click.php
+hao123.com##+js(json-edit-xhr-response, .data.*[?.hasAd==true], propsToMatch, /card/fill)
+||rule34.world/api/v*/infrastructure/dynamic-meta/user|
+rule34.world##+js(set-local-storage-item, /^app:/, $remove$)
+fapnut.net##+js(rmnt, script, adConfig)
+fapnut.net##.rtsc-sponsored-card
+fapnut.net##[href="https://theporndude.com/"]
+naijavault.com##+js(rmnt, script, .offsetHeight)
+todaytvseries1.com##+js(rmnt, script, protectedDomains)
+todaytvseries1.com##a[href*="archive.org"],a[href*="renewyep.com"],a[href*="renewgap.com"],a[href*="renewback.site"]:style(pointer-events:auto !important;cursor:pointer !important)
+||todaytvseries1.com/ads/
+||kick.com/datazoom/*/datazoom.js
+||cloudfront.net/v1/manifest/*/production-kick-vod/*.m3u8$xhr,domain=kick.com,replace=/#EXTINF[^\n]+\n[^\n]+?\/segment\/[^\n]+//gm
+||cloudfront.net/tm/*/asset_*.ts$media,xmlhttprequest,redirect=noopmp3-0.1s,domain=kick.com
 
 ! ----- https://raw.githubusercontent.com/uBlockOrigin/uAssets/master/filters/resource-abuse.txt -----
 /edgemesh.*.js$script,domain=~edgemesh.com|~edgeno.de
@@ -19569,6 +20352,7 @@ pahe.plus##footer, .text-left, #link-view > [href], .box-main > [href]
 pahe.plus##+js(set, blurred, false)
 pahe.plus##+js(no-fetch-if, mode:no-cors)
 *$xhr,redirect-rule=nooptext,domain=intercelestial.com|teknoasian.com
+@@*$xhr,image,script,frame,1p,domain=intercelestial.com|teknoasian.com
 @@*$ghide,domain=intercelestial.com|teknoasian.com
 intercelestial.com,teknoasian.com##.right-sidebar.penci_sidebar.container,.penci-home-popular-posts.container,p,ul,li,[href*="s0-greate"],#sidebar,.post-pagination,.single-breadcrumb.penci-breadcrumb.container,.penci-move-title-above.post-image,#footer-section, .post-related, #comments, .post-share.tags-share-box, .alignleft.wp-caption
 intercelestial.com#@#+js(adjust-setTimeout, '', *, 0.1)
@@ -21266,5 +22050,6 @@ sp.nicovideo.jp##body.hdNoFixed.watch:has(#jsAppModalWithLogin):style(padding-to
 @@||kinepolis.*/js/smart-app-banner.js$~third-party
 @@||mafia.ua/js/jquery.smartbanner.js$script,~third-party
 @@||mirage.ru/js/jquery.smartbanner.js$script,~third-party
+safeway.ca#@#.mobile-app-banner
 mobi24.net#@#a[href^="http://www.mobi24.net/"]
 mobi24.net#@#a[href^="https://www.mobi24.net/"]
