@@ -178,8 +178,9 @@ portalyaoi.com##+js(abort-on-stack-trace, document.getElementById, triggerBlock)
 portalyaoi.com###lbl-interaction-trigger
 portalyaoi.com###lbl-block-overlay-x92
 portalyaoi.com###lbl-block-modal-x92
-minhatela.xyz###root > div.inset-0.fixed:style(display: none !important;)
-minhatela.xyz##body:style(overflow: auto !important;)
+minhatela.xyz##+js(prevent-fetch, mode:no-cors)
+@@||minhatela.xyz/sticky_ads.js$domain=minhatela.xyz
+minhatela.xyz#@#.ad-slot
 hardwarepremium.com##+js(no-setTimeout-if, adsenseCargo)
 ||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$script,redirect=googlesyndication_adsbygoogle.js,domain=hardwarepremium.com
 ||googleads.g.doubleclick.net/pagead/id$domain=hardwarepremium.com,redirect=noop.txt,image,media,subdocument,stylesheet,script,xhr,other
@@ -1331,6 +1332,9 @@ guardianocturna.mx,3djuegos.com.mx,cine.com,3djuegospc.com,directoalpaladar.com,
 rapirecetas.com,tiohentai.com,maistocadas.mus.br,serviporno.com,solvetic.com,gamesfull.app,agazeta.com.br,lasexta.com,extra.ec,globo.com,amomeupet.org,cifras.com.br,gaz.com.br,placar.com.br,futebolinterior.com.br,tvhistoria.com.br,tribunapr.uol.com.br,diariodonordeste.verdesmares.com.br,sbt.com.br,link.estadao.com.br,atomixhq.*,jc.ne10.uol.com.br,internetpasoapaso.com,acidadeon.com,leouve.com.br,larazon.es,infoescola.com,cbn.globoradio.globo.com,abril.com.br,odia.ig.com.br,especiais.g1.globo.com,tribunapr.com.br,anime-tube.tv##.ads
 latinomegahd.net,muyinteresante.okdiario.com,subrayado.com.uy,cl1ca.com,periodicocorreo.com.mx,guiavidaesaude.com,muyinteresante.com,reporteindigo.com,omelete.com.mx,c5n.com,t13.cl,solowrestling.mundodeportivo.com,todojujuy.com,mendozapost.com,meiobit.com,brasilparalelo.com.br,tvonline.fan,laprensagrafica.com,ahoragranada.com,correio24horas.com.br,cnnespanol.cnn.com,motociclismo.es,sub100.com.br,theenemy.com.br,manhwas.net,rpp.pe,ambito.com,economipedia.com,informador.mx,elinformador.com.co,cronista.com,rionegro.com.ar,diariodecuyo.com.ar,voydeviaje.com.ar,guarda14.com,viapais.com.ar,agazeta.com.br,eleconomista.com.mx,metropolitanafm.com.br,tycsports.com,elespectador.com,bnews.com.br,migalhas.com.br,losandes.com.ar,lavoz.com.ar,mundo.sputniknews.com,omelete.com.br,lapoliticaonline.*,valenciaplaza.com,dalealbo.cl,globo.com,defesanet.com.br,mibrujula.com,lyon.kim,26noticias.com.ar,auniao.com,clickpb.com.br,emagister.com,lanacion.com.ar,parana-online.com.br,r7.com,toxico-pc.com,uol.com.br##body .banner
 actualidadiphone.com,lucrandoideias.com,proandroid.com,lusometeo.com,kltutors.com,eloutput.com,mundobytes.com,techondicas.com,jornalrepercussao.com.br,zonaaps.com,gamevicio.com,blog.desdelinux.net,megacanais.com,terrabrasilnoticias.com,psxbrasil.com.br,elrincondecabra.com,atelevisao.com,ahnegao.com.br,anmosugoi.com,linuxadictos.com,juegosdepcfull.com,pizzafria.ig.com.br,paraveronline.org,sayrodigital.net,cineplus123.org,cinemitas.org,androidayuda.com,sport.es,comandoplay.com,comandotorrents.to,adrenaline.com.br,ncultura.pt,animesdigital.org,wwwhatsnew.com,descargaseriestv.com,lifeder.com,elrellano.com,elintransigente.com,comando.la,remender.pe,noticiasautomotivas.com.br,idinheiro.com.br,diariodocomercio.com.br##body .code-block:not(#style_important)
+metropoles.com##div[class^="conteudoNoticia_articleInlineAd"]
+metropoles.com##div[class^="atf_bannerMembrana"]
+metropoles.com##div.mx-auto > div.lg\:flex > aside.hidden:has(> div.w-auto > div[id^="div-gpt-ad"])
 tomarnarede.pt##.a-wrap:has(> div.label)
 ||hdfullcdn.cc/templates/hdfull/images/gg/
 hdfull.*,hdfull.org##.breakaway-wrapper > div.center
@@ -17869,7 +17873,6 @@ vm.ru###onair > img[data-src="/img/player_cover.svg"]
 inoreader.com###reader_pane:style(padding-right: unset !important)
 3dnews.ru#@##right-sidebar > #youtube-chunk-wrapper
 inoreader.com###sinner_container:style(display: block !important; z-index: 0 !important)
-rambler.ru###summary ~ div:has(> [id^="cluster-video-ad"]):remove()
 pronpic.org###vO5STmSLgNAkebzSluI8coxpDgsG97g:style(height: 1px !important; min-height: 1px !important)
 $document,reason=malicious,domain=apad2.top|besplatnyeprogrammy.ru|games-7.com|hdrip.info|mediagetguru.ru|mixsoft.org|monna2.top|torrent-muzic.ru|torrent-soft.ru
 */bens/vinos.js$popunder
@@ -17944,7 +17947,6 @@ porngames.su,rintor.info,rintor.net##+js(abort-on-property-read, TotemToolsObjec
 castle-tv.com##+js(abort-on-property-read, WebSocket)
 100popugaev.ru,coderlessons.com,fixx.one,its-kids.ru,molitvy.guru,nizhny.ru,pro100hobbi.ru,publy.ru,samelectric.ru,svadba.expert,tehnobzor.ru,vibir.ru##+js(abort-on-property-read, XMLHttpRequest)
 3dnews.ru,avtovzglyad.ru,baby.ru,cont.ws,dni.ru,pikabu.ru,pogoda.onliner.by,russian7.ru,selflib.me,sm.news,tech.onliner.by,www.goha.ru##+js(abort-on-property-read, Ya)
-nnm-club.me,nnmclub.ro,nnmclub.to##+js(abort-on-property-read, _0x1ece)
 ya.ru##+js(abort-on-property-read, __FEED_ES_BRIDGE_BAKED_STATE__)
 comedy-radio.ru,radioromantika.ru,relax-fm.ru,veseloeradio.ru##+js(abort-on-property-read, __vasActiveTestIds)
 forum.overclockers.ua##+js(abort-on-property-read, a_urls)
@@ -18183,7 +18185,6 @@ rutube.ru##+js(prevent-addEventListener, click, showRedirectPopup)
 liveinternet.ru##+js(prevent-addEventListener, load, AdvManager)
 dumatv.ru##+js(prevent-addEventListener, message, AUTOPLAY)
 www.rambler.ru##+js(prevent-addEventListener, scroll, requestAnimationFrame)
-news.rambler.ru##+js(prevent-fetch, &origin_type=rtb, url:/rutube.ru/api/tags/video/)
 dzen.ru,sportsdzen.ru##+js(prevent-fetch, /stats/bulk|stats/pixels|zen_audit/)
 progorod62.ru,ura.news##+js(prevent-fetch, _rsc=)
 evribiont.xyz##+js(prevent-setTimeout, adTestElement)
@@ -18422,6 +18423,7 @@ pronpic.org#@#:not(obhod-adblocka)
 @@||st.top100.ru/top100/top100.js|$script,badfilter,domain=auto.rambler.ru|news.rambler.ru
 @@||studizba.com^$generichide,badfilter
 @@||xksqb.com/native.$script,badfilter,domain=gwss.ru
+rambler.ru##[aria-label="Реклама"] iframe:remove()
 dzen.ru,ya.ru,yandex.by,yandex.kz,yandex.ru,yandex.uz##[class*="mini-suggest__item"]:has(> a[href*="://yabs.yandex."][href*="/count/"]):remove()
 dzen.ru,ya.ru,yandex.by,yandex.kz,yandex.ru,yandex.uz##[class*="mini-suggest__item"]:has(> a[href*="://yandex."][href*="/clck/"]):remove()
 dzen.ru,ya.ru,yandex.by,yandex.kz,yandex.ru,yandex.uz##[class*="mini-suggest__item"]:has(> a[href][target="_blank"]):remove()
@@ -18577,7 +18579,6 @@ fastpic.org,~new.fastpic.org##+js(remove-node-text, script, /__BIM__|box-shadow/
 fastpic.org,~new.fastpic.org##+js(remove-node-text, script, getElementById, includes, referrer)
 fastpic.org,~new.fastpic.org##[srcdoc]:remove()
 fastpic.org,~new.fastpic.org##a[href*="/big/"]:remove-attr(target)
-fastpic.org,~new.fastpic.org##a[href*="/fullview/"] > img[src*="/preview/"]:style(clip-path: inset(0 0 38px 0) !important)
 fastpic.org,~new.fastpic.org##a[href*="/fullview/"]:remove-attr(target)
 fastpic.org,~new.fastpic.org##a[href="https://static.fastpic.ru/FastPicUploader.apk"]:remove-attr(target)
 fastpic.org,~new.fastpic.org##body > template:remove()
@@ -19041,7 +19042,15 @@ twitchnosub.com##section:nth-of-type(2) > .container > div:has(a[href^="https://
 *$image,redirect-rule=32x32.png,domain=twitchnosub.com
 @@*$ghide,domain=twitchnosub.com
 cinefreak.*##+js(aeld, click, openPopunder)
-cinecloud.*##+js(nostif, /window\.location\.href/)
+cinecloud.*##+js(nostif, location.href, 5000)
+cinecloud.*##+js(aost, Promise, imageProbe)
+cinefreak.net##+js(aost, Promise.all, imageProbe)
+cinefreak.net#@#.sponsored-ad
+cinefreak.net##+js(nowoif, _blank)
+||googleads.g.doubleclick.net/favicon.ico$image,redirect=2x2.png,domain=cinefreak.net|cinecloud.site
+||amazon-adsystem.com/favicon.ico$image,redirect=2x2.png,domain=cinefreak.net|cinecloud.site
+||static.criteo.net/favicon.ico$image,redirect=2x2.png,domain=cinefreak.net|cinecloud.site
+||ads.linkedin.com/favicon.ico$image,redirect=2x2.png,domain=cinefreak.net|cinecloud.site
 aznude.com##^meta[content*="magsrv.com"]
 aznude.com##+js(set, AdProvider, noopFunc)
 aznude.com##+js(set, AdProvider.push, noopFunc)
@@ -19813,9 +19822,12 @@ vikuy.click##.watch-ad-slot
 xfeed.com##+js(nowoif, _blank)
 xfeed.com##.prm-wrapper
 xfeed.com##[data-badge="Ad"]
-xfeed.com##div.column:has(div[class="spоns"])
+xfeed.com##div.column:has(div[class="spons"])
 xfeed.com##.hill-top-slot
 xfeed.com##.bottom-outstream
+||xboxdynasty.de/wp-content/plugins/xd-performance/assets/ads.js
+1024teradl.com##+js(set-session-storage-item, 1024teradl:fetch-click-count, 1)
+1024teradl.com##span[class*="text-"]:has(+ .ad-unit-container)
 
 ! ----- https://raw.githubusercontent.com/uBlockOrigin/uAssets/master/filters/resource-abuse.txt -----
 /edgemesh.*.js$script,domain=~edgemesh.com|~edgeno.de
@@ -21852,6 +21864,8 @@ gq.co.za##+js(set-cookie, PromptLater, true)
 ask.fm##.lightbox_overlay
 ask.fm##body:style(overflow: auto !important)
 cosmos.so##+js(set, Object.prototype.disablePaginationLimitForLoggedOut, true)
+speedtest.net##body:style(overflow: auto !important)
+speedtest.net#?#.\!z-\[3500\]:has-text(Speedtest is better with the app)
 goodreads.com##+js(set-cookie, blocking_sign_in_interstitial, true)
 reddit.com###app-upsell-blocking-bottom-sheet-seo
 reddit.com###configured-xpromo-mweb3x_mid_funnel_blocking_v1_30s
