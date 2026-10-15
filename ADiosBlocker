@@ -163,6 +163,7 @@
 ||xad.dnoticias.pt^
 ||adclient-uol.lp.uol.com.br^
 ||adv.r7.com^
+||topanimes.net/topanimes.net.js
 sushianimes.com.br##+js(prevent-fetch, adsbygoogle)
 sushianimes.com.br#@#.ad-unit:not(.textads)
 tt18.info##+js(addEventListener-defuser, DOMContentLoaded, detectAdBlock)
@@ -1334,6 +1335,8 @@ guardianocturna.mx,3djuegos.com.mx,cine.com,3djuegospc.com,directoalpaladar.com,
 rapirecetas.com,tiohentai.com,maistocadas.mus.br,serviporno.com,solvetic.com,gamesfull.app,agazeta.com.br,lasexta.com,extra.ec,globo.com,amomeupet.org,cifras.com.br,gaz.com.br,placar.com.br,futebolinterior.com.br,tvhistoria.com.br,tribunapr.uol.com.br,diariodonordeste.verdesmares.com.br,sbt.com.br,link.estadao.com.br,atomixhq.*,jc.ne10.uol.com.br,internetpasoapaso.com,acidadeon.com,leouve.com.br,larazon.es,infoescola.com,cbn.globoradio.globo.com,abril.com.br,odia.ig.com.br,especiais.g1.globo.com,tribunapr.com.br,anime-tube.tv##.ads
 latinomegahd.net,muyinteresante.okdiario.com,subrayado.com.uy,cl1ca.com,periodicocorreo.com.mx,guiavidaesaude.com,muyinteresante.com,reporteindigo.com,omelete.com.mx,c5n.com,t13.cl,solowrestling.mundodeportivo.com,todojujuy.com,mendozapost.com,meiobit.com,brasilparalelo.com.br,tvonline.fan,laprensagrafica.com,ahoragranada.com,correio24horas.com.br,cnnespanol.cnn.com,motociclismo.es,sub100.com.br,theenemy.com.br,manhwas.net,rpp.pe,ambito.com,economipedia.com,informador.mx,elinformador.com.co,cronista.com,rionegro.com.ar,diariodecuyo.com.ar,voydeviaje.com.ar,guarda14.com,viapais.com.ar,agazeta.com.br,eleconomista.com.mx,metropolitanafm.com.br,tycsports.com,elespectador.com,bnews.com.br,migalhas.com.br,losandes.com.ar,lavoz.com.ar,mundo.sputniknews.com,omelete.com.br,lapoliticaonline.*,valenciaplaza.com,dalealbo.cl,globo.com,defesanet.com.br,mibrujula.com,lyon.kim,26noticias.com.ar,auniao.com,clickpb.com.br,emagister.com,lanacion.com.ar,parana-online.com.br,r7.com,toxico-pc.com,uol.com.br##body .banner
 actualidadiphone.com,lucrandoideias.com,proandroid.com,lusometeo.com,kltutors.com,eloutput.com,mundobytes.com,techondicas.com,jornalrepercussao.com.br,zonaaps.com,gamevicio.com,blog.desdelinux.net,megacanais.com,terrabrasilnoticias.com,psxbrasil.com.br,elrincondecabra.com,atelevisao.com,ahnegao.com.br,anmosugoi.com,linuxadictos.com,juegosdepcfull.com,pizzafria.ig.com.br,paraveronline.org,sayrodigital.net,cineplus123.org,cinemitas.org,androidayuda.com,sport.es,comandoplay.com,comandotorrents.to,adrenaline.com.br,ncultura.pt,animesdigital.org,wwwhatsnew.com,descargaseriestv.com,lifeder.com,elrellano.com,elintransigente.com,comando.la,remender.pe,noticiasautomotivas.com.br,idinheiro.com.br,diariodocomercio.com.br##body .code-block:not(#style_important)
+subsbr.net##.xbr-dual-player-grid
+||subsbr.net/xbr-gaming-videos-api.php
 braziljournal.com##.banner-ad
 pobreflixtv.email##div.alert-carousel-track
 infomercado.pe##div.container > aside#entry-aside:has(> div.mb-4 > div[id^="div-gpt-ad-"])
@@ -5473,6 +5476,7 @@ animeonline.ninja##+js(abort-on-property-read, area51)
 player.seriesgod.com,player.pelisgod.com##+js(no-window-open-if)
 lctutors.com.br##.adsbygoogle
 adguard.info,adguard.com,adguard.app##.hello_from_adguard_spanish
+@@||publicidad.animepelis.com/$script,image,font,stylesheet,xhr,~3p
 @@||mincetur.gob.pe/webCasinos/Index.aspx?po=frmRegistros_AD.aspx$~3p
 @@||mincetur.gob.pe/webCasinos/sistema/publico/frmRegistros_AD.aspx$~3p
 @@||imasdk.googleapis.com/js/sdkloader/ima3_dai.js$domain=nmas.com.mx
@@ -6022,7 +6026,9 @@ the-star.co.ke##div.premium-gate__paywall,div.premium-content figure:not(:has(im
 ||theatlantic.com/zephr/decision-engine$xmlhttprequest,~third-party
 theatlantic.com##aside#paywall,div[class^="LostInventoryMessage_"]
 ||thedailybeast.com/zephr/decision-engine$xmlhttprequest,~third-party
-||cloudfunctions.net/gated-countView$xmlhttprequest,domain=thediplomat.com
+thediplomat.com##+js(ra, style, div#app_story_content, stay)
+thediplomat.com##+js(ra, hidden, aside[hidden], stay)
+thediplomat.com##aside#tda-gated-appendix,section#tda-gated-body
 thedispatch.com##+js(cookie-remover, xbc)
 ||thedispatch.com/next-250/$inline-script
 theglobeandmail.com##+js(set, window.Fusion.globalContent._id, 0)
@@ -10438,6 +10444,9 @@ beaumontenterprise.com,chron.com,ctpost.com,expressnews.com,greenwichtime.com,ho
 beaumontenterprise.com,chron.com,ctinsider.com,ctpost.com,expressnews.com,greenwichtime.com,houstonchronicle.com,lmtonline.com,manisteenews.com,michigansthumb.com,middletownpress.com,mrt.com,myjournalcourier.com,myplainview.com,mysanantonio.com,newstimes.com,nhregister.com,ourmidland.com,registercitizen.com,sfchronicle.com,stamfordadvocate.com,thehour.com,theintelligencer.com##.mb32:has-text(Advertisement)
 chron.com,ctinsider.com,ctpost.com,middletownpress.com,mysanantonio.com,beaumontenterprise.com,expressnews.com,houstonchronicle.com,lmtonline.com,mrt.com,newstimes.com,nhregister.com,registercitizen.com,seattlepi.com,sfchronicle.com,sfgate.com,stamfordadvocate.com,thehour.com,timesunion.com##.bg-black.td300
 chron.com,ctinsider.com,ctpost.com,middletownpress.com,mysanantonio.com,beaumontenterprise.com,expressnews.com,houstonchronicle.com,lmtonline.com,mrt.com,newstimes.com,nhregister.com,registercitizen.com,seattlepi.com,sfchronicle.com,sfgate.com,stamfordadvocate.com,thehour.com,timesunion.com##.jcc.z1004
+beaumontenterprise.com,chron.com,ctinsider.com,ctpost.com,expressnews.com,greenwichtime.com,houstonchronicle.com,lmtonline.com,manisteenews.com,michigansthumb.com,middletownpress.com,mrt.com,myjournalcourier.com,myplainview.com,mysanantonio.com,newstimes.com,nhregister.com,ourmidland.com,registercitizen.com,sfchronicle.com,sfgate.com,stamfordadvocate.com,thehour.com,theintelligencer.com###modalOuter:has-text(Your Ad Blocker)
+beaumontenterprise.com,chron.com,ctinsider.com,ctpost.com,expressnews.com,greenwichtime.com,houstonchronicle.com,lmtonline.com,manisteenews.com,michigansthumb.com,middletownpress.com,mrt.com,myjournalcourier.com,myplainview.com,mysanantonio.com,newstimes.com,nhregister.com,ourmidland.com,registercitizen.com,sfchronicle.com,sfgate.com,stamfordadvocate.com,thehour.com,theintelligencer.com##.z1006.fix
+beaumontenterprise.com,chron.com,ctinsider.com,ctpost.com,expressnews.com,greenwichtime.com,houstonchronicle.com,lmtonline.com,manisteenews.com,michigansthumb.com,middletownpress.com,mrt.com,myjournalcourier.com,myplainview.com,mysanantonio.com,newstimes.com,nhregister.com,ourmidland.com,registercitizen.com,sfchronicle.com,sfgate.com,stamfordadvocate.com,thehour.com,theintelligencer.com##.fix:has(#modalOuter)
 beaumontenterprise.com,chron.com,ctinsider.com,ctpost.com,expressnews.com,houstonchronicle.com,lmtonline.com,middletownpress.com,mrt.com,mysanantonio.com,newstimes.com,nhregister.com,registercitizen.com,seattlepi.com,sfchronicle.com,sfgate.com,stamfordadvocate.com,thehour.com,timesunion.com,ctpost.com###modals
 beaumontenterprise.com,chron.com,ctinsider.com,ctpost.com,expressnews.com,houstonchronicle.com,lmtonline.com,middletownpress.com,mrt.com,mysanantonio.com,newstimes.com,nhregister.com,registercitizen.com,seattlepi.com,sfchronicle.com,sfgate.com,stamfordadvocate.com,thehour.com,timesunion.com,ctpost.com##body:style(overflow: auto !important;)
 sfchronicle.com##div[class^="ad-module-"]
@@ -15481,7 +15490,7 @@ animepahe.ru,kwik.si##+js(aopr, PopAds)
 @@*$ghide,domain=taazaalerts.com|mahabhulekh712.in|anumin.com|awolio.com|cgbsesupport.com|eternalcbse.i|foreverhealth.in|gplinks.co|jobwaala.in|kaisekareblog.com|sugargliderfaqs.com|picassoappk.com|geniuseducares.com|netflixvip.in|raidersixgameapk.com|sarkariexam365.com|digitalfacts4u.com|odiasongsworld.com|instander.me|trancebazar.com|odishadjs.link|pagalmp3status.com|flyshayari.com|powerrangergames.com|kishanganjnews.in|tipdoot.in
 taazaalerts.com,mahabhulekh712.in,anumin.com,awolio.com,cgbsesupport.com,eternalcbse.in,foreverhealth.in,jobwaala.in,kaisekareblog.com,sugargliderfaqs.com,picassoappk.com,geniuseducares.com,netflixvip.in,raidersixgameapk.com,sarkariexam365.com,digitalfacts4u.com,odiasongsworld.com,instander.me,trancebazar.com,odishadjs.link,pagalmp3status.com,flyshayari.com,powerrangergames.com,kishanganjnews.in,tipdoot.in##+js(aopw, AdBDetected)
 taazaalerts.com,mahabhulekh712.in,anumin.com,awolio.com,cgbsesupport.com,eternalcbse.in,foreverhealth.in,jobwaala.in,kaisekareblog.com,sugargliderfaqs.com,picassoappk.com,geniuseducares.com,netflixvip.in,raidersixgameapk.com,sarkariexam365.com,digitalfacts4u.com,odiasongsworld.com,instander.me,trancebazar.com,odishadjs.link,pagalmp3status.com,flyshayari.com,powerrangergames.com,kishanganjnews.in,tipdoot.in##+js(set, count, 0)
-bankofscotland.co.uk,lloydsbank.co.uk,soraraw.net,shahieed4u.*,shaheed4u.*,vipleague.io,ninguno.cc,flyfrontier.com,shaheidd4u.net,vidzp.com,overclock3d.net,ninguno.net,starlightnet.work,socalgas.com,cloudhostingz.com,hertz.com.au,hertz.co.nz,crookshanksacademy.com,casthill.net,sterham.net,a.asd.homes,adobe.com,aipebel.com,anumin.com,apollographql.com,app.gather.town,archive.fo,archive.is,archive.li,archive.md,archive.ph,archive.today,archive.vn,archiveiya74codqgiixo33q62qlrqtkgmcitqx5u2oeqnmn5bpcbiyd.onion,asiaflix.net,awolio.com,ba.com,barnesandnoble.com,bigbtc.win,bnc.ca,boxingstream.me,britishairways.com,btdig.com,buffsports.io,butter.us,calcolastipendionetto.it,capitalone.com,capitaloneoffers.com,capitaloneshopping.com,cardekhoindia.in,careersides.com,cgbsesupport.com,cimanow.cc,cinedesi.in,claroty.com,cnn.com,coinbase.com,coingax.com,colamanga.com,comohoy.com,cosme-de.com,cracksports.me,cricstream.me,crunchyroll.com,cyberlynews.com,dainandinvarta.com,dardmukti.in,dartsstreams.com,digitalfacts4u.com,discoveryplus.com,disneyplus.com,divnil.com,dofusports.xyz,e-gujarati.in,embedstreams.top,eternalcbse.in,everywherepaycard.com,facebook.com,fbstreams.co,flostreams.xyz,flyshayari.com,fordeal.com,foreverhealth.in,formula1.com,freepdfcomic.com,furecipes.com,ganohr.net,geforcenow.com,geniuseducares.com,godlikeproductions.com,golfstreams.me,gommonauti.it,google.com,goto.com,gotowebinar.com,gyansanatan.in,hackerrank.com,hbomax.com,healthrangerstore.com,help.sakarnewz.com,heybeng.com,hotstar.com,html-code-generator.com,hulu.com,hyundaipowerequipment.co.uk,iisfvirtual.in,infinityskull.com,instander.me,instantconsult.com.au,islamqahanafi.com,itrum.org,itv.com,japscan.lol,jiocinema.com,jiosaavnproapk.download,jobeducareer.com,jobpataka.com,jobwaala.in,kaisekareblog.com,kalista-beauty.com,kefayde.com,kick.com,kinemastermods.in,kishanganjnews.in,krunker.io,leak.sx,lego.com,lens-labo.net,linkjust.com,lobste.rs,lolesports.com,m.gamehub.cam,mahabhulekh712.in,mahitimanch.in,marcus.com,megacloud.tv,messitv.org,mirrativ.com,mmastreams.me,motogpstream.me,mukhyamantriyojana.in,musenboya.com,myaccountaccess.com,myarchive.in,mygamesreward.com,nayisahara.com,nbabox.co,ndlifestylego.com,netflixvip.in,newshuta.in,newzwala.co.in,nflbox.me,nhlbox.me,nothing.tech,odiasongsworld.com,odishadjs.link,olympicstreams.co,omuzaani.me,openai.com,opendroneid.org,optus.com.au,pagalmp3status.com,pandora.com,paramountplus.com,peacocktv.com,pethouse.com.au,picassoappk.com,pistonheads.com,playl2.net,playoffsstream.com,podcastle.ai,pornleaks.in,portal.app.flow.com.ar,potter-world.com,powerrangergames.com,primevideo.com,procinehub.com,projectcircuitbreaker.com,psychologytoday.com,pythonstudy.xyz,qatarstreams.me,raidersixgameapk.com,rapid-cloud.co,reliabletv.me,revadvert.com,roll20.net,rooter.gg,rugbystreams.me,rulingnews.com,saramart.com,sarkariexam365.com,shaahid4u.net,shahidd4u.net,shahiid4u.net,shaw.ca,soccerlive.app,socceronline.me,soccerworldcup.me,sonyliv.com,soraro.tonuriaz.info,sportsgames.today,sportsloverz.xyz,sportsnet.ca,sportsurge.net,spotify.com,ss64.com,starxinvestor.com,stgeorge.com.au,stream-livehd.online,stream.sportsspeed.site,streameast.app,streameast.ch,streameast.ec,streameast.fi,streameast.ms,streameast.ph,streameast.ps,streameast.sg,streameast.sk,stripe.com,sugargliderfaqs.com,support-lock.com,taazaalerts.com,techexpress360.in,techishant.in,tejtime24.com,telefullhd.com,telehealth.epic.com,tennisonline.me,test-website-b.pages.dev,thera-link.com,thestreameast.ru,thestreameast.st,thestreameast.su,thevouz.in,thunder-io.com,tmxskyspace.in,trancebazar.com,trezor.io,tv247365.link,tvableon.me,tvrium.click,tvsportslive.fr,twitch.tv,uploadbank.com,uploadmall.com,upscseva.in,userlytics.com,vanguard.com,velodata.app,vipbox.lc,viprow.nu,vipstand.pm,vizzy.io,volcom.ca,wavewalt.me,wbupdate.com,webdexscans.com,whatsapp.com,wheel.health,wheelofpets.com,wikifilmia.com,worldsports.me,xfinity.com,youtube.com,zealy.io,zee5.com,zoom.us,zoro.to,ksp.co.il##+js(brave-fix)
+fibwatch.art,bankofscotland.co.uk,lloydsbank.co.uk,soraraw.net,shahieed4u.*,shaheed4u.*,vipleague.io,ninguno.cc,flyfrontier.com,shaheidd4u.net,vidzp.com,overclock3d.net,ninguno.net,starlightnet.work,socalgas.com,cloudhostingz.com,hertz.com.au,hertz.co.nz,crookshanksacademy.com,casthill.net,sterham.net,a.asd.homes,adobe.com,aipebel.com,anumin.com,apollographql.com,app.gather.town,archive.fo,archive.is,archive.li,archive.md,archive.ph,archive.today,archive.vn,archiveiya74codqgiixo33q62qlrqtkgmcitqx5u2oeqnmn5bpcbiyd.onion,asiaflix.net,awolio.com,ba.com,barnesandnoble.com,bigbtc.win,bnc.ca,boxingstream.me,britishairways.com,btdig.com,buffsports.io,butter.us,calcolastipendionetto.it,capitalone.com,capitaloneoffers.com,capitaloneshopping.com,cardekhoindia.in,careersides.com,cgbsesupport.com,cimanow.cc,cinedesi.in,claroty.com,cnn.com,coinbase.com,coingax.com,colamanga.com,comohoy.com,cosme-de.com,cracksports.me,cricstream.me,crunchyroll.com,cyberlynews.com,dainandinvarta.com,dardmukti.in,dartsstreams.com,digitalfacts4u.com,discoveryplus.com,disneyplus.com,divnil.com,dofusports.xyz,e-gujarati.in,embedstreams.top,eternalcbse.in,everywherepaycard.com,facebook.com,fbstreams.co,flostreams.xyz,flyshayari.com,fordeal.com,foreverhealth.in,formula1.com,freepdfcomic.com,furecipes.com,ganohr.net,geforcenow.com,geniuseducares.com,godlikeproductions.com,golfstreams.me,gommonauti.it,google.com,goto.com,gotowebinar.com,gyansanatan.in,hackerrank.com,hbomax.com,healthrangerstore.com,help.sakarnewz.com,heybeng.com,hotstar.com,html-code-generator.com,hulu.com,hyundaipowerequipment.co.uk,iisfvirtual.in,infinityskull.com,instander.me,instantconsult.com.au,islamqahanafi.com,itrum.org,itv.com,japscan.lol,jiocinema.com,jiosaavnproapk.download,jobeducareer.com,jobpataka.com,jobwaala.in,kaisekareblog.com,kalista-beauty.com,kefayde.com,kick.com,kinemastermods.in,kishanganjnews.in,krunker.io,leak.sx,lego.com,lens-labo.net,linkjust.com,lobste.rs,lolesports.com,m.gamehub.cam,mahabhulekh712.in,mahitimanch.in,marcus.com,megacloud.tv,messitv.org,mirrativ.com,mmastreams.me,motogpstream.me,mukhyamantriyojana.in,musenboya.com,myaccountaccess.com,myarchive.in,mygamesreward.com,nayisahara.com,nbabox.co,ndlifestylego.com,netflixvip.in,newshuta.in,newzwala.co.in,nflbox.me,nhlbox.me,nothing.tech,odiasongsworld.com,odishadjs.link,olympicstreams.co,omuzaani.me,openai.com,opendroneid.org,optus.com.au,pagalmp3status.com,pandora.com,paramountplus.com,peacocktv.com,pethouse.com.au,picassoappk.com,pistonheads.com,playl2.net,playoffsstream.com,podcastle.ai,pornleaks.in,portal.app.flow.com.ar,potter-world.com,powerrangergames.com,primevideo.com,procinehub.com,projectcircuitbreaker.com,psychologytoday.com,pythonstudy.xyz,qatarstreams.me,raidersixgameapk.com,rapid-cloud.co,reliabletv.me,revadvert.com,roll20.net,rooter.gg,rugbystreams.me,rulingnews.com,saramart.com,sarkariexam365.com,shaahid4u.net,shahidd4u.net,shahiid4u.net,shaw.ca,soccerlive.app,socceronline.me,soccerworldcup.me,sonyliv.com,soraro.tonuriaz.info,sportsgames.today,sportsloverz.xyz,sportsnet.ca,sportsurge.net,spotify.com,ss64.com,starxinvestor.com,stgeorge.com.au,stream-livehd.online,stream.sportsspeed.site,streameast.app,streameast.ch,streameast.ec,streameast.fi,streameast.ms,streameast.ph,streameast.ps,streameast.sg,streameast.sk,stripe.com,sugargliderfaqs.com,support-lock.com,taazaalerts.com,techexpress360.in,techishant.in,tejtime24.com,telefullhd.com,telehealth.epic.com,tennisonline.me,test-website-b.pages.dev,thera-link.com,thestreameast.ru,thestreameast.st,thestreameast.su,thevouz.in,thunder-io.com,tmxskyspace.in,trancebazar.com,trezor.io,tv247365.link,tvableon.me,tvrium.click,tvsportslive.fr,twitch.tv,uploadbank.com,uploadmall.com,upscseva.in,userlytics.com,vanguard.com,velodata.app,vipbox.lc,viprow.nu,vipstand.pm,vizzy.io,volcom.ca,wavewalt.me,wbupdate.com,webdexscans.com,whatsapp.com,wheel.health,wheelofpets.com,wikifilmia.com,worldsports.me,xfinity.com,youtube.com,zealy.io,zee5.com,zoom.us,zoro.to,ksp.co.il##+js(brave-fix)
 cnnespanol.cnn.com##+js(rmnt, script, location.replace)
 marcus.com,hackerrank.com##+js(aopr, navigator.brave)
 marcus.com,geforcenow.com##+js(set, navigator.brave, undefined)
@@ -18383,6 +18392,7 @@ gazeta.press,gazeta.ru##.b_flowup:remove()
 lostfilm.download,lostfilm.life,lostfilm.one,lostfilm.pro,lostfilm.today,lostfilm.tv,lostfilm.tw,lostfilm.uno,lostfilm.win,lostfilmtv.site,lostfilmtv.uno,lostfilmtv1.site,lostfilmtv2.site,lostfilmtv3.site,lostfilmtv4.site,lostfilmtv5.site##.body > .body:style(user-select: text !important; -moz-user-select: text !important; -webkit-user-select: text !important)
 gamemag.ru##.content-text:has(em:has-text(erid:)) a > strong:style(font-weight: inherit !important)
 gamemag.ru##.content-text:has(em:has-text(erid:)) a:style(pointer-events: none !important; color: inherit !important)
+fishki.net##.content__filter-tip > .quick-settings__toggle:has(> .autoplay)
 playground.ru##.dfp-container:remove()
 shedevrum.ai##.fixed#root-toasts[style^="top:"]
 online-fix.me#@#.full-story-header:style(color: #222 !important)
@@ -18745,6 +18755,7 @@ www.kinopoisk.ru##div[id^="yandex"][class] > div[id][class]:remove()
 www.kinopoisk.ru##div[style="width: 100%; height: 249px;"]
 rutube.ru##+js(json-edit-fetch-response, [?!.video_balancer.default].appearance.auto_start, propsToMatch, /api/play)
 ya.ru#@#+js(remove-node-text, div, 'ad-mark__b-unit')
+/rutube\.ru\/api\/play\/options\/.*[?&]referer=https.*(116|14|161|164|173|178|26|29|35|43|45|48|51|53|56|59|60|63|68|71|72|74|76|86|89|93|chita|e1|fontanka|ircity|izh1|mgorsk|msk1|ngs22|ngs24|ngs42|ngs55|ngs70|ngs|nn|sochi1|starhit|sterlitamak1|tolyatty|ufa1|v1|vladivostok1|voronezh1|ya62)\.ru/$xmlhttprequest,removeparam=referer
 @@$cname,domain=360tv.ru|3sat.de|innal.top|kyiv.ua|sports.ru|tosdr.org
 ndelo.ru##^.js-login > input
 root-nation.com##^.td-a-rec
@@ -19414,7 +19425,7 @@ genpick.app##+js(trusted-replace-argument, document.getElementById, 0, json:"hea
 hotukdeals.com###comments > .box--content:has(#ad-belowDescription)
 hotukdeals.com##div.box--content:has(#ad-belowDetails)
 hotukdeals.com##div.box--content:has(#ad-belowComments)
-indoav.app##+js(nowoif)
+indoav.app##+js(nowoif, _blank, 1)
 rcostation.xyz##+js(rmnt, script, adbWarn)
 xca.cymru##+js(acs, document.addEventListener, /popup/i)
 xca.cymru##+js(rmnt, script, .onerror)
@@ -19890,6 +19901,21 @@ terraria-servers.com###vote-form-block:style(display:block !important)
 terraria-servers.com###vote-warning-block
 speedof.me##.background-container > [class*="-"]:not([id]):not([aria-label]):not([style]):not([role]):not([class*=" "],[class*="menu"],[class*="content"],[class*="progress"])
 speedof.me##.api-ad-footer
+virtuavixen.com##+js(set, VVADS, undefined)
+virtuavixen.com##+js(set, FVPOA, undefined)
+kinob.net##+js(trusted-json-edit, .vast=0)
+kinob.net##+js(trusted-json-edit, .prerolls=0)
+nonograms-katana.com###embed-da
+nonograms-katana.com###embed-app:style(width: 100% !important;)
+gosbagotui.com##+js(rmnt, script, /popup|\.onerror/i)
+||websecx.site^
+||otakusexart.com/wp-content/uploads/*.gif$image,1p
+otakusexart.com##a[href^="https://hentai-onahole.moe"]
+otakusexart.com##.widget-area
+mxdrop.click##+js(rmnt, script, .open, includes, \\x20*)
+||sotlpy6yh.mxcontent.net/d/*/*?$removeparam
+||wgmxvubzck.com^
+video1exa.live##+js(rmnt, script, VK_DIRECT_AD)
 
 ! ----- https://raw.githubusercontent.com/uBlockOrigin/uAssets/master/filters/resource-abuse.txt -----
 /edgemesh.*.js$script,domain=~edgemesh.com|~edgeno.de
@@ -21582,6 +21608,7 @@ cricbuzz.com##.cbz-leaderboard-banner
 apkpure.com,apkpure.net##.chrome-install-pop
 clayandbuck.com##.cnb-download-app-at-mobile
 coinpaprika.com##.coins-mobile-banner
+www.reddit.com##.configured-xpromo-bottom-sheet
 kijiji.ca##.container-3757608091
 cbsnews.com##.content__cta
 gumtree.com.au##.continueInApp__container
