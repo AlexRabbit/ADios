@@ -164,6 +164,7 @@
 ||xad.dnoticias.pt^
 ||adclient-uol.lp.uol.com.br^
 ||adv.r7.com^
+xtusubs.com##+js(no-setInterval-if, divExists)
 nexusmangas.com##+js(no-setTimeout-if, {x()})
 nexusmangas.com##+js(no-setInterval-if, {x()})
 nexusmangas.com##+js(addEventListener-defuser, , {x()})
@@ -1349,6 +1350,9 @@ guardianocturna.mx,3djuegos.com.mx,cine.com,3djuegospc.com,directoalpaladar.com,
 rapirecetas.com,tiohentai.com,maistocadas.mus.br,serviporno.com,solvetic.com,gamesfull.app,agazeta.com.br,lasexta.com,extra.ec,globo.com,amomeupet.org,cifras.com.br,gaz.com.br,placar.com.br,futebolinterior.com.br,tvhistoria.com.br,tribunapr.uol.com.br,diariodonordeste.verdesmares.com.br,sbt.com.br,link.estadao.com.br,atomixhq.*,jc.ne10.uol.com.br,internetpasoapaso.com,acidadeon.com,leouve.com.br,larazon.es,infoescola.com,cbn.globoradio.globo.com,abril.com.br,odia.ig.com.br,especiais.g1.globo.com,tribunapr.com.br,anime-tube.tv##.ads
 latinomegahd.net,muyinteresante.okdiario.com,subrayado.com.uy,cl1ca.com,periodicocorreo.com.mx,guiavidaesaude.com,muyinteresante.com,reporteindigo.com,omelete.com.mx,c5n.com,t13.cl,solowrestling.mundodeportivo.com,todojujuy.com,mendozapost.com,meiobit.com,brasilparalelo.com.br,tvonline.fan,laprensagrafica.com,ahoragranada.com,correio24horas.com.br,cnnespanol.cnn.com,motociclismo.es,sub100.com.br,theenemy.com.br,manhwas.net,rpp.pe,ambito.com,economipedia.com,informador.mx,elinformador.com.co,cronista.com,rionegro.com.ar,diariodecuyo.com.ar,voydeviaje.com.ar,guarda14.com,viapais.com.ar,agazeta.com.br,eleconomista.com.mx,metropolitanafm.com.br,tycsports.com,elespectador.com,bnews.com.br,migalhas.com.br,losandes.com.ar,lavoz.com.ar,mundo.sputniknews.com,omelete.com.br,lapoliticaonline.*,valenciaplaza.com,dalealbo.cl,globo.com,defesanet.com.br,mibrujula.com,lyon.kim,26noticias.com.ar,auniao.com,clickpb.com.br,emagister.com,lanacion.com.ar,parana-online.com.br,r7.com,toxico-pc.com,uol.com.br##body .banner
 actualidadiphone.com,lucrandoideias.com,proandroid.com,lusometeo.com,kltutors.com,eloutput.com,mundobytes.com,techondicas.com,jornalrepercussao.com.br,zonaaps.com,gamevicio.com,blog.desdelinux.net,megacanais.com,terrabrasilnoticias.com,psxbrasil.com.br,elrincondecabra.com,atelevisao.com,ahnegao.com.br,anmosugoi.com,linuxadictos.com,juegosdepcfull.com,pizzafria.ig.com.br,paraveronline.org,sayrodigital.net,cineplus123.org,cinemitas.org,androidayuda.com,sport.es,comandoplay.com,comandotorrents.to,adrenaline.com.br,ncultura.pt,animesdigital.org,wwwhatsnew.com,descargaseriestv.com,lifeder.com,elrellano.com,elintransigente.com,comando.la,remender.pe,noticiasautomotivas.com.br,idinheiro.com.br,diariodocomercio.com.br##body .code-block:not(#style_important)
+xtusubs.com##.maups
+||xtusubs.com/wpp/img/rux37ex29kmf1.gif
+serenotv.com###ltv-preroll
 ||pyrsahn.com^$domain=latribuna.hn
 animegratis.org##.amazon-showcase-container
 ggmax.com.br##div[class]:has(> .announcement__ad)
@@ -5820,6 +5824,7 @@ economist.com##html,body:style(overflow: visible !important;)
 elespanol.com##+js(rc, content-not-granted-paywall, div.content-not-granted-paywall, stay)
 elespanol.com##div.full-suscriptor-container
 elconfidencial.com##+js(rc, newsType__content--closed, div.newsType__content--closed, stay)
+elconfidencial.com##+js(ra, hidden, div#news-body-cc[hidden], stay)
 ||elobservador.com.uy/shares$xmlhttprequest,~third-party
 ||elpais.com.uy/user/authStatus$script,~third-party
 ||prisa.com/dist/subs/pmwall/*/pmwall.min.js$script,domain=elpais.com
@@ -5909,6 +5914,8 @@ kurier.at##+js(ra, class|style, div.paywall, stay)
 kurier.at##div#cfs-paywall-container
 lanacion.com.ar##+js(set-local-storage-item, metering, $remove$)
 lance.com.br##+js(rc, h-[550px], div.paywall-content[class*="h-\["], stay)
+latercera.com##+js(rc, article-body__teaser--locked, div.article-body__teaser--locked, stay)
+latercera.com##div#lt-paywall-slot
 ||latimes.com/meteringjs/$script,~third-party
 ||californiatimes.com/caltimes/latimes/Bootstrap.js$script,third-party,domain=latimes.com
 ||californiatimes.com/modalityjs/latest.js$script,third-party,domain=latimes.com
@@ -18024,7 +18031,6 @@ versia.ru##+js(abort-on-property-read, addLink)
 bb.lv##+js(abort-on-property-read, adjustBackground)
 footboom.com,footboom.kz##+js(abort-on-property-read, admiral)
 electric-house.ru##+js(abort-on-property-read, ads)
-fearmp4.ru##+js(abort-on-property-read, ads_block_check)
 freehat.cc##+js(abort-on-property-read, advFirstClickOpenNewTab)
 amazinghis.ru,moj-pes.ru##+js(abort-on-property-read, anOptions)
 shrlink.top##+js(abort-on-property-read, app_vars.force_disable_adblock)
@@ -18194,7 +18200,7 @@ ya.ru##+js(json-prune, rythm_market)
 znanija.com##+js(json-prune, tiers.TIER_ANY)
 aniqit.com,anivod.com,ashdi.vip,kodik.cc,kodik.info,kodikdb.com,kodikplayer.com,tortuga.wtf##+js(json-prune, vast)
 lumex.space##+js(json-prune-fetch-response, ads.banners.endtag ads.banners.pausebanner ads.rolls)
-rutube.ru##+js(json-prune-fetch-response, appearance.auto_start, '', stackToMatch, !.ru/video/)
+rutube.ru##+js(json-prune-fetch-response, appearance.auto_start, '', stackToMatch, !/video/)
 ohmywishes.com##+js(json-prune-fetch-response, item.banners)
 595.ucoz.net,5wip-file.ru,file-mods.ru,infourok.ru,mixmuz.ru,myshared.ru,sims3pack.ru,wallegend.net##+js(nano-setInterval-booster)
 muzlan.top##+js(nano-setInterval-booster, .numcard)
@@ -18257,6 +18263,7 @@ vsthemes.org##+js(prevent-addEventListener, copy, preventDefault)
 rutube.ru##+js(prevent-addEventListener, ended, _endedNotifier)
 liveinternet.ru##+js(prevent-addEventListener, load, AdvManager)
 dumatv.ru##+js(prevent-addEventListener, message, AUTOPLAY)
+shuba.life##+js(prevent-addEventListener, message, element.contentWindow)
 www.rambler.ru##+js(prevent-addEventListener, scroll, requestAnimationFrame)
 dzen.ru,sportsdzen.ru##+js(prevent-fetch, /stats/bulk|stats/pixels|zen_audit/)
 progorod62.ru,ura.news##+js(prevent-fetch, _rsc=)
@@ -18432,8 +18439,8 @@ dtf.ru,vc.ru##.author__avatar video:remove-attr(autoplay)
 footboom.com,footboom.kz##.b-article-content > h2:has-text(букмекер)
 gazeta.press,gazeta.ru##.b_flowup:remove()
 lostfilm.download,lostfilm.life,lostfilm.one,lostfilm.pro,lostfilm.today,lostfilm.tv,lostfilm.tw,lostfilm.uno,lostfilm.win,lostfilmtv.site,lostfilmtv.uno,lostfilmtv1.site,lostfilmtv2.site,lostfilmtv3.site,lostfilmtv4.site,lostfilmtv5.site##.body > .body:style(user-select: text !important; -moz-user-select: text !important; -webkit-user-select: text !important)
-gamemag.ru##.content-text:has(em:has-text(erid:)) a > strong:style(font-weight: inherit !important)
-gamemag.ru##.content-text:has(em:has-text(erid:)) a:style(pointer-events: none !important; color: inherit !important)
+shuba.life##.c-shorts-slider__mask
+gamemag.ru##.content-row__content:has(p:has-text(erid:)) > p a:not([href^="/"]):not([href^="https://gamemag.ru/"]):style(pointer-events: none !important; color: inherit !important)
 fishki.net##.content__filter-tip > .quick-settings__toggle:has(> .autoplay)
 playground.ru##.dfp-container:remove()
 shedevrum.ai##.fixed#root-toasts[style^="top:"]
@@ -19136,9 +19143,11 @@ vidara.so,vidara.to,vidavra.com##+js(set, HTMLScriptElement.prototype.onerror, u
 vidara.so,vidara.to,vidavra.com##div.max-w-3xl.mx-auto > div.relative.mb-5.rounded-xl.p-7.text-center
 myvidster.com##div.details_ads:nth-of-type(2)
 myvidster.com##td[height="90"]
-avtub.net>>,vidara.*>>##+js(rmnt, script, /h=decodeURIComponent|popundersPerIP|popup|\.onerror|WebAssembly/i)
-dstyladsg.com,gjsabgs.com,gosbagotui.com##+js(rmnt, script, /h=decodeURIComponent|popundersPerIP|popup|\.onerror|WebAssembly/i)
+avtub.net>>,funcrot.net>>,vidara.*>>##+js(rmnt, script, /h=decodeURIComponent|popundersPerIP|popup|\.onerror|WebAssembly/i)
+dstyladsg.com,gasobni.com,gjsabgs.com,gosbagotui.com##+js(rmnt, script, /h=decodeURIComponent|popundersPerIP|popup|\.onerror|WebAssembly/i)
 /assets/js/wynq.js|$script,3p
+/^https:\/\/[a-z]{8}\.com\/assets\/js\/[a-z]{4,5}\.js$/$script,3p,match-case,top=avtub.net|funcrot.net|vidara.*|vidara.so|vidara.to
+/^https:\/\/[a-z][a-z][a-z][a-z][a-z][a-z][a-z][a-z]\.com\/assets\/js\/[a-z][a-z][a-z][a-z][a-z]?\.js$/$script,3p,match-case,top=avtub.net|funcrot.net|vidara.*|vidara.so|vidara.to
 twitchnosub.com##+js(nostif, , 3200-)
 twitchnosub.com##+js(rmnt, script, /bait/i)
 @@||twitchnosub.com/*.js|$1p
@@ -20027,6 +20036,10 @@ vsthemes.org##+js(trusted-click-element, section.nospace > a.button.nospace[href
 rennlist.com##+js(set, googletag.setConfig, noopFunc)
 ||stream.broadpeak.io^$xhr,removeparam=slau,domain=go3.lt
 ||stream.broadpeak.io^$xhr,removeparam=csid,domain=go3.lt
+anikoto.*,anikototv.to###networkloop-ad
+||cdn.kotocdn.site/ad.js^
+||cdn.jsdelivr.net/gh/JStivenCM/Aggressive-Anti-AdBlock/
+/ad?spotid=$frame
 
 ! ----- https://raw.githubusercontent.com/uBlockOrigin/uAssets/master/filters/resource-abuse.txt -----
 /edgemesh.*.js$script,domain=~edgemesh.com|~edgeno.de
@@ -20565,6 +20578,7 @@ ryuugames.com###wpsafe-link:style(display: block !important;)
 ryuugames.com###wpsafe-wait1,#wpsafe-link:others()
 pahe.plus##footer, .text-left, #link-view > [href], .box-main > [href]
 pahe.plus##+js(set, blurred, false)
+pahe.plus##+js(aopr, app_vars.force_disable_adblock)
 *$xhr,redirect-rule=nooptext,domain=intercelestial.com|teknoasian.com|linegee.net|pahe.plus
 @@*$xhr,image,script,frame,stylesheet,1p,domain=intercelestial.com|teknoasian.com|linegee.net|pahe.plus
 @@*$ghide,domain=intercelestial.com|teknoasian.com|linegee.net|pahe.plus
@@ -20575,6 +20589,30 @@ intercelestial.com#@#+js(adjust-setTimeout, '', *, 0.1)
 /_ac/s/*.js|$script,1p
 ||dvwztnx4ab3fl.cloudfront.net^$script
 ||antiadblockcore.org^
+clksz.com,tpi.li,oii.la,srnky.com##^script:has-text(/;break;case \$\.|adb_detected|AdBlockCheck/)
+clksz.com,tpi.li,srnky.com##+js(remove-node-text, script, /adb_detected|AdBlockCheck|;break;case \$\./i)
+clksz.com,tpi.li,oii.la,srnky.com##+js(nowoif)
+tpi.li,oii.la##+js(no-fetch-if, googlesyndication)
+clksz.com,tpi.li,oii.la,srnky.com##+js(no-xhr-if, /pagead2\.googlesyndication\.com|inklinkor\.com/)
+clksz.com,tpi.li,oii.la,srnky.com##+js(acs, EventTarget.prototype.addEventListener, delete window)
+clksz.com,tpi.li,oii.la,srnky.com##+js(aeld, DOMContentLoaded, checkAdblockUser)
+clksz.com,tpi.li,oii.la,srnky.com##+js(nostif, checkAdblock)
+clksz.com,tpi.li,oii.la,srnky.com##+js(set, blurred, false)
+clksz.com,tpi.li,oii.la,srnky.com##+js(rpnt, script, offsetHeight, offsetHeight+100)
+clksz.com,tpi.li,oii.la,srnky.com##a[href][target="_blank"]
+clksz.com,tpi.li,oii.la,srnky.com##.td-post-template-default.td-container, .banner-inner
+healthylifez.com,policiesreview.com,hosttbuzz.com,loanbixby.com,ensuretips.com##+js(nowoif)
+healthylifez.com,policiesreview.com,hosttbuzz.com,loanbixby.com,ensuretips.com##+js(nano-sib, /countdown--|getElementById/, *, 0.001)
+healthylifez.com,policiesreview.com,hosttbuzz.com,loanbixby.com,ensuretips.com##+js(nano-stb, getElementById, *, 0.001)
+healthylifez.com,policiesreview.com,hosttbuzz.com,loanbixby.com,ensuretips.com###getnewlink, .wp2continuelink, .getmylink:style(display: block !important;)
+healthylifez.com,policiesreview.com,hosttbuzz.com,loanbixby.com,ensuretips.com###getnewlink, .wp2continuelink, .getmylink, #newtimer:others()
+financeguidz.com,lnbzi.com,techbixby.com##+js(nowoif)
+lnbzi.com##+js(set, blurred, false)
+@@.js$xhr,domain=aii.sh|clksz.com|linegee.net|lnbzi.com|pahe.plus|srnky.com
+@@||clksz.com^$ghide
+@@||srnky.com^$ghide
+||aii.sh/webroot/cloud_theme/img/downloadbaner.png
+$script,1p,replace=/\['ok'\]=!!\[\]/['ok']=![]/g,domain=aii.sh|clksz.com|linegee.net|lnbzi.com|pahe.plus|srnky.com
 laweducationinfo.com,godstoryinfo.com,armypowerinfo.com,phonereviewinfo.com,gknutshell.com,vichitrainfo.com,workproductivityinfo.com,dopomininfo.com,artoffocas.com##+js(trusted-replace-outbound-text, decodeURIComponent, Math.random() <= 0.15, false)
 laweducationinfo.com,godstoryinfo.com,armypowerinfo.com,phonereviewinfo.com,gknutshell.com,vichitrainfo.com,workproductivityinfo.com,dopomininfo.com,artoffocas.com##+js(set-cookie, __gads, 1)
 laweducationinfo.com,godstoryinfo.com,armypowerinfo.com,phonereviewinfo.com,gknutshell.com,vichitrainfo.com,workproductivityinfo.com,dopomininfo.com,artoffocas.com##+js(aopw, window.onload)
@@ -20659,31 +20697,6 @@ segurosdevida.site###wpsafe-generate, #wpsafe-link:style(display: block !importa
 segurosdevida.site##[id^="wpsafe-wait"], #content-wrapper
 ikramlar.online##+js(noeval-if, /chp_?ad/)
 ikramlar.online##+js(no-fetch-if, googlesyndication)
-clksz.com,tpi.li,oii.la,srnky.com##^script:has-text(/;break;case \$\.|adb_detected|AdBlockCheck/)
-clksz.com,tpi.li,srnky.com##+js(remove-node-text, script, /adb_detected|AdBlockCheck|;break;case \$\./i)
-clksz.com,tpi.li,oii.la,srnky.com##+js(nowoif)
-tpi.li,oii.la##+js(no-fetch-if, googlesyndication)
-clksz.com,tpi.li,oii.la,srnky.com##+js(no-xhr-if, /pagead2\.googlesyndication\.com|inklinkor\.com/)
-clksz.com,tpi.li,oii.la,srnky.com##+js(acs, EventTarget.prototype.addEventListener, delete window)
-clksz.com,tpi.li,oii.la,srnky.com##+js(aeld, DOMContentLoaded, checkAdblockUser)
-clksz.com,tpi.li,oii.la,srnky.com##+js(nostif, checkAdblock)
-clksz.com,tpi.li,oii.la,srnky.com##+js(set, blurred, false)
-clksz.com,tpi.li,oii.la,srnky.com##+js(rpnt, script, offsetHeight, offsetHeight+100)
-clksz.com,tpi.li,oii.la,srnky.com##a[href][target="_blank"]
-clksz.com,tpi.li,oii.la,srnky.com##.td-post-template-default.td-container, .banner-inner
-healthylifez.com,policiesreview.com,hosttbuzz.com,loanbixby.com,ensuretips.com##+js(nowoif)
-healthylifez.com,policiesreview.com,hosttbuzz.com,loanbixby.com,ensuretips.com##+js(nano-sib, /countdown--|getElementById/, *, 0.001)
-healthylifez.com,policiesreview.com,hosttbuzz.com,loanbixby.com,ensuretips.com##+js(nano-stb, getElementById, *, 0.001)
-healthylifez.com,policiesreview.com,hosttbuzz.com,loanbixby.com,ensuretips.com###getnewlink, .wp2continuelink, .getmylink:style(display: block !important;)
-healthylifez.com,policiesreview.com,hosttbuzz.com,loanbixby.com,ensuretips.com###getnewlink, .wp2continuelink, .getmylink, #newtimer:others()
-financeguidz.com,lnbzi.com,techbixby.com##+js(nowoif)
-lnbzi.com##+js(set, blurred, false)
-pahe.plus##+js(aopr, app_vars.force_disable_adblock)
-@@.js$xhr,domain=aii.sh|clksz.com|linegee.net|lnbzi.com|pahe.plus|srnky.com
-@@||clksz.com^$ghide
-@@||srnky.com^$ghide
-||aii.sh/webroot/cloud_theme/img/downloadbaner.png
-$script,1p,replace=/\['ok'\]=!!\[\]/['ok']=![]/g,domain=aii.sh|clksz.com|linegee.net|lnbzi.com|pahe.plus|srnky.com
 techacode.com##+js(nostif, nextFunction, 250)
 techacode.com##+js(nobab)
 techacode.com##+js(noeval-if, adb)
@@ -21832,6 +21845,7 @@ duckduckgo.com##.js-open-in-app
 adspecials.us,ajanlatok.hu,akcniletak.cz,catalogosofertas.cl,catalogosofertas.com.ar,catalogosofertas.com.br,catalogosofertas.com.co,catalogosofertas.com.ec,catalogosofertas.com.mx,catalogosofertas.com.pe,catalogueoffers.co.uk,catalogueoffers.com.au,flugblattangebote.at,flyerdeals.ca,folderz.nl,folhetospromocionais.com,folletosofertas.es,gazetki.pl,kundeavisogtilbud.no,ofertelecatalog.ro,offertevolantini.it,promocatalogues.fr,promotiez.be,promotions.ae,prospektangebote.de,reklambladerbjudanden.se,tilbudsaviseronline.dk##.js-page-promotion-container
 my.mintmobile.com##.justify-content-end.rounded-1.g-0.p-3
 news.bitcoin.com##.kBQmzn.sc-gMKojc
+leicester.news##.kg-cta-content-app
 baby-calendar.jp##.l-anime-bana.js-bcweb-only
 soundcloud.com##.l-front-mobile-teaser
 sauna-ikitai.com##.l-headerApp
