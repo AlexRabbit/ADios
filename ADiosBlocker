@@ -155,6 +155,8 @@
 ||templates.buscape.com^$3p
 ||urlcash.net^$3p
 ||zebestof.com^$3p
+||e-afiliacao.estadao.com.br^
+||smartads.estadao.com.br^
 ||ak-ads-ns.prisasd.com^
 ||ads.comunidades.net^
 ||go.etoro.com^$3p
@@ -1352,10 +1354,18 @@ guardianocturna.mx,3djuegos.com.mx,cine.com,3djuegospc.com,directoalpaladar.com,
 rapirecetas.com,tiohentai.com,maistocadas.mus.br,serviporno.com,solvetic.com,gamesfull.app,agazeta.com.br,lasexta.com,extra.ec,globo.com,amomeupet.org,cifras.com.br,gaz.com.br,placar.com.br,futebolinterior.com.br,tvhistoria.com.br,tribunapr.uol.com.br,diariodonordeste.verdesmares.com.br,sbt.com.br,link.estadao.com.br,atomixhq.*,jc.ne10.uol.com.br,internetpasoapaso.com,acidadeon.com,leouve.com.br,larazon.es,infoescola.com,cbn.globoradio.globo.com,abril.com.br,odia.ig.com.br,especiais.g1.globo.com,tribunapr.com.br,anime-tube.tv##.ads
 latinomegahd.net,muyinteresante.okdiario.com,subrayado.com.uy,cl1ca.com,periodicocorreo.com.mx,guiavidaesaude.com,muyinteresante.com,reporteindigo.com,omelete.com.mx,c5n.com,t13.cl,solowrestling.mundodeportivo.com,todojujuy.com,mendozapost.com,meiobit.com,brasilparalelo.com.br,tvonline.fan,laprensagrafica.com,ahoragranada.com,correio24horas.com.br,cnnespanol.cnn.com,motociclismo.es,sub100.com.br,theenemy.com.br,manhwas.net,rpp.pe,ambito.com,economipedia.com,informador.mx,elinformador.com.co,cronista.com,rionegro.com.ar,diariodecuyo.com.ar,voydeviaje.com.ar,guarda14.com,viapais.com.ar,agazeta.com.br,eleconomista.com.mx,metropolitanafm.com.br,tycsports.com,elespectador.com,bnews.com.br,migalhas.com.br,losandes.com.ar,lavoz.com.ar,mundo.sputniknews.com,omelete.com.br,lapoliticaonline.*,valenciaplaza.com,dalealbo.cl,globo.com,defesanet.com.br,mibrujula.com,lyon.kim,26noticias.com.ar,auniao.com,clickpb.com.br,emagister.com,lanacion.com.ar,parana-online.com.br,r7.com,toxico-pc.com,uol.com.br##body .banner
 mundoisosgratis.com,actualidadiphone.com,lucrandoideias.com,proandroid.com,lusometeo.com,kltutors.com,eloutput.com,mundobytes.com,techondicas.com,jornalrepercussao.com.br,zonaaps.com,gamevicio.com,blog.desdelinux.net,megacanais.com,terrabrasilnoticias.com,psxbrasil.com.br,elrincondecabra.com,atelevisao.com,ahnegao.com.br,anmosugoi.com,linuxadictos.com,juegosdepcfull.com,pizzafria.ig.com.br,paraveronline.org,sayrodigital.net,cineplus123.org,cinemitas.org,androidayuda.com,sport.es,comandoplay.com,comandotorrents.to,adrenaline.com.br,ncultura.pt,animesdigital.org,wwwhatsnew.com,descargaseriestv.com,lifeder.com,elrellano.com,elintransigente.com,comando.la,remender.pe,noticiasautomotivas.com.br,idinheiro.com.br,diariodocomercio.com.br##body .code-block:not(#style_important)
+madridinforma.es##div[class^="gb-element-"]:has(> :is([class^="mi-ad-"], [id^="mi-ad-"]))
+finance.biggo.com##button[aria-label="Share"]
+estadao.com.br##.content-wrapper.subfooter > .styled-wrapper:has(> .container div[data-ea-slot])
+ominho.pt##.entry-content > div[style*="overflow:hidden;"]:has(> div[id^="div-gpt-ad-"])
+elchecf.es##.MkModuleBanner
+elchecf.es##.MkGrids__block--three_divisions
+blizzpaste.com##+js(no-window-open-if, _blank)
 vejasp.abril.com.br###relacionadas_marfeel_single
 vejasp.abril.com.br###mais_lidas_marfeel_single
 vejasp.abril.com.br###abrAdAnchor
-24noticias.sapo.pt##.inkw-pub-wrapper
+||js.sapo.pt/Projects/CPU/
+sapo.pt##.inkw-pub-wrapper
 diariobitcoin.com##.dbtc-ad-slot
 legiongamesgod.com###adAnchor
 legiongamesgod.com##.ad-modal-overlay
@@ -3721,7 +3731,7 @@ epocanegocios.globo.com###pub-shopping
 acidadeon.com##.slb0
 acidadeon.com###opec
 ovaciondigital.com.uy,elpais.com.uy##.module1colAds
-g24.gal,elpais.com.uy##.ads-container
+estadao.com.br,g24.gal,elpais.com.uy##.ads-container
 es.charla.motor.narkive.com##div[onimpression="nk_playbuzz_impression"]
 ordenador.online##div[class^="escomad"]
 enmimaquinafunciona.com##.big-square-inline
@@ -18130,7 +18140,6 @@ fssp.gov.ru,southpark.su,turkcinema.org##+js(abort-on-property-write, document.o
 fssp.gov.ru,southpark.su,turkcinema.org##+js(abort-on-property-write, document.ondragstart)
 fssp.gov.ru,southpark.su,turkcinema.org##+js(abort-on-property-write, document.onselectstart)
 phys-kids.com##+js(abort-on-property-write, fetch)
-gamemag.ru##+js(abort-on-property-write, keepAdblock)
 fishki.net##+js(abort-on-stack-trace, HTMLVideoElement.prototype.play, playVideo)
 tvzvezda.ru##+js(abort-on-stack-trace, Object.prototype.autoplay, assets)
 ya.ru##+js(abort-on-stack-trace, Object.prototype.feed, yandex-portal.naydex.net)
@@ -18237,11 +18246,11 @@ kinogo-720.net,kinokong.li,uakino.best,win-lite.site##+js(nano-setInterval-boost
 startgamer.ru##+js(nano-setInterval-booster, js-game-loader-block, 1000, 0.0001)
 3mod.ru,iblitzmods.ru##+js(nano-setInterval-booster, ks_counter)
 wowskill.ru##+js(nano-setInterval-booster, p)
-anifap.com,anifap.xyz,diplomsrazu.ru,igrozoom.ru,pro-books.ru,ru-minecraft.ru,softomania.net,vip-mods.ru,warezok.net,windows-driver.com,windows-driver.net,windows-program.com##+js(nano-setInterval-booster, timer)
+anifap.com,anifap.xyz,diplomsrazu.ru,freetp.org,freetp.ru,igrozoom.ru,pro-books.ru,ru-minecraft.ru,softomania.net,vip-mods.ru,warezok.net,windows-driver.com,windows-driver.net,windows-program.com##+js(nano-setInterval-booster, timer)
 autoinfo24.ru,dp73.spb.ru,dropmefiles.com.ua,dropmefiles.net,gtavicecity.ru,pes-files.ru##+js(nano-setTimeout-booster)
 dzen.ru##+js(nano-setTimeout-booster, '()=>r(', 15000)
 tv-kanali.online##+js(nano-setTimeout-booster, , 30000, 0.0001)
-freetp.org,freetp.ru,online-fix.me##+js(nano-setTimeout-booster, timer)
+online-fix.me##+js(nano-setTimeout-booster, timer)
 4pda.to##+js(nano-setTimeout-booster, zat_tick)
 www.ukr.net##+js(no-fetch-if, /_events/)
 trychatgpt.ru##+js(no-fetch-if, /mpsuadv\.ru/)
@@ -19753,10 +19762,11 @@ picnob.com##.slimlay
 7daystodie-servers.com#@##ad-banner-top
 7daystodie-servers.com#@#.ad-sidebar
 7daystodie-servers.com#@#.ad-slot:not(.adsbox):not(.adsbygoogle)
-net77.cc##+js(rmnt, script, .removeClass, includes, data-hash)
 net77.cc##+js(set, HTMLImageElement.prototype.onerror, undefined)
 net77.cc##+js(nowoif, _blank)
 net77.cc##+js(trusted-set-attr, body, data-allok, y)
+net77.cc##+js(rpnt, script, == "y", !== "y")
+net77.cc##+js(nostif, removeClass("hideele"))
 /zvrk/?n=$frame
 thisvid.com##+js(acs, document.write)
 ##.container a[title="AI Jerk OFF"][href][target="_blank"]
@@ -20061,6 +20071,7 @@ anikoto.*,anikototv.to###networkloop-ad
 /ad?spotid=$frame
 ##.wrapper a[rel~="sponsored"][href^="https://"][href*=".com/"][href*="?key="]
 ##.code-block a[target="_blank"][href^="https://"][href*=".com/"][href*="?key="]
+##.code-block a[href^="https://ewxerd.site/"]
 hormuz.data-tracking.net##+js(nostif, offsetHeight)
 ||ads.1mindrama.net^
 mangaball.com##+js(json-prune-xhr-response, data.advanced_settings, , propsToMatch, /settings)
@@ -20083,9 +20094,15 @@ namiko.net##.namiko-ad-band
 namiko.net##+js(set, HTMLScriptElement.prototype.onerror, undefined)
 namiko.net##+js(trusted-prevent-xhr, /googlesyndication|doubleclick/, "dataset.namikoVisitProbe='ready'")
 namiko.net##+js(trusted-prevent-fetch, /googlesyndication|doubleclick/, "dataset.namikoVisitProbe='ready'")
+##div[data-ad-slot-name]
 ||cdn.jsdelivr.net/gh/senbonzakura000/$script
 gg.deals##+js(rmnt, style, page-feature)
 gg.deals##.flash-container-wrapper
+##.flex a[href^="https://s.smartfloralab.com/"]
+enmods.com,4umods.com##+js(rmnt, script, .offsetParent)
+||enmods.com/wp-content/uploads/jlikfa/
+enmods.com,4umods.com##.enmods-ad-slot
+||4umods.com/wp-content/uploads/mmaaol/
 
 ! ----- https://raw.githubusercontent.com/uBlockOrigin/uAssets/master/filters/resource-abuse.txt -----
 /edgemesh.*.js$script,domain=~edgemesh.com|~edgeno.de
@@ -20638,8 +20655,8 @@ intercelestial.com#@#+js(adjust-setTimeout, '', *, 0.1)
 linegee.net,intercelestial.com,teknoasian.com,pahe.*##+js(rmnt, script, documentElement)
 linegee.net,intercelestial.com,teknoasian.com,pahe.*##div:has(a[href*="antiadblockcore.com"])
 linegee.net,intercelestial.com,teknoasian.com,pahe.*##html:style(overflow: auto !important;)
-linegee.net,intercelestial.com,teknoasian.com,pahe.*##+js(trusted-replace-outbound-text, decodeURIComponent, /^__x[0-9a-f]{7}$/, document)
-pahe.*##+js(trusted-replace-outbound-text, decodeURIComponent, /^[0-9a-f]__$/)
+pahe.ink##+js(trusted-replace-outbound-text, decodeURIComponent, /^__x[0-9a-f]{7}$/, document)
+pahe.ink##+js(trusted-replace-outbound-text, decodeURIComponent, /^[0-9a-f]__$/)
 aii.sh,lnbzi.com,clksz.com,tpi.li,oii.la,srnky.com##+js(trusted-replace-outbound-text, decodeURIComponent, /^__x[0-9a-f]{7}$/, document)
 aii.sh,lnbzi.com,clksz.com,tpi.li,oii.la,srnky.com##+js(trusted-replace-outbound-text, decodeURIComponent, /^[0-9a-f]__$/)
 clksz.com,tpi.li,oii.la,srnky.com##^script:has-text(/;break;case \$\.|adb_detected|AdBlockCheck/)
@@ -21504,8 +21521,20 @@ link.snipcash.com##+js(set, blurred, false)
 ||zmfcxr.srnky.com^
 ||srnky.com/u1710i/polyfill.
 @@||fileroy.com/assets/$script,1p
+fileroy.com##main.fr-download-main:style(display:block !important)
+fileroy.com##+js(ra, inert, main.fr-download-main, complete, quitAfter, 10)
+fileroy.com##+js(ra, data-fr-detection, body, complete)
+fileroy.com##.fr-download-guard:remove()
+fileroy.com##+js(adjust-setInterval, counter)
 fileroy.com##+js(rmnt, script, ?key=)
 fileroy.com##div.fr-gate-ad
+||auth.av1core.de5.net/health$xhr
+||uplcm.com^$popup
+av1core.*##+js(no-fetch-if, /outbrain\.com|adligature\.com|quantserve\.com|srvtrck\.com/)
+av1core.*##+js(set, HTMLElement.prototype.offsetHeight, 1)
+av1core.*##+js(nowoif, uplcm.com)
+av1core.*##+js(set, document.hidden, false)
+av1core.*##+js(trusted-set, document.visibilityState, visible)
 
 ! ----- https://secure.fanboy.co.nz/fanboy-mobile-notifications.txt -----
 /app-banner/*$xmlhttprequest
