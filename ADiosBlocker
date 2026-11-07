@@ -8,6 +8,7 @@
 [Adblock Plus 2.0]
 
 ! ----- https://filters.adtidy.org/extension/ublock/filters/9.txt -----
+||antiadblockguard.com^
 ||adstag0102.xyz^
 ||otzads.net^
 ||bivogrvfyoj.in^
@@ -1354,6 +1355,13 @@ guardianocturna.mx,3djuegos.com.mx,cine.com,3djuegospc.com,directoalpaladar.com,
 rapirecetas.com,tiohentai.com,maistocadas.mus.br,serviporno.com,solvetic.com,gamesfull.app,agazeta.com.br,lasexta.com,extra.ec,globo.com,amomeupet.org,cifras.com.br,gaz.com.br,placar.com.br,futebolinterior.com.br,tvhistoria.com.br,tribunapr.uol.com.br,diariodonordeste.verdesmares.com.br,sbt.com.br,link.estadao.com.br,atomixhq.*,jc.ne10.uol.com.br,internetpasoapaso.com,acidadeon.com,leouve.com.br,larazon.es,infoescola.com,cbn.globoradio.globo.com,abril.com.br,odia.ig.com.br,especiais.g1.globo.com,tribunapr.com.br,anime-tube.tv##.ads
 latinomegahd.net,muyinteresante.okdiario.com,subrayado.com.uy,cl1ca.com,periodicocorreo.com.mx,guiavidaesaude.com,muyinteresante.com,reporteindigo.com,omelete.com.mx,c5n.com,t13.cl,solowrestling.mundodeportivo.com,todojujuy.com,mendozapost.com,meiobit.com,brasilparalelo.com.br,tvonline.fan,laprensagrafica.com,ahoragranada.com,correio24horas.com.br,cnnespanol.cnn.com,motociclismo.es,sub100.com.br,theenemy.com.br,manhwas.net,rpp.pe,ambito.com,economipedia.com,informador.mx,elinformador.com.co,cronista.com,rionegro.com.ar,diariodecuyo.com.ar,voydeviaje.com.ar,guarda14.com,viapais.com.ar,agazeta.com.br,eleconomista.com.mx,metropolitanafm.com.br,tycsports.com,elespectador.com,bnews.com.br,migalhas.com.br,losandes.com.ar,lavoz.com.ar,mundo.sputniknews.com,omelete.com.br,lapoliticaonline.*,valenciaplaza.com,dalealbo.cl,globo.com,defesanet.com.br,mibrujula.com,lyon.kim,26noticias.com.ar,auniao.com,clickpb.com.br,emagister.com,lanacion.com.ar,parana-online.com.br,r7.com,toxico-pc.com,uol.com.br##body .banner
 mundoisosgratis.com,actualidadiphone.com,lucrandoideias.com,proandroid.com,lusometeo.com,kltutors.com,eloutput.com,mundobytes.com,techondicas.com,jornalrepercussao.com.br,zonaaps.com,gamevicio.com,blog.desdelinux.net,megacanais.com,terrabrasilnoticias.com,psxbrasil.com.br,elrincondecabra.com,atelevisao.com,ahnegao.com.br,anmosugoi.com,linuxadictos.com,juegosdepcfull.com,pizzafria.ig.com.br,paraveronline.org,sayrodigital.net,cineplus123.org,cinemitas.org,androidayuda.com,sport.es,comandoplay.com,comandotorrents.to,adrenaline.com.br,ncultura.pt,animesdigital.org,wwwhatsnew.com,descargaseriestv.com,lifeder.com,elrellano.com,elintransigente.com,comando.la,remender.pe,noticiasautomotivas.com.br,idinheiro.com.br,diariodocomercio.com.br##body .code-block:not(#style_important)
+seriesmp4.club##+js(href-sanitizer, a[href^="https://seriesmp4.club/dl/?go=aHR0c"], ?go, base64decode)
+dbsullca.com###special-overlay:style(display: none !important;)
+dbsullca.com##body:style(overflow: auto !important;)
+dbsullca.com##.special-overlay__link
+||dbsullca.com/storage/promo-modal/
+filmesmp4.biz##.fm-ads
+as.com##.ad-tp
 madridinforma.es##div[class^="gb-element-"]:has(> :is([class^="mi-ad-"], [id^="mi-ad-"]))
 finance.biggo.com##button[aria-label="Share"]
 estadao.com.br##.content-wrapper.subfooter > .styled-wrapper:has(> .container div[data-ea-slot])
@@ -2219,9 +2227,6 @@ la-razon.com##.genosha_ads
 la-razon.com##.genosha_ads_fixed_bottom
 ||pagina7.cl/js/ads.js
 ||gamesfull.app/*/anuncios/
-seriesflix.onl##.babaz
-seriesflix.onl##+js(no-window-open-if)
-seriesflix.onl##+js(abort-current-script, EventTarget.prototype.addEventListener, pop[_0x)
 nationalgeographic.pt##.ad-container-m1:style(min-height: 0 !important;)
 novabrasilfm.com.br##[class^="publicidade-"]
 webmotors.com.br##div[id^="ad-search-result"]
@@ -5734,7 +5739,7 @@ simple.ripley.com.pe#@#.dfp-ad-unit
 ||onecount.net^$third-party
 ||js.pelcro.com^$script,third-party
 /xbuilder/experience/execute$xmlhttprequest,domain=~automobilwoche.de|~frontline.thehindu.com|~thedispatch.com
-@@||piano.io^$domain=hbr.org|japantimes.co.jp
+@@||piano.io^$domain=japantimes.co.jp
 @@||tinypass.com^$script,domain=ajc.com|thelogic.co
 ||api.pico.tools/client/query/*$xmlhttprequest,~third-party
 ||api.pico.tools/popup/null/*$xmlhttprequest,~third-party
@@ -5792,6 +5797,7 @@ bhaskar.com##+js(ra, class, div.paywallBlockedContent, stay)
 ||bizjournals.com/*.html?rel=plus$inline-script
 ||bwbx.io/s3/fence/fortress-client/*.css$stylesheet,third-party,domain=bloomberg.com
 ||meter.bostonglobe.com/js/meter.js$script,~third-party
+/\.businessdesk\.co\.nz\/.+\/(\w+-){3,}.+\?rel=plus/$inline-script,domain=businessdesk.co.nz
 /\.businessinsider\.com\/chunks\/scripts\/\d.+\.js/$script,domain=businessinsider.com,~third-party
 businessinsider.jp##+js(ra, hidden, div.piano-paywall-container[hidden], stay)
 ||businessoffashion.com/arc-platform-proxy.js$script,~third-party
@@ -5897,8 +5903,6 @@ gauchazh.clicrbs.com.br##+js(ra, class, div.m-paid-content>div.hidden, stay)
 groene.nl##+js(cookie-remover, rlist)
 harpers.org##+js(cookie-remover, hr_session)
 ||harpers.org/wp-content/themes/timber/static/js/modal*.js
-||adobedtm.com/*/launch-*.js$script,domain=hbr.org
-||cdn.tinypass.com/api/tinypass.min.js$script,domain=hbr.org
 ||hilltimes.com/*/js/loadingoverlay/loadingoverlay.min.js$script,~third-party
 hindustantimes.com##+js(rc, paywall, .paywall, stay)
 hindustantimes.com##+js(rc, hide, .hide, stay)
@@ -6332,9 +6336,9 @@ internationalepolitik.de##+js(set-local-storage-item, paywall-nids, $remove$)
 ||invmed.co/bootstrap/bootstrap.min.js$script,domain=investing.com
 ipsoa.it##+js(ra, style, div.paywall, stay)
 ||jerseyeveningpost.com^$inline-script
-jewishinsider.com##+js(rc, paywalled-content, section.paywalled-content, stay)
-jewishinsider.com##+js(rc, whitePopup, body.whitePopup, stay)
+jewishinsider.com##section.body.p1:style(height: auto !important;)
 jewishinsider.com##div.regModalOuter
+jewishinsider.com##+js(ra, class, div.wp-block-custom-everlit-iframe-embed, stay)
 ||jornaldocomercio.com/*/json/paywall.json$xmlhttprequest,~third-party
 jornaljoca.com.br##+js(acis, $, paywall)
 kommersant.ru##+js(rc, doc--regwall, article.doc--regwall, stay)
@@ -15013,6 +15017,7 @@ dzen.ru#@#:matches-path(/articles) div:has(> article > div > [class*="image"]:em
 .cyou/g/
 .cyou/gd/
 .cyou/s/
+.cyou/sbx/
 .net/wrr?
 .qpon/cuid/
 .qpon/gd/
@@ -17765,6 +17770,7 @@ ecosia.org##.ai-search-button
 straitstimes.com##.ai-summary
 businessinsider.com##.ai-summary-questions
 fresnobee.com##.ai-summary-wrapper
+community.shopify.com##.ai-topic-summary
 flyscoot.com##.ai-trip-section
 indiatoday.in##.ai_assist_logo
 economictimes.indiatimes.com##.ai_podcast_030825
@@ -17971,6 +17977,7 @@ www.youtube.com##ytd-talk-to-recs-flow-renderer
 ||widget.indexfox.ai^
 ||widget.kapa.ai^$third-party
 ||widget.prod.equally.ai^$third-party
+||widget.sitegpt.ai^$subdocument,third-party
 
 ! ----- https://raw.githubusercontent.com/easylist/ruadlist/master/js-fixes-experimental.txt -----
 growhow.in.ua###custom-background-css:remove()
@@ -18987,6 +18994,7 @@ straemplay.org,stre4mpay.one,stre4mplay.*##+js(nowoif)
 straemplay.org,stre4mpay.one,stre4mplay.*##+js(aopr, puOverlay)
 straemplay.org,stre4mpay.one,stre4mplay.*##div[style*="z-index: 1000"][style*="background: transparent"]
 ||btent.stre4mpay.one^$popup
+fandom.com##+js(set, RLCONF.wgAdShieldActive, false)
 fandom.com##+js(set, wgAffiliateEnabled, false)
 kenshi.fandom.com##+js(set, ads, null)
 fandom.com##[id^="siderail_"][id*="_gamepedia"]
@@ -19044,6 +19052,7 @@ freeforums.net##div[id^="FreeForums_net_InThread"]
 investing.com##+js(no-fetch-if, ads)
 investing.com##+js(set, adNotificationDetected, false)
 investing.com##+js(trusted-replace-argument, String.prototype.startsWith, 0, , condition, /ad-free-subscription)
+investing.com##+js(trusted-json-edit, .props.pageProps.state.authStore.isAdsFree=true)
 pornhub.*##+js(rmnt, script, /\/interstitial\?|\\x/)
 pornhub.*##+js(nostif, adsbytrafficjunkycontext)
 pornhub.*##+js(acs, Object.defineProperty, trafficjunky)
@@ -19693,15 +19702,16 @@ autoembed.app##+js(nostif, offsetHeight)
 ||empirenovel.com/po.js
 @@||leakgallery.com^$ghide
 ##.page-layout a[href^="https://hashcounts.com/"]
+leakgallery.com##app-page-lead
 leakgallery.com##app-top-strip:remove()
 leakgallery.com##a[rel~="sponsored"]
 leakgallery.com##+js(no-fetch-if, method:HEAD)
 leakgallery.com##+js(set-cookie, adblock, 0)
 *$script,3p,redirect-rule=noopjs,to=~googletagmanager.com,from=leakgallery.com
 *$script,3p,redirect=noopjs,to=pemsrv.com|tsyndicate.com,from=leakgallery.com
-||api.leakgallery.com/r/z?
-||cdn.*.com/sdk/v*/dd.*.js|$script,3p
-/\/r\/z\?z=[0-9]+&sub=[0-9]+/$xhr,1p,match-case
+||api.leakgallery.com/cfg/*/z?
+||api.leakgallery.com/cfg/*/cpc?
+||cdn.*.com/sdk/v*/dd.*.js^$script,3p
 scmp.com##+js(no-xhr-if, googlesyndication)
 scmp.com##+js(remove-cookie, __adblocker)
 opatil.com##+js(rmnt, script, offsetParent)
@@ -19763,10 +19773,14 @@ picnob.com##.slimlay
 7daystodie-servers.com#@#.ad-sidebar
 7daystodie-servers.com#@#.ad-slot:not(.adsbox):not(.adsbygoogle)
 net77.cc##+js(set, HTMLImageElement.prototype.onerror, undefined)
+net77.cc##+js(set, HTMLScriptElement.prototype.onerror, undefined)
 net77.cc##+js(nowoif, _blank)
 net77.cc##+js(trusted-set-attr, body, data-allok, y)
 net77.cc##+js(rpnt, script, == "y", !== "y")
-net77.cc##+js(nostif, removeClass("hideele"))
+net77.cc##+js(ra, onerror, script, asap, quitAfter, 1000)
+net77.cc##+js(rmnt, script, adp.innerHTML)
+@@||net77.cc^$ghide
+||monetag.com^$image,redirect=3x2.png,domain=net77.cc
 /zvrk/?n=$frame
 thisvid.com##+js(acs, document.write)
 ##.container a[title="AI Jerk OFF"][href][target="_blank"]
@@ -20103,6 +20117,20 @@ enmods.com,4umods.com##+js(rmnt, script, .offsetParent)
 ||enmods.com/wp-content/uploads/jlikfa/
 enmods.com,4umods.com##.enmods-ad-slot
 ||4umods.com/wp-content/uploads/mmaaol/
+chaturflix.cam,striphub.cam##+js(nostif, timed out)
+chaturflix.cam,striphub.cam##a[href="https://theporndude.com/"]
+chaturflix.cam,striphub.cam##+js(no-fetch-if, method:HEAD, length:10001)
+@@||chaturflix.cam^$ghide
+@@||striphub.cam^$ghide
+||uqload.*/js2/
+allpornflix.com##+js(json-prune, *.props.videoPlayerAds *.props.postButtonAds)
+||guardiantv.live/api/vast^
+/^https?:\/\/[-a-z]{6,}\.(?:com?|info|pro|xyz)\/[a-d][-.\/A-Z_a-z][DHWXm][-.\/A-Z_a-z][59FVZ][-.\/A-Z_a-z][6swyz][-.\/A-Z_a-z][-\/0-9A-Z_a-z][-.\/A-Z_a-z][-\/0-9A-Z_a-z]+$/$xhr,3p,match-case,to=co|com|info|pro|xyz,from=guardiantv.live
+/^https:\/\/[-a-z][-a-z][-a-z][-a-z][-a-z][-a-z]+\.[cipx][nory][fmoz]?o?\/[a-d][-.\/A-Z_a-z][DHWXm][-.\/A-Z_a-z][59FVZ][-.\/A-Z_a-z][6swyz][-.\/A-Z_a-z][-\/0-9A-Z_a-z][-.\/A-Z_a-z][-\/0-9A-Z_a-z]+$/$xhr,3p,match-case,domain=guardiantv.live
+arabcanadanews.ca##+js(aeld, load, popupAdModal)
+arabcanadanews.ca##.detailsAdvertisementWrap
+arabcanadanews.ca##.sliderAdvertisementWrap
+||arabcanadanews.ca/storage/ads/
 
 ! ----- https://raw.githubusercontent.com/uBlockOrigin/uAssets/master/filters/resource-abuse.txt -----
 /edgemesh.*.js$script,domain=~edgemesh.com|~edgeno.de
@@ -20646,7 +20674,6 @@ pahe.plus##+js(aopr, app_vars.force_disable_adblock)
 @@*$xhr,image,script,frame,stylesheet,1p,domain=intercelestial.com|teknoasian.com|linegee.net|pahe.plus
 @@*$ghide,domain=intercelestial.com|teknoasian.com|linegee.net|pahe.plus
 linegee.net,intercelestial.com,teknoasian.com##.right-sidebar.penci_sidebar.container,.penci-home-popular-posts.container,p,ul,li,[href*="s0-greate"],#sidebar,.post-pagination,.single-breadcrumb.penci-breadcrumb.container,.penci-move-title-above.post-image,#footer-section, .post-related, #comments, .post-share.tags-share-box, .alignleft.wp-caption
-linegee.net,intercelestial.com,teknoasian.com##+js(aeld, DOMContentLoaded, onpopstate)
 linegee.net,intercelestial.com,teknoasian.com##+js(nowoif)
 intercelestial.com#@#+js(adjust-setTimeout, '', *, 0.1)
 /_ac/s/*.js|$script,1p
