@@ -1360,6 +1360,7 @@ linkliberado.xyz,guardianocturna.mx,3djuegos.com.mx,cine.com,3djuegospc.com,dire
 rapirecetas.com,tiohentai.com,maistocadas.mus.br,serviporno.com,solvetic.com,gamesfull.app,agazeta.com.br,lasexta.com,extra.ec,globo.com,amomeupet.org,cifras.com.br,gaz.com.br,placar.com.br,futebolinterior.com.br,tvhistoria.com.br,tribunapr.uol.com.br,diariodonordeste.verdesmares.com.br,sbt.com.br,link.estadao.com.br,atomixhq.*,jc.ne10.uol.com.br,internetpasoapaso.com,acidadeon.com,leouve.com.br,larazon.es,infoescola.com,cbn.globoradio.globo.com,abril.com.br,odia.ig.com.br,especiais.g1.globo.com,tribunapr.com.br,anime-tube.tv##.ads
 latinomegahd.net,muyinteresante.okdiario.com,subrayado.com.uy,cl1ca.com,periodicocorreo.com.mx,guiavidaesaude.com,muyinteresante.com,reporteindigo.com,omelete.com.mx,c5n.com,t13.cl,solowrestling.mundodeportivo.com,todojujuy.com,mendozapost.com,meiobit.com,brasilparalelo.com.br,tvonline.fan,laprensagrafica.com,ahoragranada.com,correio24horas.com.br,cnnespanol.cnn.com,motociclismo.es,sub100.com.br,theenemy.com.br,manhwas.net,rpp.pe,ambito.com,economipedia.com,informador.mx,elinformador.com.co,cronista.com,rionegro.com.ar,diariodecuyo.com.ar,voydeviaje.com.ar,guarda14.com,viapais.com.ar,agazeta.com.br,eleconomista.com.mx,metropolitanafm.com.br,tycsports.com,elespectador.com,bnews.com.br,migalhas.com.br,losandes.com.ar,lavoz.com.ar,mundo.sputniknews.com,omelete.com.br,lapoliticaonline.*,valenciaplaza.com,dalealbo.cl,globo.com,defesanet.com.br,mibrujula.com,lyon.kim,26noticias.com.ar,auniao.com,clickpb.com.br,emagister.com,lanacion.com.ar,parana-online.com.br,r7.com,toxico-pc.com,uol.com.br##body .banner
 mundoisosgratis.com,actualidadiphone.com,lucrandoideias.com,proandroid.com,lusometeo.com,kltutors.com,eloutput.com,mundobytes.com,techondicas.com,jornalrepercussao.com.br,zonaaps.com,gamevicio.com,blog.desdelinux.net,megacanais.com,terrabrasilnoticias.com,psxbrasil.com.br,elrincondecabra.com,atelevisao.com,ahnegao.com.br,anmosugoi.com,linuxadictos.com,juegosdepcfull.com,pizzafria.ig.com.br,paraveronline.org,sayrodigital.net,cineplus123.org,cinemitas.org,androidayuda.com,sport.es,comandoplay.com,comandotorrents.to,adrenaline.com.br,ncultura.pt,animesdigital.org,wwwhatsnew.com,descargaseriestv.com,lifeder.com,elrellano.com,elintransigente.com,comando.la,remender.pe,noticiasautomotivas.com.br,idinheiro.com.br,diariodocomercio.com.br##body .code-block:not(#style_important)
+player.pelisserieshoy.com##+js(abort-on-stack-trace, document.createElement, Pop)
 viciados.net##.vgdb-home-ad
 viciados.net###vp-fundo
 viciados.net###vp-card
@@ -5969,8 +5970,8 @@ lavanguardia.com,mundodeportivo.com##span.content-ad,span.hidden-ad,span.ad-unit
 ledevoir.com##+js(cookie-remover, pw6)
 legrandcontinent.eu##+js(rc, paywall|pw|softwall, body, stay)
 lejdd.fr##div#poool-widget
-lepoint.fr,lexpress.fr##+js(set, window.Fusion.globalContent.content_restrictions, {})
-/\.lequipe\.fr\/assets\/js\/.*[wW]all.+\.js/$script,~third-party
+lepoint.fr,##+js(set, window.Fusion.globalContent.content_restrictions, {})
+/\.lequipe\.fr\/assets\/js\/.*[wW]all.+\.js/$script,~third-party,domain=lequipe.fr
 ||livemint.com/lm-img/subscription/$script,~third-party
 livemint.com##+js(rc, paywall, div.paywall, stay)
 livemint.com##div[class^="storyPaywall_paywallStory_"]:remove()
@@ -6030,6 +6031,7 @@ parismatch.com##div#dead-poool
 ||pastemagazine.com/wp-content/cache/autoptimize/js/autoptimize_*.js$script,~third-party
 pb.pl##+js(ra, class, section.o-article-content, stay)
 pb.pl##div.o-piano-template-loader-box
+||piaui.uol.com.br/static/js/amdb_utils.min.js$script,~third-party
 pitchfork.com##+js(cookie-remover, pay_ent_msmp)
 pourleco.com##+js(ra, style, div[class*="article-"][style], stay)
 pourleco.com##div[data-pleco-poool^="paywall"],div[data-pleco-transition="fade"]
@@ -6130,6 +6132,7 @@ unherd.com##+js(ra, id, div#premiumcontent, stay)
 unherd.com##div#premiumpreview
 /\.vn\.at\/.+\/\d{4}\//$inline-script,domain=vn.at
 ||washingtonpost.com/*/tetro-client/$script,~third-party
+||welt.de/pss-chords-*.js$script,~third-party
 ||weser-kurier.de/assets/*/wk-bundle.min.js$script,~third-party
 ||account.winnipegfreepress.com/api/v*/auth/identify$xmlhttprequest,~third-party
 winnipegfreepress.com##.billboard-ad-space,.ad,.article-ad,.fixed-sky
@@ -6307,6 +6310,7 @@ cmcmarkets.com##+js(rc, activePaywall, .activePaywall, stay)
 connexionfrance.com##+js(cookie-remover, /^/)
 connexionfrance.com##div#subscribe-banner
 ||dailycaller.com/functions/v1/getExperiences$xmlhttprequest,~third-party
+||dailymaverick.co.za/_astro/subscription-status*.js$script,~third-party
 ||darwin.cx/dcxpw-init.js$script,domain=cspdailynews.com|restaurantbusinessonline.com
 dasinvestment.com##+js(rc, paywall-blurred, div.paywall-blurred, stay)
 dasinvestment.com##div#paywall
@@ -11800,6 +11804,7 @@ mail.google.com##.aeF > .nH > .nH[role="main"] > .aKB
 mail.google.com##.nH.PS
 stoodnt.com##.boxzilla-center-container
 stoodnt.com##.boxzilla-overlay
+facebook.com##div[data-virtualized]:has([data-ad-rendering-role^="cta"])
 facebook.com##.RectangleAd
 facebook.com,facebookwkhpilnemxj7asaniu7vnjjbiltxjqhye3mhbshg7kx5tfyd.onion###stream_pagelet div[id^="hyperfeed_story_id_"]:has(a.uiStreamSponsoredLink)
 facebook.com,facebookwkhpilnemxj7asaniu7vnjjbiltxjqhye3mhbshg7kx5tfyd.onion###stream_pagelet div[id^="hyperfeed_story_id_"]:if(h6:has-text(People You May Know))
@@ -15011,6 +15016,7 @@ bizjournals.com#@#div[id^="headlessui-dialog-"], div.sheet-overlay
 @@||c2.piano.io/xbuilder/experience/$xhr,domain=bizjournals.com
 @@||buy.tinypass.com/api/$xhr,domain=bizjournals.com
 ||cxense.com^$script,important,from=bizjournals.com,badfilter
+chochox.com#@#+js(acs, String.fromCharCode, atob)
 dzen.ru#@#:matches-path(/a/) [data-appid] > [itemscope] > div > div[id]
 dzen.ru#@#:matches-path(/a/) [data-appid] [style^="max-height:"] [style^="opacity:"]
 dzen.ru#@#:matches-path(/a/) div:matches-attr(/[a-z0-9]/=article-bottom-block) > [class*="social"] ~ div
@@ -18894,6 +18900,7 @@ game4you.top,innal.top,naylo.top,rustorka.com,rustorka.net,rustorka.top,rustorka
 game4you.top,innal.top,naylo.top,rustorka.com,rustorka.net,rustorka.top,rustorkacom.lib##+js(remove-node-text, script, /agl007|blockPage/)
 e.mail.ru##+js(set-constant, Object.prototype.hasAdBlock, false)
 e.mail.ru#@#+js(set-constant, Object.prototype.hasAdBlock, null)
+/adfox/*/getCode?$third-party,xmlhttprequest
 @@||dzen.ru^$generichide
 @@||sportsdzen.ru^$generichide
 com,~hoster.ru,me,net,org,ru##a[href*="://hoster.ru"][target="_blank"]:not(thanks-opennet.ru)
@@ -19281,6 +19288,9 @@ kaa.lt##+js(set, KAA.state.popads, undefined)
 kaa.lt##+js(aeld, , /popMagic|shield/)
 kaa.lt##+js(nosiif, enforceVideoShield)
 kaa.lt##+js(nowoif, _blank)
+kaa.lt##+js(aost, document.createElement, startOrchestrator)
+kaa.lt###fullscreen-ad-trap
+||kaa.lt/*x*.html^$frame,1p
 ||xgamehub.net/kaa/
 ||imasdk.googleapis.com/js/sdkloader/ima3.js$redirect=noopjs,domain=nuovo.vidplayer.live
 nuovo.vidplayer.live##+js(trusted-json-edit, ..allowAdblock=true)
@@ -20284,6 +20294,11 @@ elektrotanya.com###ad-header4
 elektrotanya.com###ad-header3
 madamnazar.io##+js(no-fetch-if, method:HEAD)
 madamnazar.io##+js(nostif, /offsetHeight|error"/)
+applescoop.org##+js(rmnt, script, /probe|adblock|__asPicks/i)
+applescoop.org##.story-content .ad
+applescoop.org##.as-ad-rail
+applescoop.org##.as-ad
+||laviola.it/jaqisharam.js
 
 ! ----- https://raw.githubusercontent.com/uBlockOrigin/uAssets/master/filters/resource-abuse.txt -----
 /edgemesh.*.js$script,domain=~edgemesh.com|~edgeno.de
@@ -20822,6 +20837,7 @@ pahe.plus##+js(aopr, app_vars.force_disable_adblock)
 *$xhr,redirect-rule=nooptext,domain=intercelestial.com|teknoasian.com|linegee.net|pahe.plus
 @@*$xhr,image,script,frame,stylesheet,1p,domain=intercelestial.com|teknoasian.com|linegee.net|pahe.plus
 @@*$ghide,domain=intercelestial.com|teknoasian.com|linegee.net|pahe.plus
+/\/[0-9a-z]{12}\/[0-9a-z]+$/$script,1p,important,domain=intercelestial.com|teknoasian.com|linegee.net|pahe.plus
 linegee.net,intercelestial.com,teknoasian.com##.right-sidebar.penci_sidebar.container,.penci-home-popular-posts.container,p,ul,li,[href*="s0-greate"],#sidebar,.post-pagination,.single-breadcrumb.penci-breadcrumb.container,.penci-move-title-above.post-image,#footer-section, .post-related, #comments, .post-share.tags-share-box, .alignleft.wp-caption
 linegee.net,intercelestial.com,teknoasian.com##+js(nowoif)
 intercelestial.com#@#+js(adjust-setTimeout, '', *, 0.1)
