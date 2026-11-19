@@ -1360,6 +1360,8 @@ linkliberado.xyz,guardianocturna.mx,3djuegos.com.mx,cine.com,3djuegospc.com,dire
 rapirecetas.com,tiohentai.com,maistocadas.mus.br,serviporno.com,solvetic.com,gamesfull.app,agazeta.com.br,lasexta.com,extra.ec,globo.com,amomeupet.org,cifras.com.br,gaz.com.br,placar.com.br,futebolinterior.com.br,tvhistoria.com.br,tribunapr.uol.com.br,diariodonordeste.verdesmares.com.br,sbt.com.br,link.estadao.com.br,atomixhq.*,jc.ne10.uol.com.br,internetpasoapaso.com,acidadeon.com,leouve.com.br,larazon.es,infoescola.com,cbn.globoradio.globo.com,abril.com.br,odia.ig.com.br,especiais.g1.globo.com,tribunapr.com.br,anime-tube.tv##.ads
 latinomegahd.net,muyinteresante.okdiario.com,subrayado.com.uy,cl1ca.com,periodicocorreo.com.mx,guiavidaesaude.com,muyinteresante.com,reporteindigo.com,omelete.com.mx,c5n.com,t13.cl,solowrestling.mundodeportivo.com,todojujuy.com,mendozapost.com,meiobit.com,brasilparalelo.com.br,tvonline.fan,laprensagrafica.com,ahoragranada.com,correio24horas.com.br,cnnespanol.cnn.com,motociclismo.es,sub100.com.br,theenemy.com.br,manhwas.net,rpp.pe,ambito.com,economipedia.com,informador.mx,elinformador.com.co,cronista.com,rionegro.com.ar,diariodecuyo.com.ar,voydeviaje.com.ar,guarda14.com,viapais.com.ar,agazeta.com.br,eleconomista.com.mx,metropolitanafm.com.br,tycsports.com,elespectador.com,bnews.com.br,migalhas.com.br,losandes.com.ar,lavoz.com.ar,mundo.sputniknews.com,omelete.com.br,lapoliticaonline.*,valenciaplaza.com,dalealbo.cl,globo.com,defesanet.com.br,mibrujula.com,lyon.kim,26noticias.com.ar,auniao.com,clickpb.com.br,emagister.com,lanacion.com.ar,parana-online.com.br,r7.com,toxico-pc.com,uol.com.br##body .banner
 mundoisosgratis.com,actualidadiphone.com,lucrandoideias.com,proandroid.com,lusometeo.com,kltutors.com,eloutput.com,mundobytes.com,techondicas.com,jornalrepercussao.com.br,zonaaps.com,gamevicio.com,blog.desdelinux.net,megacanais.com,terrabrasilnoticias.com,psxbrasil.com.br,elrincondecabra.com,atelevisao.com,ahnegao.com.br,anmosugoi.com,linuxadictos.com,juegosdepcfull.com,pizzafria.ig.com.br,paraveronline.org,sayrodigital.net,cineplus123.org,cinemitas.org,androidayuda.com,sport.es,comandoplay.com,comandotorrents.to,adrenaline.com.br,ncultura.pt,animesdigital.org,wwwhatsnew.com,descargaseriestv.com,lifeder.com,elrellano.com,elintransigente.com,comando.la,remender.pe,noticiasautomotivas.com.br,idinheiro.com.br,diariodocomercio.com.br##body .code-block:not(#style_important)
+ominho.pt##.ominho-ad
+wallapop.com##.ATnaPW_PublicProfileItems__card:has([class*="RetrievalItemCard__highlighted"])
 player.pelisserieshoy.com##+js(abort-on-stack-trace, document.createElement, Pop)
 viciados.net##.vgdb-home-ad
 viciados.net###vp-fundo
@@ -4563,7 +4565,7 @@ emol.com###adx_p
 clubic.com###annonce_pub2
 lanacion.com.py###ba_avanza
 lanacion.com.py###ba_interbanco
-tvserieslatino.com,dicasdereceitas.net,dicasgeeks.net,tvonline.global,ijuinews.com.br,peladas69.com,animeflv.net,cadenasuper.com,rcmpharma.com,terra.com.br###banner
+nove3cinco.pt,tvserieslatino.com,dicasdereceitas.net,dicasgeeks.net,tvonline.global,ijuinews.com.br,peladas69.com,animeflv.net,cadenasuper.com,rcmpharma.com,terra.com.br###banner
 folhadelondrina.com.br,braziliantimes.com###banner-topo
 vanguardia.com###banner0
 eleconomista.es,tudorondonia.com###banner1
@@ -6100,6 +6102,7 @@ the-star.co.ke##div.premium-gate__paywall,div.premium-content figure:not(:has(im
 ||theartnewspaper.com/_next/static/chunks/pages/access-allowed-*.js$script,~third-party
 ||theatlantic.com/zephr/decision-engine$xmlhttprequest,~third-party
 theatlantic.com##aside#paywall,div[class^="LostInventoryMessage_"]
+||theblaze.com/r/engagement_static/v1/web.js$script,~third-party
 ||thedailybeast.com/zephr/decision-engine$xmlhttprequest,~third-party
 thedailybeast.com##+js(cookie-remover, blaize_session)
 thediplomat.com##+js(ra, style, div#app_story_content, stay)
@@ -14898,6 +14901,7 @@ search.brave.com###search-ad
 /push/i?clk
 /script/ut.js
 /suurl5.php?
+||optimizely.com/js/$script,redirect=optimizely.js
 linkedin.com##+js(trusted-set-session-storage-item, blocking-upsell, '"DISMISSED"')
 linkedin.com##+js(trusted-set-session-storage-item, blocking-upsell_lastUpdatedAt, $now$)
 rottentomatoes.com##+js(trusted-set-session-storage-item, mobileAppModal, '{"wasClosed":true}')
@@ -17899,6 +17903,7 @@ www.notion.so##[href="/ai"] > div
 priceline.com##[id=":r1b:"]
 priceline.com##[id=":r1i:"]
 www.reddit.com##[id^="answers-suggested-queries"]
+amazon.*##[id^="sac-suggestion-row-"]:has(> .s-rufus-autocomplete-bh-desktop-suggestion-container)
 www.google.com##[role="listitem"]:has(a[href*="aep=1&ntc=1"])
 yandex.com##a.HeaderNav-Tab[href$="&promo=force_neuro"]
 www.yahoo.co.jp##a.yMWCYupQNdgppL-NV6sMi._3sAlKGsIBCxTUbNi86oSjt:has(svg[aria-label="AIアシスタント"])
@@ -18332,7 +18337,7 @@ dumatv.ru##+js(prevent-addEventListener, message, AUTOPLAY)
 shuba.life##+js(prevent-addEventListener, message, element.contentWindow)
 www.rambler.ru##+js(prevent-addEventListener, scroll, requestAnimationFrame)
 dzen.ru,sportsdzen.ru##+js(prevent-fetch, /stats/bulk|stats/pixels|zen_audit/)
-progorod62.ru,ura.news##+js(prevent-fetch, _rsc=)
+progorod62.ru,sovsport.ru,ura.news##+js(prevent-fetch, _rsc=)
 evribiont.xyz##+js(prevent-setTimeout, adTestElement)
 kinofilm.io##+js(prevent-setTimeout, baitHidden)
 aigenda.ru##+js(prevent-setTimeout, combinedDetector)
@@ -19994,6 +19999,7 @@ second-hand.it##.werbung-container
 planetminecraft.com##+js(nano-sib, countdown)
 up-4ever.net##+js(rmnt, script, .offsetHeight)
 up-4ever.net##.u4dl-spotcol.u4dl-choice
+||up-4ever.net/js/bravenote.js
 reuters.com##+js(rmnt, script, rcom_bdScriptLoaded)
 dilar.tube##+js(set, HTMLImageElement.prototype.onerror, undefined)
 dilar.tube##+js(no-fetch-if, method:HEAD)
@@ -20299,6 +20305,12 @@ applescoop.org##.story-content .ad
 applescoop.org##.as-ad-rail
 applescoop.org##.as-ad
 ||laviola.it/jaqisharam.js
+anytimesbook.com##+js(rmnt, script, .offsetWidth)
+suikora.com##+js(no-fetch-if, /googlesyndication|doubleclick|favicon.ico/)
+||abscloud.org^$script,redirect=noop.js,domain=suikora.com
+suikora.com##+js(nowoif, _blank)
+liddread.com##+js(rmnt, script, AdBlock)
+liddread.com##div[data-type="_mgwidget"]
 
 ! ----- https://raw.githubusercontent.com/uBlockOrigin/uAssets/master/filters/resource-abuse.txt -----
 /edgemesh.*.js$script,domain=~edgemesh.com|~edgeno.de
@@ -20777,6 +20789,7 @@ upfilesgo.com,upfion.com,upfiles.app,upfiles-urls.com##+js(aeld, click, shouldOp
 upfilesgo.com,upfion.com,upfiles.app,upfiles-urls.com##+js(set, blurred, false)
 upfilesgo.com,upfion.com,upfiles.app,upfiles-urls.com##+js(aeld, /blur|focus/)
 upfilesgo.com,upfion.com,upfiles.app,upfiles-urls.com##+js(no-fetch-if, /scorecardresearch\.com|outbrain\.com|taboola\.com|criteo\.net|rubiconproject\.com|adform\.net|casalemedia\.com|adservice\.google\.com/, , {"type": "opaque"})
+upfilesgo.com##+js(set, vhit.detectAdblock, falseFunc)
 rentry.co##article:has(#download-your-archive-file)
 ||sharecube.pro^$all
 ||flyshare.cfd^$all
@@ -21198,7 +21211,6 @@ dropgalaxy.*,financemonk.net##+js(rpnt, script, event.message);, 'event.message)
 dropgalaxy.*,financemonk.net##iframe[id^="google_ads_iframe_/"], div[id^="adm-container-"]:style(clip-path: circle(0) !important;)
 dropgalaxy.*,financemonk.net##+js(nowoif)
 dropgalaxy.*,financemonk.net##+js(rpnt, script, /\.cloudfront\.net|window\.open/g, false)
-dropgalaxy.*,financemonk.net##+js(no-fetch-if, adsbygoogle, war:googlesyndication_adsbygoogle.js)
 dropgalaxy.*,financemonk.net##+js(rpnt, script, false;, true;, condition, rundirectad)
 dropgalaxy.com##div.page.pt-5.container:has-text(adblockers)
 dropgalaxy.com##[id^="TR-"]
